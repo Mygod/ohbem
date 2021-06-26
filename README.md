@@ -2,6 +2,19 @@
 
 Ohbem is an optimized judgemental library that computes PvP rankings for Pokemon GO.
 
+Features:
+
+* Little cup/great league/ultra league rankings
+* Multiple level caps (level 50/51)
+* Customizable CP/level caps
+* Evolutions support
+* Mega evolutions support
+* Tyrogue evolutions support
+* Gender-locked evolutions support
+* Unevolvable costumes support
+* Optional built-in caching
+
+
 ## Usage
 
 Install it with `npm`.
