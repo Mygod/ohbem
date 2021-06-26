@@ -1,6 +1,6 @@
 # Ohbem
 
-Ohbem is a judgemental library that computes PvP rankings for Pokemon GO.
+Ohbem is an optimized judgemental library that computes PvP rankings for Pokemon GO.
 
 ## Usage
 
