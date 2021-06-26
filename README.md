@@ -10,9 +10,9 @@ Install it with `npm`.
 npm install
 
 # Optional dependencies:
-# if you want to use fetchPokemonMaster
+# if you want to use fetchPokemonData
 npm install --save axios
-# if you want to use caching
+# if you want to use cachingStrategy
 npm install --save lru-cache
 ```
 
