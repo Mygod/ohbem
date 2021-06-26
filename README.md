@@ -50,7 +50,7 @@ const ohbem = new Ohbem({
             little: false,
             cap: 2500,
         },
-        // only detect functionally perfect IVs
+        // only detect functionally perfect IVs; caching does not apply
         master: null,
     },
     levelCaps: [50, 51],
