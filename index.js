@@ -2,7 +2,7 @@
 
 const POGOProtos = require('pogo-protos');
 
-const { calculateCpMultiplier, calculateCp, calculateRanks } = require('./pvp-core.js');
+const { calculateCpMultiplier, calculateHp, calculateCp, calculateRanks } = require('./pvp-core.js');
 
 const maxLevel = 100;
 
@@ -77,7 +77,8 @@ class Ohbem {
      *
      * @param {Object} options An object containing your preferences. See more options below.
      * @param {Object} [options.leagues] An object containing key-value pair, where keys correspond to league names,
-     *  and value could either be a Number indicating the CP cap, or an Object like {little: true, cap: 500}.
+     *  and value could either be a Number indicating the CP cap, or an Object like {little: true, cap: 500},
+     *  or null indicating functionally perfect.
      *  If key starts with "little" and the value is a Number, it will be assumed to be a little cup.
      * @param {Number[]} [options.levelCaps] An array containing a list of Numbers in ascending order,
      *  indicating the interested level caps.
@@ -95,7 +96,8 @@ class Ohbem {
             little: 500,
             great: 1500,
             ultra: 2500,
-        })) this._leagues[name] = cap instanceof Object ? cap : {
+            master: null,
+        })) this._leagues[name] = cap === null || cap instanceof Object ? cap : {
             cap,
             little: name.startsWith("little"),
         };
@@ -164,29 +166,38 @@ class Ohbem {
         if (form) baseEntry.form = form;
         const pushAllEntries = (stats, evolution = 0) => {
             for (const [leagueName, leagueOptions] of Object.entries(this._leagues)) {
-                if (leagueOptions.little && !(stats.little || masterPokemon.little)) continue;
-                const combinationIndex = this.calculateAllRanks(stats, leagueOptions.cap);
-                if (combinationIndex === null) continue;
                 const entries = [];
-                for (const [lvCap, combinations] of Object.entries(combinationIndex)) {
-                    const ivEntry = combinations[attack][defense][stamina];
-                    if (level > ivEntry.level) continue;
-                    const entry = { ...baseEntry, cap: parseFloat(lvCap), ...ivEntry };
-                    if (evolution) entry.evolution = evolution;
-                    entry.value = Math.floor(entry.value);
-                    entries.push(entry);
-                }
-                if (entries.length === 0) continue;
-                let last = entries[entries.length - 1];
-                while (entries.length >= 2) {   // remove duplicate ranks at highest caps
-                    const secondLast = entries[entries.length - 2];
-                    if (secondLast.level !== last.level || secondLast.rank !== last.rank) break;
-                    entries.pop();
-                    last = secondLast;
-                }
-                if (last.cap < maxLevel) last.capped = true; else {
-                    if (entries.length === 1) continue;
-                    entries.pop();
+                if (leagueOptions !== null) {
+                    if (leagueOptions.little && !(stats.little || masterPokemon.little)) continue;
+                    const combinationIndex = this.calculateAllRanks(stats, leagueOptions.cap);
+                    if (combinationIndex === null) continue;
+                    for (const [lvCap, combinations] of Object.entries(combinationIndex)) {
+                        const ivEntry = combinations[attack][defense][stamina];
+                        if (level > ivEntry.level) continue;
+                        const entry = { ...baseEntry, cap: parseFloat(lvCap), ...ivEntry };
+                        if (evolution) entry.evolution = evolution;
+                        entry.value = Math.floor(entry.value);
+                        entries.push(entry);
+                    }
+                    if (entries.length === 0) continue;
+                    let last = entries[entries.length - 1];
+                    while (entries.length >= 2) {   // remove duplicate ranks at highest caps
+                        const secondLast = entries[entries.length - 2];
+                        if (secondLast.level !== last.level || secondLast.rank !== last.rank) break;
+                        entries.pop();
+                        last = secondLast;
+                    }
+                    if (last.cap < maxLevel) last.capped = true; else {
+                        if (entries.length === 1) continue;
+                        entries.pop();
+                    }
+                } else if (!evolution && attack === 15 && defense === 15 && stamina < 15) {
+                    // Temporary evolutions always preserve HP
+                    for (const lvCap of this._levelCaps) {
+                        if (calculateHp(stats, stamina, lvCap) === calculateHp(stats, 15, lvCap)) {
+                            entries.push({...baseEntry, level: parseFloat(lvCap), rank: 1, percentage: 1});
+                        }
+                    }
                 }
                 result[leagueName] = result[leagueName] ? result[leagueName].concat(entries) : entries;
             }
