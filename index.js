@@ -212,8 +212,8 @@ class Ohbem {
                 }
                 if (evolution.gender_requirement && gender !== evolution.gender_requirement) continue;
                 // reset costume since we know it can evolve
-                const evolvedRanks = this.queryPvPRank(evolution.pokemon, evolution.form || 0, 0,
-                    attack, defense, stamina, level, gender);
+                const evolvedRanks = this.queryPvPRank(evolution.pokemon, evolution.form || 0, 0, gender,
+                    attack, defense, stamina, level);
                 for (const [leagueName, results] of Object.entries(evolvedRanks)) {
                     result[leagueName] = result[leagueName] ? result[leagueName].concat(results) : results;
                 }
