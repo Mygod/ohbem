@@ -20,7 +20,7 @@ Features:
 Install it with `npm`.
 
 ```sh
-npm install
+npm install ohbem
 
 # Optional dependencies:
 # if you want to use fetchPokemonData
