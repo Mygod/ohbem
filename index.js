@@ -227,6 +227,19 @@ class Ohbem {
         }
         return result;
     }
+
+    /**
+     * Look up base stats of a Pokemon.
+     *
+     * @param pokemonId {POGOProtos.Rpc.HoloPokemonId}
+     * @param [form] {POGOProtos.Rpc.PokemonDisplayProto.Form}
+     * @returns {Object}
+     */
+    findBaseStats(pokemonId, form = POGOProtos.Rpc.PokemonDisplayProto.Form.FORM_UNSET) {
+        const masterPokemon = this._pokemonData[pokemonId];
+        const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
+        return masterForm.attack ? masterForm : masterPokemon;
+    }
 }
 
 module.exports = Ohbem;
