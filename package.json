@@ -1,0 +1,26 @@
+{
+  "name": "ohbem",
+  "version": "1.0.0",
+  "description": "Ohbem judges your Pokemon GO IVs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "pokemon",
+    "go"
+  ],
+  "author": "Mygod",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "pogo-protos": "github:Furtif/pogo-protos"
+  },
+  "optionalDependencies": {
+    "axios": "^0.21.1",
+    "lru-cache": "^6.0.0"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "mocha": "^9.0.1"
+  }
+}
