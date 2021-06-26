@@ -12,7 +12,8 @@ Features:
 * Tyrogue evolutions support
 * Gender-locked evolutions support
 * Unevolvable costumes support
-* Tied PvP ranks (for example, 13/15/14 and 13/15/15 are both UL rank 1 at L51, followed by 14/14/14 being UL rank 3)
+* Tied PvP ranks
+  (for example, 13/15/14 and 13/15/15 Talonflame are both UL rank 1 at L51, followed by 14/14/14 being UL rank 3)
 * Optional built-in caching
 
 
