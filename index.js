@@ -145,8 +145,8 @@ class Ohbem {
      * You need to initialize pokemonData in options to use this!
      *
      * @param pokemonId {POGOProtos.Rpc.HoloPokemonId}
-     * @param formId {POGOProtos.Rpc.PokemonDisplayProto.Form}
-     * @param costumeId {POGOProtos.Rpc.PokemonDisplayProto.Costume} This will be used to check whether it can evolve.
+     * @param form {POGOProtos.Rpc.PokemonDisplayProto.Form}
+     * @param costume {POGOProtos.Rpc.PokemonDisplayProto.Costume} This will be used to check whether it can evolve.
      * @param gender {POGOProtos.Rpc.PokemonDisplayProto.Gender}
      *  This will be used for checking gender-locked evolutions.
      * @param attack {number} Attack IV.
@@ -155,13 +155,13 @@ class Ohbem {
      * @param level {number} Level.
      * @returns {{}}
      */
-    queryPvPRank(pokemonId, formId, costumeId, gender, attack, defense, stamina, level) {
+    queryPvPRank(pokemonId, form, costume, gender, attack, defense, stamina, level) {
         const result = {};
         const masterPokemon = this._pokemonData[pokemonId];
         if (!masterPokemon || !masterPokemon.attack) return result;
-        const masterForm = formId ? masterPokemon.forms[formId] || masterPokemon : masterPokemon;
+        const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
         const baseEntry = { pokemon: pokemonId };
-        if (formId) baseEntry.form = formId;
+        if (form) baseEntry.form = form;
         const pushAllEntries = (stats, evolution = 0) => {
             for (const [leagueName, leagueOptions] of Object.entries(this._leagues)) {
                 if (leagueOptions.little && !(stats.little || masterPokemon.little)) continue;
@@ -193,8 +193,8 @@ class Ohbem {
         };
         pushAllEntries(masterForm.attack ? masterForm : masterPokemon);
         let canEvolve = true;
-        if (costumeId) {
-            const costumeName = POGOProtos.Rpc.PokemonDisplayProto.Costume[costumeId];
+        if (costume) {
+            const costumeName = POGOProtos.Rpc.PokemonDisplayProto.Costume[costume];
             canEvolve = !costumeName.endsWith('_NOEVOLVE') && !costumeName.endsWith('_NO_EVOLVE');
         }
         if (canEvolve && masterForm.evolutions) {

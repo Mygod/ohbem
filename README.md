@@ -56,8 +56,8 @@ const ohbem = new Ohbem({
 });
 ohbem.queryPvPRank(
     /* pokemonId: */    605,
-    /* formId: */       0,
-    /* costumeId: */    0,
+    /* form: */         0,
+    /* costume: */      0,
     /* gender: */       1,
     /* attack: */       1,
     /* defense: */      4,
