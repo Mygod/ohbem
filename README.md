@@ -8,7 +8,7 @@ Features:
 * Multiple level caps (level 50/51)
 * Customizable CP/level caps
 * Evolutions support
-* Mega evolutions support
+* Mega evolutions support (including unreleased Mega)
 * Tyrogue evolutions support
 * Gender-locked evolutions support
 * Unevolvable costumes support
