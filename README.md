@@ -28,7 +28,7 @@ npm install ohbem
 # Optional dependencies:
 # if you want to use fetchPokemonData
 npm install --save axios
-# if you want to use cachingStrategy
+# if you want to use cachingStrategy other than cpuHeavy
 npm install --save lru-cache
 ```
 
@@ -40,8 +40,10 @@ const Ohbem = require('ohbem');
 // if you want to install axios and use built-in fetcher
 const pokemonData = await Ohbem.fetchPokemonData();
 
+// construct an Ohbem -- you should reuse this object as much as possible since it holds a cache
 const ohbem = new Ohbem({
-    // all of the following options are optional and these are the default values
+    // all of the following options are optional and these (except for pokemonData) are the default values
+    // read the documentation for more information
     leagues: {
         little: 500,
         great: 1500,
@@ -55,7 +57,8 @@ const ohbem = new Ohbem({
     },
     levelCaps: [50, 51],
     // The following field is required to use queryPvPRank
-    // pokemonData,
+    // You can skip populating it if you only want to use other helper methods
+    pokemonData,
     // If you have installed lru-cache, uncomment the following to use cache:
     // cachingStrategy: Ohbem.cachingStrategies.memoryHeavy,
 });
