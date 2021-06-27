@@ -1,6 +1,6 @@
 {
   "name": "ohbem",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Ohbem judges your Pokemon GO IVs.",
   "main": "index.js",
   "scripts": {
