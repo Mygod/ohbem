@@ -15,6 +15,8 @@ const calculateCpMultiplier = (level, test = false) => {
     return Math.sqrt((baseCpm * baseCpm + nextCpm * nextCpm) / 2);
 };
 
+const calculateHp = (stats, iv, level) => Math.max(10, Math.floor((stats.stamina + iv) * calculateCpMultiplier(level)));
+
 const calculateStatProduct = (stats, attack, defense, stamina, level) => {
     const multiplier = calculateCpMultiplier(level);
     let hp = Math.floor((stamina + stats.stamina) * multiplier);
@@ -81,4 +83,4 @@ const calculateRanks = (stats, cpCap, lvCap) => {
     return { combinations, sortedRanks };
 };
 
-module.exports = { calculateCpMultiplier, calculateCp, calculateRanks };
+module.exports = { calculateCpMultiplier, calculateHp, calculateCp, calculateRanks };
