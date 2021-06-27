@@ -12,6 +12,7 @@
   ],
   "author": "Mygod",
   "license": "Apache-2.0",
+  "repository": "github:Mygod/ohbem",
   "dependencies": {
     "pogo-protos": "github:Furtif/pogo-protos"
   },
