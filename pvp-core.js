@@ -3,14 +3,10 @@
 const cpMultipliers = require('./cpm.json');
 
 const calculateCpMultiplier = (level, test = false) => {
-    if (test ? level < 40 : level <= 55) {
-        return cpMultipliers[level];
-    }
+    if (test ? level < 40 : level <= 55) return cpMultipliers[level];
     const baseLevel = Math.floor(level);
     const baseCpm = Math.fround(0.5903 + baseLevel * 0.005);
-    if (baseLevel === level) {
-        return Math.fround(baseCpm);
-    }
+    if (baseLevel === level) return Math.fround(baseCpm);
     const nextCpm = Math.fround(0.5903 + (baseLevel + 1) * 0.005);
     return Math.sqrt((baseCpm * baseCpm + nextCpm * nextCpm) / 2);
 };
@@ -20,9 +16,7 @@ const calculateHp = (stats, iv, level) => Math.max(10, Math.floor((stats.stamina
 const calculateStatProduct = (stats, attack, defense, stamina, level) => {
     const multiplier = calculateCpMultiplier(level);
     let hp = Math.floor((stamina + stats.stamina) * multiplier);
-    if (hp < 10) {
-        hp = 10;
-    }
+    if (hp < 10) hp = 10;
     return (attack + stats.attack) * multiplier *
         (defense + stats.defense) * multiplier *
         hp;
@@ -47,9 +41,7 @@ const calculatePvPStat = (stats, attack, defense, stamina, cap, lvCap) => {
         if (cp <= cap) {
             lowest = mid;
             bestCP = cp;
-        } else {
-            highest = mid - .5;
-        }
+        } else highest = mid - .5;
     }
     return { value: calculateStatProduct(stats, attack, defense, stamina, lowest), level: lowest, cp: bestCP };
 };
@@ -75,9 +67,7 @@ const calculateRanks = (stats, cpCap, lvCap) => {
     for (let i = 0, j = 0; i < sortedRanks.length; i++) {
         const entry = sortedRanks[i];
         entry.percentage = Number((entry.value / best).toFixed(5));
-        if (entry.value < sortedRanks[j].value) {
-            j = i;
-        }
+        if (entry.value < sortedRanks[j].value) j = i;
         entry.rank = j + 1;
     }
     return { combinations, sortedRanks };
