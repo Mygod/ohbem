@@ -33,9 +33,9 @@ const calculateCp = (stats, attack, defense, stamina, level) => {
     return cp < 10 ? 10 : cp;
 };
 
-const calculatePvPStat = (stats, attack, defense, stamina, cap, lvCap) => {
-    if (calculateCp(stats, attack, defense, stamina, 1) > cap) return null;
-    let bestCP = cap, lowest = 1, highest = lvCap;
+const calculatePvPStat = (stats, attack, defense, stamina, cap, lvCap, minLevel = 1) => {
+    if (calculateCp(stats, attack, defense, stamina, minLevel) > cap) return null;
+    let bestCP = cap, lowest = minLevel, highest = lvCap;
     for (let mid = Math.ceil(lowest + highest) / 2; lowest < highest; mid = Math.ceil(lowest + highest) / 2) {
         const cp = calculateCp(stats, attack, defense, stamina, mid);
         if (cp <= cap) {
@@ -73,4 +73,32 @@ const calculateRanks = (stats, cpCap, lvCap) => {
     return { combinations, sortedRanks };
 };
 
-module.exports = { calculateCpMultiplier, calculateHp, calculateCp, calculateRanks };
+const calculateRanksCompact = (stats, cpCap, lvCap) => {
+    const combinations = Array(16 * 16 * 16);
+    const sortedRanks = [];
+    for (let a = 0; a <= 15; a++) {
+        for (let d = 0; d <= 15; d++) {
+            for (let s = 0; s <= 15; s++) {
+                const entry = calculatePvPStat(stats, a, d, s, cpCap, lvCap);
+                entry.index = (a * 16 + d) * 16 + s;
+                sortedRanks.push(entry);
+            }
+        }
+    }
+    sortedRanks.sort((a, b) => b.value - a.value);
+    for (let i = 0, j = 0; i < sortedRanks.length; i++) {
+        const entry = sortedRanks[i];
+        if (entry.value < sortedRanks[j].value) j = i;
+        combinations[entry.index] = j + 1;
+    }
+    return { combinations, sortedRanks };
+}
+
+module.exports = {
+    calculateCpMultiplier,
+    calculateHp,
+    calculateCp,
+    calculatePvPStat,
+    calculateRanks,
+    calculateRanksCompact,
+};

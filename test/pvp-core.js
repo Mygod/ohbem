@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { calculateCpMultiplier, calculateCp, calculateRanks } = require('../pvp-core.js');
+const { calculateCpMultiplier, calculateCp, calculateRanks, calculateRanksCompact } = require('../pvp-core.js');
 const Ohbem = require('../index.js');
 const cpMultipliers = require('../cpm.json');
 
@@ -22,10 +22,21 @@ describe('PvP Core', () => {
     });
     it('calculateRanks', async () => {
         const pokemon = await pokemonData;
-        assert.strictEqual(calculateRanks(pokemon[26], 1500, 40).combinations[15][15][15].rank, 742, 'Hundo Raichu rank');
-        assert.strictEqual(calculateRanks(pokemon[351], 1500, 51).combinations[4][14][15].rank, 56, 'Weather boosted Castform rank');
-        assert.strictEqual(calculateRanks(pokemon[660], 1500, 100).combinations[0][15][11].rank, 1, 'Diggersby uncapped rank');
-        assert.strictEqual(calculateRanks(pokemon[663], 2500, 51).combinations[13][15][15].rank, 1, 'Talonflame functionally perfect @15');
-        assert.strictEqual(calculateRanks(pokemon[663], 2500, 51).combinations[13][15][14].rank, 1, 'Talonflame functionally perfect @14');
+        const getRank = (stats, cpCap, lvCap, a, d, s, compact) => {
+            if (compact) return calculateRanksCompact(stats, cpCap, lvCap).combinations[(a * 16 + d) * 16 + s];
+            return calculateRanks(stats, cpCap, lvCap).combinations[a][d][s].rank;
+        }
+        for (const compact of [false, true]) {
+            assert.strictEqual(getRank(pokemon[26], 1500, 40, 15, 15, 15, compact), 742,
+                `Hundo Raichu rank [${compact}]`);
+            assert.strictEqual(getRank(pokemon[351], 1500, 51, 4, 14, 15, compact), 56,
+                `Weather boosted Castform rank [${compact}]`);
+            assert.strictEqual(getRank(pokemon[660], 1500, 100, 0, 15, 11, compact), 1,
+                `Diggersby uncapped rank [${compact}]`);
+            assert.strictEqual(getRank(pokemon[663], 2500, 51, 13, 15, 15, compact), 1,
+                `Talonflame functionally perfect @15 [${compact}]`);
+            assert.strictEqual(getRank(pokemon[663], 2500, 51, 13, 15, 14, compact), 1,
+                `Talonflame functionally perfect @14 [${compact}]`);
+        }
     });
 });

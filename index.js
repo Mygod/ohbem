@@ -2,7 +2,14 @@
 
 const POGOProtos = require('pogo-protos');
 
-const { calculateCpMultiplier, calculateHp, calculateCp, calculateRanks } = require('./pvp-core.js');
+const {
+    calculateCpMultiplier,
+    calculateHp,
+    calculateCp,
+    calculatePvPStat,
+    calculateRanks,
+    calculateRanksCompact,
+} = require('./pvp-core.js');
 
 const maxLevel = 100;
 
@@ -89,6 +96,9 @@ class Ohbem {
      * @param {Function} [options.cachingStrategy] An optional function constructing a cache
      *  implementing get(key) and set(key, value).
      *  @see cachingStrategies
+     * @param {boolean} [options.compactCache] An optional boolean indicating whether the content of the cache should
+     *  optimize towards less CPU (false) or less memory usage (true).
+     *  Default is true if caching is enabled, false if not.
      */
     constructor(options = {}) {
         this._leagues = {};
@@ -104,16 +114,20 @@ class Ohbem {
         this._levelCaps = options.levelCaps || [50, 51];
         this._pokemonData = options.pokemonData;
         this._rankCache = options.cachingStrategy ? options.cachingStrategy() : null;
+        this._compactCache = options.compactCache === undefined ? !!this._rankCache : options.compactCache;
     }
 
     /**
      * Calculate all PvP ranks for a specific base stats with the specified CP cap.
+     *
+     * The return value of this method is subject to change. Ask maintainer before attempting to invoke it.
+     *
      * @param stats {Object} An object containing the base stats.
      * @param stats.attack {number} Base attack.
      * @param stats.defense {number} Base defense.
      * @param stats.stamina {number} Base stamina.
      * @param cpCap {number} The CP cap.
-     * @returns {[Object]} An object mapping level cap to combinations,
+     * @returns {[Object]} An object mapping level cap to combinations (whose content depends on compactCache),
      *  or null if the Pokemon does not hit the cpCap at any level cap.
      */
     calculateAllRanks(stats, cpCap) {
@@ -122,20 +136,23 @@ class Ohbem {
         if (combinationIndex === undefined) {
             combinationIndex = null;
             let maxed = false;
+            const calculator = this._compactCache ? (lvCap) => {
+                const { combinations, sortedRanks } = calculateRanksCompact(stats, cpCap, lvCap);
+                const result = combinations;
+                result.push(sortedRanks[0].value);
+                return result;
+            } : (lvCap) => calculateRanks(stats, cpCap, lvCap).combinations;
             for (const lvCap of this._levelCaps) {
                 if (calculateCp(stats, 15, 15, 15, lvCap) <= cpCap) continue;   // not viable
-                const { combinations } = calculateRanks(stats, cpCap, lvCap);
-                if (combinationIndex === null) combinationIndex = { [lvCap]: combinations };
-                else combinationIndex[lvCap] = combinations;
+                if (combinationIndex === null) combinationIndex = { [lvCap]: calculator(lvCap) };
+                else combinationIndex[lvCap] = calculator(lvCap);
                 // check if no more power up is possible: further increasing the cap will not be relevant
                 if (calculateCp(stats, 0, 0, 0, lvCap + .5) > cpCap) {
                     maxed = true;
                     break;
                 }
             }
-            if (combinationIndex !== null && !maxed) {
-                combinationIndex[maxLevel] = calculateRanks(stats, cpCap, maxLevel).combinations;
-            }
+            if (combinationIndex !== null && !maxed) combinationIndex[maxLevel] = calculator(maxLevel);
             if (this._rankCache) this._rankCache.set(key, combinationIndex);
         }
         return combinationIndex;
@@ -172,9 +189,24 @@ class Ohbem {
                     const combinationIndex = this.calculateAllRanks(stats, leagueOptions.cap);
                     if (combinationIndex === null) continue;
                     for (const [lvCap, combinations] of Object.entries(combinationIndex)) {
-                        const ivEntry = combinations[attack][defense][stamina];
-                        if (level > ivEntry.level) continue;
-                        const entry = { ...baseEntry, cap: parseFloat(lvCap), ...ivEntry };
+                        let entry;
+                        if (this._compactCache) {
+                            const cap = parseFloat(lvCap);
+                            const stat = calculatePvPStat(stats, attack, defense, stamina,
+                                leagueOptions.cap, cap, level);
+                            if (stat === null) continue;
+                            entry = {
+                                ...baseEntry,
+                                cap,
+                                ...stat,
+                                percentage: Number((stat.value / combinations[4096]).toFixed(5)),
+                                rank: combinations[(attack * 16 + defense) * 16 + stamina],
+                            };
+                        } else {
+                            const ivEntry = combinations[attack][defense][stamina];
+                            if (level > ivEntry.level) continue;
+                            entry = { ...baseEntry, cap: parseFloat(lvCap), ...ivEntry };
+                        }
                         if (evolution) entry.evolution = evolution;
                         entry.value = Math.floor(entry.value);
                         entries.push(entry);
