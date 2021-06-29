@@ -115,6 +115,27 @@ ohbem.queryPvPRank(661, 0, 0, 1, 15, 15, 14, 1);
 }
 ```
 
+
+## Output format
+
+As demonstrated above, the output of `queryPvPRank` is an object mapping league names to an array.
+If no viable combinations are found for a specific league, i.e. if an empty array is to be returned, the key will not be present in the object.
+The array contains a list of combinations ordered by evolutions, then by temp evolutions, then by level caps, for example, `Ralts, Kirlia, Gardevoir L50, Gardevoir L51, Mega Gardevoir, Gallade L50, Gallade L51, Mega Gallade`.
+
+Each combination is an object having the following field:
+
+* `pokemon`: (`HoloPokemonId`)
+* `[form]`: (`PokemonDisplayProto.Form`) This field will be unset if the value is `FORM_UNSET = 0`.
+* `[evolution]`: (`HoloTemporaryEvolutionId`) This field will be unset if the value is `TEMP_EVOLUTION_UNSET = 0`.
+* `cap`: (`number`) Level cap used for calculation. The actual level cap could be increased further without impacting the ranking. See `capped`.
+* `[capped]`: (`boolean`) This indicates whether the combination is futureproof, i.e. increasing the level cap further will not change anything for this combination. You should **not** display `cap` in the UI if `capped = true`. This field will be unset if the value is `false`.
+* `level`: (`number`) The level that the combination could be powered up to, with respect to both the CP cap of the league and the current level `cap`.
+* `cp`: (`number`) CP of the combination when powered up.
+* `value`: (`number`) Stat product of the combination when powered up, floored to an integer.
+* `percentage`: (`number`) A number between 0 and 1 indicating its stats product percentage comparing to that of the rank 1 in the same conditions.
+
+For functionally perfect, only the following fields are processed: `pokemon`, `form`, `level`, `rank = 1`, `percentage = 1`.
+
 ## License
 
 Apache 2.0
