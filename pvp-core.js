@@ -74,6 +74,7 @@ const calculateRanks = (stats, cpCap, lvCap) => {
 };
 
 const calculateRanksCompact = (stats, cpCap, lvCap) => {
+    // note if you are trying to port it to other languages: use a short (2-byte) array to save RAM
     const combinations = Array(16 * 16 * 16);
     const sortedRanks = [];
     for (let a = 0; a <= 15; a++) {
