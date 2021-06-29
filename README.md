@@ -136,6 +136,18 @@ Each combination is an object having the following field:
 
 For functionally perfect, only the following fields are processed: `pokemon`, `form`, `level`, `rank = 1`, `percentage = 1`.
 
+The output could be further filtered using a subset of level caps via `Ohbem.filterLevelCaps`.
+For example:
+
+```js
+Ohbem.filterLevelCaps(ohbem.queryPvPRank(661, 0, 0, 1, 15, 15, 14, 1).great, [51]);
+[
+  { pokemon: 662, cap: 51, value: 1743985, level: 41.5, cp: 1493, percentage: 0.94736, rank: 1328 },
+  { pokemon: 663, cap: 50, value: 1756548, level: 23.5, cp: 1476, percentage: 0.94144, rank: 2867, capped: true }
+]
+```
+
+
 ## License
 
 Apache 2.0
