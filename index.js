@@ -92,6 +92,39 @@ class Ohbem {
     }
 
     /**
+     * Filter the output of queryPvPRank with a subset of interested level caps.
+     *
+     * @param entries {Object[]}
+     *  An array containing PvP combinations for a specific league from the output of queryPvPRank.
+     * @param interestedLevelCaps {number[]} An array containing a list of interested level caps in ascending order.
+     * @returns {Object[]} The filtered array containing only capped entries and those whose cap matches the given caps.
+     */
+    static filterLevelCaps(entries, interestedLevelCaps) {
+        const result = [];
+        let last;
+        for (const entry of entries) {
+            if (entry.cap === undefined) {  // functionally perfect, fast route
+                if (interestedLevelCaps.includes(entry.level)) result.push(entry);
+                continue;
+            }
+            if (entry.capped ? interestedLevelCaps[interestedLevelCaps.length - 1] < entry.cap
+                             : !interestedLevelCaps.includes(entry.cap)) continue;
+            if (last && last.pokemon === entry.pokemon &&
+                last.form === entry.form && last.evolution === entry.evolution &&
+                // if raising the level cap does not increase its level,
+                // this IV has hit the max level in the league;
+                // at this point, its rank can only go down (only unmaxed combinations can still go up);
+                // if the rank stays the same, all higher ranks are also unchanged
+                last.level === entry.level && last.rank === entry.rank) {
+                // merge two entries
+                last.cap = entry.cap;
+                if (entry.capped) last.capped = true;
+            } else result.push(last = {...entry});
+        }
+        return result;
+    }
+
+    /**
      * Initialize your overlord Ohbem.
      *
      * @param {Object} options An object containing your preferences. See more options below.
@@ -238,7 +271,7 @@ class Ohbem {
                     // Temporary evolutions always preserve HP
                     for (const lvCap of this._levelCaps) {
                         if (calculateHp(stats, stamina, lvCap) === calculateHp(stats, 15, lvCap)) {
-                            entries.push({...baseEntry, level: parseFloat(lvCap), rank: 1, percentage: 1});
+                            entries.push({ ...baseEntry, level: parseFloat(lvCap), rank: 1, percentage: 1 });
                         }
                     }
                     if (entries.length === 0) continue;
