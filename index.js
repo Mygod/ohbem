@@ -239,7 +239,8 @@ class Ohbem {
                             entries.push({...baseEntry, level: parseFloat(lvCap), rank: 1, percentage: 1});
                         }
                     }
-                }
+                    if (entries.length === 0) continue;
+                } else continue;
                 result[leagueName] = result[leagueName] ? result[leagueName].concat(entries) : entries;
             }
         };
