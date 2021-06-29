@@ -96,7 +96,8 @@ class Ohbem {
      *
      * @param entries {Object[]}
      *  An array containing PvP combinations for a specific league from the output of queryPvPRank.
-     * @param interestedLevelCaps {number[]} An array containing a list of interested level caps in ascending order.
+     * @param interestedLevelCaps {number[]}
+     *  A non-empty array containing a list of interested level caps in ascending order.
      * @returns {Object[]} The filtered array containing only capped entries and those whose cap matches the given caps.
      */
     static filterLevelCaps(entries, interestedLevelCaps) {
