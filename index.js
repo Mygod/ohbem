@@ -119,7 +119,7 @@ class Ohbem {
                 // merge two entries
                 last.cap = entry.cap;
                 if (entry.capped) last.capped = true;
-            } else result.push(last = {...entry});
+            } else result.push(last = { ...entry });
         }
         return result;
     }
