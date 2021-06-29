@@ -1,11 +1,11 @@
 const Ohbem = require('..');
 const pokemonData = require('./cached.json');
 
-for (const compatCache of [false, true]) {}
+const mode = process.argv[process.argv.length - 1];
 const ohbem = new Ohbem({
     pokemonData,
     cachingStrategy: Ohbem.cachingStrategies.memoryHeavy,
-    compactCache: process.argv[process.argv.length - 1] === 'compact',
+    compactCache: mode === 'compact',
 });
 
 function goInCache(stats) {
@@ -20,7 +20,8 @@ function goInCache(stats) {
 
 for (const pokemon of Object.values(pokemonData)) {
     goInCache(pokemon);
-    for (const form of Object.values(pokemon.forms)) goInCache(form);
+    for (const form of Object.values(pokemon.forms)) if (form.attack) goInCache(form);
+    if (mode === 'baseline') break;
 }
 if (global.gc) global.gc(); // do a gc to show accurate RAM usage
 console.log('Finished with', ohbem._rankCache.length, 'entries');
