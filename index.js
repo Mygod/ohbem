@@ -10,6 +10,7 @@ const {
     calculateRanks,
     calculateRanksCompact,
 } = require('./pvp-core.js');
+const addPokemonDataHelpers = require('./pokemon-data.js');
 
 const maxLevel = 100;
 
@@ -80,13 +81,14 @@ class Ohbem {
     /**
      * Fetches the latest Pokemon data from Masterfile-Generator. Requires optional dependency axios.
      *
-     * @returns {Promise<*>}
+     * @returns {Promise<object>} See pokemon-data.js for some helper methods.
+     * @see addPokemonDataHelpers
      */
     static async fetchPokemonData() {
         const axios = require('axios');
         const response = await axios.get(
             'https://raw.githubusercontent.com/WatWowMap/Masterfile-Generator/master/master-latest.json');
-        return response.data.pokemon;
+        return addPokemonDataHelpers(response.data.pokemon);
     }
 
     /**
@@ -282,16 +284,11 @@ class Ohbem {
     }
 
     /**
-     * Look up base stats of a Pokemon.
-     *
-     * @param pokemonId {POGOProtos.Rpc.HoloPokemonId}
-     * @param [form] {POGOProtos.Rpc.PokemonDisplayProto.Form}
-     * @returns {Object}
+     * @deprecated
+     * @see pokemonData.findBaseStats
      */
     findBaseStats(pokemonId, form = POGOProtos.Rpc.PokemonDisplayProto.Form.FORM_UNSET) {
-        const masterPokemon = this._pokemonData[pokemonId];
-        const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
-        return masterForm.attack ? masterForm : masterPokemon;
+        return this._pokemonData.findBaseStats(pokemonId, form);
     }
 }
 
