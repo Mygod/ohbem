@@ -59,8 +59,8 @@ const ohbem = new Ohbem({
     // The following field is required to use queryPvPRank
     // You can skip populating it if you only want to use other helper methods
     pokemonData,
-    // If you have installed lru-cache, uncomment the following to use cache:
-    // cachingStrategy: Ohbem.cachingStrategies.memoryHeavy,
+    // If you have installed lru-cache, uncomment the following to use caching:
+    // cachingStrategy: Ohbem.cachingStrategies.balanced,
 });
 ohbem.queryPvPRank(
     /* pokemonId: */    605,
