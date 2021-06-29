@@ -4,8 +4,7 @@ const pokemonData = require('./cached.json');
 const mode = process.argv[process.argv.length - 1];
 const ohbem = new Ohbem({
     pokemonData,
-    cachingStrategy: Ohbem.cachingStrategies.memoryHeavy,
-    compactCache: mode === 'compact',
+    cachingStrategy: mode === 'memory' ? Ohbem.cachingStrategies.memoryHeavy : Ohbem.cachingStrategies.balanced,
 });
 
 function goInCache(stats) {

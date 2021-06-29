@@ -13,10 +13,14 @@ const {
 
 const maxLevel = 100;
 
-function lruBuilder(options) {
+function lruBuilder(options, compactCache) {
     const LRU = require('lru-cache');
-    return new LRU(options);
+    return [new LRU(options), compactCache];
 }
+const dayOldCacheOptions = {
+    maxAge: 24 * 60 * 60 * 1000,
+    updateAgeOnGet: true,
+};
 
 class Ohbem {
     /**
@@ -50,21 +54,27 @@ class Ohbem {
         cpuHeavy: null,
         /**
          * Rankings will always be cached for 24 hours. Requires optional dependency lru-cache.
+         * Furthermore, the cache will be optimized towards using less RAM.
+         *
+         * Usage: cachingStrategies.balanced
+         */
+        balanced: () => lruBuilder(dayOldCacheOptions, true),
+        /**
+         * Rankings will always be cached for 24 hours. Requires optional dependency lru-cache.
+         * Furthermore, the cache will be optimized towards using less CPU.
          *
          * Usage: cachingStrategies.memoryHeavy
          */
-        memoryHeavy: () => lruBuilder({
-            maxAge: 24 * 60 * 60 * 1000,
-            updateAgeOnGet: true,
-        }),
+        memoryHeavy: () => lruBuilder(dayOldCacheOptions, false),
         /**
          * Rankings will be cached by LRUCache. Requires optional dependency lru-cache.
          *
-         * Usage: cachingStrategies.lru({...})
+         * Usage: cachingStrategies.lru({...}, true/false)
          *
          * @param options This will be used as the options to create the LRUCache.
+         * @param compactCache Whether the cache should be optimized for lower RAM (true) or lower CPU (false).
          */
-        lru: (options) => () => lruBuilder(options),
+        lru: (options, compactCache) => () => lruBuilder(options, compactCache),
     };
 
     /**
@@ -94,11 +104,8 @@ class Ohbem {
      *  @see fetchPokemonData
      *  @see queryPvPRank
      * @param {Function} [options.cachingStrategy] An optional function constructing a cache
-     *  implementing get(key) and set(key, value).
+     *  implementing get(key) and set(key, value), along with a boolean for whether compact mode (#3) should be used.
      *  @see cachingStrategies
-     * @param {boolean} [options.compactCache] An optional boolean indicating whether the content of the cache should
-     *  optimize towards less CPU (false) or less memory usage (true).
-     *  Default is true if caching is enabled, false if not.
      */
     constructor(options = {}) {
         this._leagues = {};
@@ -113,8 +120,10 @@ class Ohbem {
         };
         this._levelCaps = options.levelCaps || [50, 51];
         this._pokemonData = options.pokemonData;
-        this._rankCache = options.cachingStrategy ? options.cachingStrategy() : null;
-        this._compactCache = options.compactCache === undefined ? !!this._rankCache : options.compactCache;
+        if (options.cachingStrategy) [this._rankCache, this._compactCache] = options.cachingStrategy(); else {
+            this._rankCache = null;
+            this._compactCache = false;
+        }
     }
 
     /**

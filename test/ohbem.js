@@ -6,7 +6,7 @@ describe('Ohbem', () => {
         const pokemonData = await Ohbem.fetchPokemonData();
         return [false, true].map(compactCache => new Ohbem({
             pokemonData,
-            compactCache,
+            cachingStrategy: () => [null, compactCache],
         }));
     })();
     it('Elgyem', async () => {
