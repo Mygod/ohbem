@@ -2,14 +2,25 @@
 
 const POGOProtos = require('pogo-protos');
 
-const { calculateCpMultiplier, calculateHp, calculateCp, calculateRanks } = require('./pvp-core.js');
+const {
+    calculateCpMultiplier,
+    calculateHp,
+    calculateCp,
+    calculatePvPStat,
+    calculateRanks,
+    calculateRanksCompact,
+} = require('./pvp-core.js');
 
 const maxLevel = 100;
 
-function lruBuilder(options) {
+function lruBuilder(options, compactCache) {
     const LRU = require('lru-cache');
-    return new LRU(options);
+    return [new LRU(options), compactCache];
 }
+const dayOldCacheOptions = {
+    maxAge: 24 * 60 * 60 * 1000,
+    updateAgeOnGet: true,
+};
 
 class Ohbem {
     /**
@@ -43,21 +54,27 @@ class Ohbem {
         cpuHeavy: null,
         /**
          * Rankings will always be cached for 24 hours. Requires optional dependency lru-cache.
+         * Furthermore, the cache will be optimized towards using less RAM.
+         *
+         * Usage: cachingStrategies.balanced
+         */
+        balanced: () => lruBuilder(dayOldCacheOptions, true),
+        /**
+         * Rankings will always be cached for 24 hours. Requires optional dependency lru-cache.
+         * Furthermore, the cache will be optimized towards using less CPU.
          *
          * Usage: cachingStrategies.memoryHeavy
          */
-        memoryHeavy: () => lruBuilder({
-            maxAge: 24 * 60 * 60 * 1000,
-            updateAgeOnGet: true,
-        }),
+        memoryHeavy: () => lruBuilder(dayOldCacheOptions, false),
         /**
          * Rankings will be cached by LRUCache. Requires optional dependency lru-cache.
          *
-         * Usage: cachingStrategies.lru({...})
+         * Usage: cachingStrategies.lru({...}, true/false)
          *
          * @param options This will be used as the options to create the LRUCache.
+         * @param compactCache Whether the cache should be optimized for lower RAM (true) or lower CPU (false).
          */
-        lru: (options) => () => lruBuilder(options),
+        lru: (options, compactCache) => () => lruBuilder(options, compactCache),
     };
 
     /**
@@ -87,7 +104,7 @@ class Ohbem {
      *  @see fetchPokemonData
      *  @see queryPvPRank
      * @param {Function} [options.cachingStrategy] An optional function constructing a cache
-     *  implementing get(key) and set(key, value).
+     *  implementing get(key) and set(key, value), along with a boolean for whether compact mode (#3) should be used.
      *  @see cachingStrategies
      */
     constructor(options = {}) {
@@ -103,17 +120,23 @@ class Ohbem {
         };
         this._levelCaps = options.levelCaps || [50, 51];
         this._pokemonData = options.pokemonData;
-        this._rankCache = options.cachingStrategy ? options.cachingStrategy() : null;
+        if (options.cachingStrategy) [this._rankCache, this._compactCache] = options.cachingStrategy(); else {
+            this._rankCache = null;
+            this._compactCache = false;
+        }
     }
 
     /**
      * Calculate all PvP ranks for a specific base stats with the specified CP cap.
+     *
+     * The return value of this method is subject to change. Ask maintainer before attempting to invoke it.
+     *
      * @param stats {Object} An object containing the base stats.
      * @param stats.attack {number} Base attack.
      * @param stats.defense {number} Base defense.
      * @param stats.stamina {number} Base stamina.
      * @param cpCap {number} The CP cap.
-     * @returns {[Object]} An object mapping level cap to combinations,
+     * @returns {[Object]} An object mapping level cap to combinations (whose content depends on compactCache),
      *  or null if the Pokemon does not hit the cpCap at any level cap.
      */
     calculateAllRanks(stats, cpCap) {
@@ -122,20 +145,23 @@ class Ohbem {
         if (combinationIndex === undefined) {
             combinationIndex = null;
             let maxed = false;
+            const calculator = this._compactCache ? (lvCap) => {
+                const { combinations, sortedRanks } = calculateRanksCompact(stats, cpCap, lvCap);
+                const result = combinations;
+                result.push(sortedRanks[0].value);
+                return result;
+            } : (lvCap) => calculateRanks(stats, cpCap, lvCap).combinations;
             for (const lvCap of this._levelCaps) {
                 if (calculateCp(stats, 15, 15, 15, lvCap) <= cpCap) continue;   // not viable
-                const { combinations } = calculateRanks(stats, cpCap, lvCap);
-                if (combinationIndex === null) combinationIndex = { [lvCap]: combinations };
-                else combinationIndex[lvCap] = combinations;
+                if (combinationIndex === null) combinationIndex = { [lvCap]: calculator(lvCap) };
+                else combinationIndex[lvCap] = calculator(lvCap);
                 // check if no more power up is possible: further increasing the cap will not be relevant
                 if (calculateCp(stats, 0, 0, 0, lvCap + .5) > cpCap) {
                     maxed = true;
                     break;
                 }
             }
-            if (combinationIndex !== null && !maxed) {
-                combinationIndex[maxLevel] = calculateRanks(stats, cpCap, maxLevel).combinations;
-            }
+            if (combinationIndex !== null && !maxed) combinationIndex[maxLevel] = calculator(maxLevel);
             if (this._rankCache) this._rankCache.set(key, combinationIndex);
         }
         return combinationIndex;
@@ -172,9 +198,24 @@ class Ohbem {
                     const combinationIndex = this.calculateAllRanks(stats, leagueOptions.cap);
                     if (combinationIndex === null) continue;
                     for (const [lvCap, combinations] of Object.entries(combinationIndex)) {
-                        const ivEntry = combinations[attack][defense][stamina];
-                        if (level > ivEntry.level) continue;
-                        const entry = { ...baseEntry, cap: parseFloat(lvCap), ...ivEntry };
+                        let entry;
+                        if (this._compactCache) {
+                            const cap = parseFloat(lvCap);
+                            const stat = calculatePvPStat(stats, attack, defense, stamina,
+                                leagueOptions.cap, cap, level);
+                            if (stat === null) continue;
+                            entry = {
+                                ...baseEntry,
+                                cap,
+                                ...stat,
+                                percentage: Number((stat.value / combinations[4096]).toFixed(5)),
+                                rank: combinations[(attack * 16 + defense) * 16 + stamina],
+                            };
+                        } else {
+                            const ivEntry = combinations[attack][defense][stamina];
+                            if (level > ivEntry.level) continue;
+                            entry = { ...baseEntry, cap: parseFloat(lvCap), ...ivEntry };
+                        }
                         if (evolution) entry.evolution = evolution;
                         entry.value = Math.floor(entry.value);
                         entries.push(entry);
