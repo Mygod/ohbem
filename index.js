@@ -220,6 +220,10 @@ class Ohbem {
      * @returns {{}}
      */
     queryPvPRank(pokemonId, form, costume, gender, attack, defense, stamina, level) {
+        if (!((attack = parseInt(attack)) >= 0 && attack <= 15)) throw new RangeError('attack');
+        if (!((defense = parseInt(defense)) >= 0 && defense <= 15)) throw new RangeError('defense');
+        if (!((stamina = parseInt(stamina)) >= 0 && stamina <= 15)) throw new RangeError('stamina');
+        if (!((level = parseFloat(level)) >= 1)) throw new RangeError('level');
         const result = {};
         const masterPokemon = this._pokemonData[pokemonId];
         if (!masterPokemon || !masterPokemon.attack) return result;
