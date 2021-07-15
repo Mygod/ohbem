@@ -204,6 +204,14 @@ class Ohbem {
     }
 
     /**
+     * Update pokemonData with a newer version.
+     * @param pokemonData
+     */
+    updatePokemonData(pokemonData) {
+        this._pokemonData = pokemonData;
+    }
+
+    /**
      * Query all ranks for a specific Pokemon, including its possible evolutions.
      *
      * You need to initialize pokemonData in options to use this!
