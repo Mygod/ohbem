@@ -85,10 +85,55 @@ class Ohbem {
      * @see addPokemonDataHelpers
      */
     static async fetchPokemonData() {
-        const axios = require('axios');
-        const response = await axios.get(
-            'https://raw.githubusercontent.com/WatWowMap/Masterfile-Generator/master/master-latest.json');
-        return addPokemonDataHelpers(response.data.pokemon);
+        const { generate } = require('pogo-data-generator');
+        const template = {
+          pokemon: {
+            enabled: true,
+            options: {
+              keys: {
+                main: "pokedexId",
+                forms: "formId",
+                tempEvolutions: "tempEvoId",
+              },
+              customFields: {
+                evoId: "pokemon",
+                formId: "form"
+              },
+              snake_case: true,
+            },
+            template: {
+              forms: {
+                attack: true,
+                defense: true,
+                stamina: true,
+                tempEvolutions: {},
+                evolutions: {
+                  evoId: true,
+                  formId: true,
+                  genderRequirement: true,
+                },
+                little: true,
+              },
+              evolutions: {
+                evoId: true,
+                formId: true,
+                genderRequirement: true,
+              },
+              tempEvolutions: {
+                attack: true,
+                defense: true,
+                stamina: true,
+                unreleased: true,
+              },
+              attack: true,
+              defense: true,
+              stamina: true,
+              little: true,
+            },
+          },
+        }
+        const response = await generate({ template });
+        return addPokemonDataHelpers(response.pokemon);
     }
 
     /**

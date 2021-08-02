@@ -27,7 +27,7 @@ npm install ohbem
 
 # Optional dependencies:
 # if you want to use fetchPokemonData
-npm install --save axios
+npm install --save pogo-data-generator
 # if you want to use cachingStrategy other than cpuHeavy
 npm install --save lru-cache
 ```
@@ -37,7 +37,7 @@ Ohbem in action:
 ```js
 const Ohbem = require('ohbem');
 
-// if you want to install axios and use built-in fetcher
+// if you want to install pogo-data-generator and use built-in fetcher
 const pokemonData = await Ohbem.fetchPokemonData();
 
 // construct an Ohbem -- you should reuse this object as much as possible since it holds a cache
