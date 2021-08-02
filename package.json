@@ -17,11 +17,11 @@
     "pogo-protos": "github:Furtif/pogo-protos"
   },
   "optionalDependencies": {
-    "axios": "^0.21.1",
-    "lru-cache": "^6.0.0"
+    "lru-cache": "^6.0.0",
+    "pogo-data-generator": "^1.0.2"
   },
   "devDependencies": {
-    "axios": "^0.21.1",
-    "mocha": "^9.0.1"
+    "mocha": "^9.0.1",
+    "pogo-data-generator": "^1.0.2"
   }
 }
