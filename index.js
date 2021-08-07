@@ -100,6 +100,9 @@ class Ohbem {
                 formId: "form"
               },
               snake_case: true,
+              includeProtos: true,
+              skipUnset: true,
+              includeEstimatedPokemon: true,
             },
             template: {
               forms: {
