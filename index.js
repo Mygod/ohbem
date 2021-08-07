@@ -87,54 +87,54 @@ class Ohbem {
     static async fetchPokemonData() {
         const { generate } = require('pogo-data-generator');
         const template = {
-          pokemon: {
-            enabled: true,
-            options: {
-              keys: {
-                main: "pokedexId",
-                forms: "formId",
-                tempEvolutions: "tempEvoId",
-              },
-              customFields: {
-                evoId: "pokemon",
-                formId: "form"
-              },
-              snake_case: true,
-              includeProtos: true,
-              skipUnset: true,
-              includeEstimatedPokemon: true,
-            },
-            template: {
-              forms: {
-                attack: true,
-                defense: true,
-                stamina: true,
-                tempEvolutions: {},
-                evolutions: {
-                  evoId: true,
-                  formId: true,
-                  genderRequirement: true,
+            pokemon: {
+                enabled: true,
+                options: {
+                    keys: {
+                        main: "pokedexId",
+                        forms: "formId",
+                        tempEvolutions: "tempEvoId",
+                    },
+                    customFields: {
+                        evoId: "pokemon",
+                        formId: "form",
+                    },
+                    snake_case: true,
+                    includeProtos: true,
+                    skipUnset: true,
+                    includeEstimatedPokemon: true,
                 },
-                little: true,
-              },
-              evolutions: {
-                evoId: true,
-                formId: true,
-                genderRequirement: true,
-              },
-              tempEvolutions: {
-                attack: true,
-                defense: true,
-                stamina: true,
-                unreleased: true,
-              },
-              attack: true,
-              defense: true,
-              stamina: true,
-              little: true,
+                template: {
+                    forms: {
+                        attack: true,
+                        defense: true,
+                        stamina: true,
+                        tempEvolutions: {},
+                        evolutions: {
+                            evoId: true,
+                            formId: true,
+                            genderRequirement: true,
+                        },
+                        little: true,
+                    },
+                    evolutions: {
+                        evoId: true,
+                        formId: true,
+                        genderRequirement: true,
+                    },
+                    tempEvolutions: {
+                        attack: true,
+                        defense: true,
+                        stamina: true,
+                        unreleased: true,
+                    },
+                    attack: true,
+                    defense: true,
+                    stamina: true,
+                    little: true,
+                },
             },
-          },
-        }
+        };
         const response = await generate({ template });
         return addPokemonDataHelpers(response.pokemon);
     }
