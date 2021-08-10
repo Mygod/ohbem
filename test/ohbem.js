@@ -7,6 +7,20 @@ describe('Ohbem', () => {
         pokemonData: await pokemonDataFut,
         cachingStrategy: () => [null, compactCache],
     }))()])) {
+        it(`Numel [${compactCache}]`, async () => {
+            const ohbem = await ohbemFut;
+            const out = ohbem.queryPvPRank(322, 0, 0, 2, 13, 15, 15, 27);
+            assert.strictEqual(out.little, undefined, 'No little cup');
+            assert.strictEqual(out.great, undefined, 'No great league');
+            assert.strictEqual(out.ultra.length, 2, 'UL has 2 entires');
+        });
+        it(`Audino [${compactCache}]`, async () => {
+            const ohbem = await ohbemFut;
+            const out = ohbem.queryPvPRank(531, 0, 0, 2, 0, 14, 14, 5);
+            assert.strictEqual(out.little, undefined, 'No little cup');
+            assert.strictEqual(out.great.length, 2, 'GL has 2 entries');
+            assert.strictEqual(out.ultra.length, 1, 'UL has 1 entires');
+        });
         it(`Elgyem [${compactCache}]`, async () => {
             const ohbem = await ohbemFut;
             const out = ohbem.queryPvPRank(605, 0, 0, 1, 1, 4, 12, 7);
@@ -17,13 +31,6 @@ describe('Ohbem', () => {
                 'Useless filtered GL has 3 entries');
             assert.strictEqual(Ohbem.filterLevelCaps(out.great, [50]).length, 2, 'L50 GL has 2 entries');
             assert.strictEqual(Ohbem.filterLevelCaps(out.great, [51]).length, 2, 'L51 GL has 2 entries');
-        });
-        it(`Audino [${compactCache}]`, async () => {
-            const ohbem = await ohbemFut;
-            const out = ohbem.queryPvPRank(531, 0, 0, 2, 0, 14, 14, 5);
-            assert.strictEqual(out.little, undefined, 'No little cup');
-            assert.strictEqual(out.great.length, 2, 'GL has 2 entries');
-            assert.strictEqual(out.ultra.length, 1, 'UL has 1 entires');
         });
         // TODO: finish tests
         it(`Functionally Perfect [${compactCache}]`, async () => {
