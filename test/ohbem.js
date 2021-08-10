@@ -20,6 +20,13 @@ describe('Ohbem', () => {
             assert.strictEqual(out.great.length, 2, 'GL has 2 entries');
             assert.strictEqual(out.ultra.length, 1, 'UL has 1 entires');
         });
+        ohbemTest('Ducklett', (ohbem) => {
+            const out = ohbem.queryPvPRank(580, 0, 0, 2, 0, 15, 15, 24);
+            assert.strictEqual(out.little.length, 1, 'LC has 1 entries');
+            assert.strictEqual(out.little[0].cp, 498, 'Correct CP when level given is exact');
+            assert.strictEqual(out.great.length, 1, 'GL has 1 entries');
+            assert.strictEqual(out.ultra, undefined, 'UL has no entires');
+        });
         ohbemTest('Elgyem', (ohbem) => {
             const out = ohbem.queryPvPRank(605, 0, 0, 1, 1, 4, 12, 7);
             assert.strictEqual(out.little.length, 1, 'Little cup only has one entry');
