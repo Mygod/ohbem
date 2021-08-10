@@ -34,8 +34,9 @@ const calculateCp = (stats, attack, defense, stamina, level) => {
 };
 
 const calculatePvPStat = (stats, attack, defense, stamina, cap, lvCap, minLevel = 1) => {
-    if (calculateCp(stats, attack, defense, stamina, minLevel) > cap) return null;
-    let bestCP = cap, lowest = minLevel, highest = lvCap;
+    let bestCP = calculateCp(stats, attack, defense, stamina, minLevel);
+    if (bestCP > cap) return null;
+    let lowest = minLevel, highest = lvCap;
     for (let mid = Math.ceil(lowest + highest) / 2; lowest < highest; mid = Math.ceil(lowest + highest) / 2) {
         const cp = calculateCp(stats, attack, defense, stamina, mid);
         if (cp <= cap) {
