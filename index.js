@@ -79,12 +79,25 @@ class Ohbem {
     };
 
     /**
-     * Fetches the latest Pokemon data from Masterfile-Generator. Requires optional dependency axios.
+     * Fetches the latest Pokemon data from Masterfile-Generator. Requires optional dependency node-fetch.
      *
      * @returns {Promise<object>} See pokemon-data.js for some helper methods.
      * @see addPokemonDataHelpers
      */
     static async fetchPokemonData() {
+        const fetch = require('node-fetch');
+        const response = await fetch('https://raw.githubusercontent.com/WatWowMap/Masterfile-Generator/master/master-latest-basics.json');
+        const json = await response.json();
+        return addPokemonDataHelpers(json.pokemon);
+    }
+
+    /**
+     * Generates and fetches the latest Pokemon data from Pogo Data Generator. Requires optional dependency pogo-data-generator.
+     *
+     * @returns {Promise<object>} See pokemon-data.js for some helper methods.
+     * @see addPokemonDataHelpers
+     */
+    static async fetchPokemonDataUnstable() {
         const { generate } = require('pogo-data-generator');
         const template = {
             pokemon: {
@@ -101,7 +114,6 @@ class Ohbem {
                     },
                     snake_case: true,
                     includeProtos: true,
-                    skipUnset: true,
                     includeEstimatedPokemon: true,
                 },
                 template: {
