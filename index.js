@@ -97,7 +97,7 @@ class Ohbem {
      * @returns {Promise<object>} See pokemon-data.js for some helper methods.
      * @see addPokemonDataHelpers
      */
-    static async fetchLatestPokemonData() {
+    static async fetchPokemonDataUnstable() {
         const { generate } = require('pogo-data-generator');
         const template = {
             pokemon: {

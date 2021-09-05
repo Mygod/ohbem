@@ -2,7 +2,7 @@ const assert = require('assert');
 const Ohbem = require('../index.js');
 
 describe('Ohbem', () => {
-    const pokemonDataFut = (latest) => latest ? Ohbem.fetchLatestPokemonData() : Ohbem.fetchPokemonData();
+    const pokemonDataFut = (latest) => latest ? Ohbem.fetchPokemonDataUnstable() : Ohbem.fetchPokemonData();
     for (const latest of [true, false]) {
         for (const [compactCache, ohbemFut] of [false, true].map(compactCache => [compactCache, (async () => new Ohbem({
             pokemonData: await pokemonDataFut(latest),
@@ -47,6 +47,6 @@ describe('Ohbem', () => {
                 assert.strictEqual(Ohbem.filterLevelCaps(out.master, [51]).length, 2,
                     'Talonflame functionally perfect at level 51');
             });
-        };    
+        };
     };
 });
