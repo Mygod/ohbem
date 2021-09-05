@@ -86,9 +86,9 @@ class Ohbem {
      */
     static async fetchPokemonData() {
         const fetch = require('node-fetch');
-        const response = await fetch('https://raw.githubusercontent.com/WatWowMap/Masterfile-Generator/master/master-latest-basics.json')
-            .then(res => res.json());
-        return addPokemonDataHelpers(response.pokemon);
+        const response = await fetch('https://raw.githubusercontent.com/WatWowMap/Masterfile-Generator/master/master-latest-basics.json');
+        const json = await response.json();
+        return addPokemonDataHelpers(json.pokemon);
     }
 
     /**
