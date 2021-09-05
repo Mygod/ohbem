@@ -26,7 +26,9 @@ Install it with `npm`.
 npm install ohbem
 
 # Optional dependencies:
-# if you want to use fetchPokemonData
+# if you want to use the built in data fetcher to fetch from a known-safe masterfile repo
+npm install --save node-fetch
+# if you want to generate fetch the latest masterfile from Pogo Data Generator (alternative to the option above)
 npm install --save pogo-data-generator
 # if you want to use cachingStrategy other than cpuHeavy
 npm install --save lru-cache
@@ -37,8 +39,10 @@ Ohbem in action:
 ```js
 const Ohbem = require('ohbem');
 
-// if you want to install pogo-data-generator and use built-in fetcher
+// if you want to use built-in fetcher to grab the latest [known safe] pokemon data
 const pokemonData = await Ohbem.fetchPokemonData();
+// if you want to install pogo-data-generator and use built-in fetcher
+const pokemonData = await Ohbem.fetchLatestPokemonData();
 
 // construct an Ohbem -- you should reuse this object as much as possible since it holds a cache
 const ohbem = new Ohbem({

@@ -79,7 +79,7 @@ class Ohbem {
     };
 
     /**
-     * Fetches the latest Pokemon data from Masterfile-Generator. Requires optional dependency axios.
+     * Fetches the latest Pokemon data from Masterfile-Generator. Requires optional dependency node-fetch.
      *
      * @returns {Promise<object>} See pokemon-data.js for some helper methods.
      * @see addPokemonDataHelpers
@@ -88,6 +88,66 @@ class Ohbem {
         const fetch = require('node-fetch');
         const response = await fetch('https://raw.githubusercontent.com/WatWowMap/Masterfile-Generator/master/master-latest-basics.json')
             .then(res => res.json());
+        return addPokemonDataHelpers(response.pokemon);
+    }
+
+    /**
+     * Generates and fetches the latest Pokemon data from Pogo Data Generator. Requires optional dependency pogo-data-generator.
+     *
+     * @returns {Promise<object>} See pokemon-data.js for some helper methods.
+     * @see addPokemonDataHelpers
+     */
+    static async fetchLatestPokemonData() {
+        const { generate } = require('pogo-data-generator');
+        const template = {
+            pokemon: {
+                enabled: true,
+                options: {
+                    keys: {
+                        main: "pokedexId",
+                        forms: "formId",
+                        tempEvolutions: "tempEvoId",
+                    },
+                    customFields: {
+                        evoId: "pokemon",
+                        formId: "form",
+                    },
+                    snake_case: true,
+                    includeProtos: true,
+                    includeEstimatedPokemon: true,
+                },
+                template: {
+                    forms: {
+                        attack: true,
+                        defense: true,
+                        stamina: true,
+                        tempEvolutions: {},
+                        evolutions: {
+                            evoId: true,
+                            formId: true,
+                            genderRequirement: true,
+                        },
+                        little: true,
+                    },
+                    evolutions: {
+                        evoId: true,
+                        formId: true,
+                        genderRequirement: true,
+                    },
+                    tempEvolutions: {
+                        attack: true,
+                        defense: true,
+                        stamina: true,
+                        unreleased: true,
+                    },
+                    attack: true,
+                    defense: true,
+                    stamina: true,
+                    little: true,
+                },
+            },
+        };
+        const response = await generate({ template });
         return addPokemonDataHelpers(response.pokemon);
     }
 
