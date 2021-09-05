@@ -18,10 +18,9 @@
   },
   "optionalDependencies": {
     "lru-cache": "^6.0.0",
-    "pogo-data-generator": "^1.1.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
-    "mocha": "^9.0.3",
-    "pogo-data-generator": "^1.1.0"
+    "mocha": "^9.0.3"
   }
 }
