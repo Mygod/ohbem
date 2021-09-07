@@ -16,12 +16,12 @@ describe('PvP Core', () => {
     });
     const pokemonData = Ohbem.fetchPokemonData();
     it('calculateCP', async () => {
-        const pokemon = await pokemonData;
+        const { pokemon } = await pokemonData;
         assert.strictEqual(calculateCp(pokemon[150], 15, 15, 15, 40), 4178, 'Mewtwo CP');
         assert.strictEqual(calculateCp(pokemon[618], 15, 15, 15, 51), 2474, 'Stunfisk CP');
     });
     it('calculateRanks', async () => {
-        const pokemon = await pokemonData;
+        const { pokemon } = await pokemonData;
         const getRank = (stats, cpCap, lvCap, a, d, s, compact) => {
             if (compact) return calculateRanksCompact(stats, cpCap, lvCap).combinations[(a * 16 + d) * 16 + s];
             return calculateRanks(stats, cpCap, lvCap).combinations[a][d][s].rank;

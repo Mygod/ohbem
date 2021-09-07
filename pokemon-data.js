@@ -1,15 +1,13 @@
-const POGOProtos = require("pogo-protos");
-
 module.exports = function addPokemonDataHelpers(pokemonData) {
     /**
      * Look up base stats of a Pokemon.
      *
-     * @param pokemonId {POGOProtos.Rpc.HoloPokemonId}
-     * @param [form] {POGOProtos.Rpc.PokemonDisplayProto.Form}
+     * @param pokemonId {number}
+     * @param [form] {number}
      * @returns {Object}
      */
-    pokemonData.findBaseStats = (pokemonId, form = POGOProtos.Rpc.PokemonDisplayProto.Form.FORM_UNSET) => {
-        const masterPokemon = pokemonData[pokemonId];
+    pokemonData.findBaseStats = (pokemonId, form = 0) => {
+        const masterPokemon = pokemonData.pokemon[pokemonId];
         const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
         return masterForm.attack ? masterForm : masterPokemon;
     };
@@ -17,13 +15,23 @@ module.exports = function addPokemonDataHelpers(pokemonData) {
     /**
      * Check whether the stats for a given mega is speculated.
      *
-     * @param pokemonId {POGOProtos.Rpc.HoloPokemonId}
-     * @param evolution {POGOProtos.Rpc.HoloTemporaryEvolutionId}
+     * @param pokemonId {number}
+     * @param evolution {number}
      * @returns {boolean}
      */
     pokemonData.isMegaUnreleased = (pokemonId, evolution) => {
-        return pokemonData[pokemonId].temp_evolutions[evolution].unreleased;
+        return pokemonData.pokemon[pokemonId].temp_evolutions[evolution].unreleased;
     };
+
+    /**
+     * Check whether a costume evolves.
+     *
+     * @param costumeId {number}
+     * @returns {boolean}
+     */
+    pokemonData.noEvolve = (costumeId) => {
+        return pokemonData.costumes[costumeId].noEvolve;
+    };    
 
     return pokemonData;
 };

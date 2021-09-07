@@ -1,7 +1,5 @@
 'use strict';
 
-const POGOProtos = require('pogo-protos');
-
 const {
     calculateCpMultiplier,
     calculateHp,
@@ -88,7 +86,7 @@ class Ohbem {
         const fetch = require('node-fetch');
         const response = await fetch('https://raw.githubusercontent.com/WatWowMap/Masterfile-Generator/master/master-latest-basics.json');
         const json = await response.json();
-        return addPokemonDataHelpers(json.pokemon);
+        return addPokemonDataHelpers(json);
     }
 
     /**
@@ -114,7 +112,10 @@ class Ohbem {
                     },
                     snake_case: true,
                     includeProtos: true,
-                    includeEstimatedPokemon: true,
+                    includeEstimatedPokemon: {
+                        baseStats: true,
+                        mega: true,
+                    },
                 },
                 template: {
                     forms: {
@@ -146,9 +147,21 @@ class Ohbem {
                     little: true,
                 },
             },
+            costumes: {
+                enabled: true,
+                options: {
+                    keys: {
+                        main: 'id',
+                    },
+                },
+                template: {
+                    proto: true,
+                    noEvolve: true,
+                },
+            },
         };
         const response = await generate({ template });
-        return addPokemonDataHelpers(response.pokemon);
+        return addPokemonDataHelpers(response);
     }
 
     /**
@@ -195,7 +208,7 @@ class Ohbem {
      *  If key starts with "little" and the value is a Number, it will be assumed to be a little cup.
      * @param {Number[]} [options.levelCaps] An array containing a list of Numbers in ascending order,
      *  indicating the interested level caps.
-     * @param {Object} [options.pokemonData] An object containing Pokemon data from Masterfile-Generator.
+     * @param {Object} [options.pokemonData.pokemon] An object containing Pokemon data from Masterfile-Generator.
      *  This field is required for calling queryPvPRank.
      *  @see fetchPokemonData
      *  @see queryPvPRank
@@ -276,10 +289,10 @@ class Ohbem {
      *
      * You need to initialize pokemonData in options to use this!
      *
-     * @param pokemonId {POGOProtos.Rpc.HoloPokemonId}
-     * @param form {POGOProtos.Rpc.PokemonDisplayProto.Form}
-     * @param costume {POGOProtos.Rpc.PokemonDisplayProto.Costume} This will be used to check whether it can evolve.
-     * @param gender {POGOProtos.Rpc.PokemonDisplayProto.Gender}
+     * @param pokemonId {number}
+     * @param form {number}
+     * @param costume {number} This will be used to check whether it can evolve.
+     * @param gender {number}
      *  This will be used for checking gender-locked evolutions.
      * @param attack {number} Attack IV.
      * @param defense {number} Defense IV.
@@ -293,7 +306,7 @@ class Ohbem {
         if (!((stamina = parseInt(stamina)) >= 0 && stamina <= 15)) throw new RangeError('stamina');
         if (!((level = parseFloat(level)) >= 1)) throw new RangeError('level');
         const result = {};
-        const masterPokemon = this._pokemonData[pokemonId];
+        const masterPokemon = this._pokemonData.pokemon[pokemonId];
         if (!masterPokemon || !masterPokemon.attack) return result;
         const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
         const baseEntry = { pokemon: pokemonId };
@@ -355,19 +368,18 @@ class Ohbem {
         pushAllEntries(masterForm.attack ? masterForm : masterPokemon);
         let canEvolve = true;
         if (costume) {
-            const costumeName = POGOProtos.Rpc.PokemonDisplayProto.Costume[costume];
-            canEvolve = !costumeName.endsWith('_NOEVOLVE') && !costumeName.endsWith('_NO_EVOLVE');
+            canEvolve = !this._pokemonData.costumes[costume].noEvolve;
         }
         if (canEvolve && masterForm.evolutions) {
             for (const evolution of masterForm.evolutions) {
                 switch (evolution.pokemon) {
-                    case POGOProtos.Rpc.HoloPokemonId.HITMONLEE:
+                    case 106:
                         if (attack < defense || attack < stamina) continue;
                         break;
-                    case POGOProtos.Rpc.HoloPokemonId.HITMONCHAN:
+                    case 107:
                         if (defense < attack || defense < stamina) continue;
                         break;
-                    case POGOProtos.Rpc.HoloPokemonId.HITMONTOP:
+                    case 237:
                         if (stamina < attack || stamina < defense) continue;
                         break;
                 }
@@ -393,7 +405,7 @@ class Ohbem {
      * @deprecated
      * @see pokemonData.findBaseStats
      */
-    findBaseStats(pokemonId, form = POGOProtos.Rpc.PokemonDisplayProto.Form.FORM_UNSET) {
+    findBaseStats(pokemonId, form = 0) {
         return this._pokemonData.findBaseStats(pokemonId, form);
     }
 }
