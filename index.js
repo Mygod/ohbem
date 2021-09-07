@@ -154,10 +154,7 @@ class Ohbem {
                         main: 'id',
                     },
                 },
-                template: {
-                    proto: true,
-                    noEvolve: true,
-                },
+                template: "noEvolve",
             },
         };
         const response = await generate({ template });
@@ -368,7 +365,7 @@ class Ohbem {
         pushAllEntries(masterForm.attack ? masterForm : masterPokemon);
         let canEvolve = true;
         if (costume) {
-            canEvolve = !this._pokemonData.costumes[costume].noEvolve;
+            canEvolve = !this._pokemonData.costumes[costume];
         }
         if (canEvolve && masterForm.evolutions) {
             for (const evolution of masterForm.evolutions) {

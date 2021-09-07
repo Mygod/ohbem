@@ -30,7 +30,7 @@ module.exports = function addPokemonDataHelpers(pokemonData) {
      * @returns {boolean}
      */
     pokemonData.noEvolve = (costumeId) => {
-        return pokemonData.costumes[costumeId].noEvolve;
+        return pokemonData.costumes[costumeId];
     };    
 
     return pokemonData;
