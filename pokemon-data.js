@@ -23,15 +23,5 @@ module.exports = function addPokemonDataHelpers(pokemonData) {
         return pokemonData.pokemon[pokemonId].temp_evolutions[evolution].unreleased;
     };
 
-    /**
-     * Check whether a costume evolves.
-     *
-     * @param costumeId {number}
-     * @returns {boolean}
-     */
-    pokemonData.noEvolve = (costumeId) => {
-        return pokemonData.costumes[costumeId];
-    };    
-
     return pokemonData;
 };
