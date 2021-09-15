@@ -8,6 +8,16 @@ describe('Ohbem', () => {
         cachingStrategy: () => [null, compactCache],
     }))()])) {
         const ohbemTest = (name, fn) => it(`${name} [${compactCache}]`, async () => fn(await ohbemFut));
+        ohbemTest('Costume', (ohbem) => {
+            let out = ohbem.queryPvPRank(1, 0, 27, 1, 1, 15, 14, 17);
+            assert.strictEqual(out.little.length, 1, 'LC has 1 entry');
+            assert.strictEqual(out.great.length, 2, 'GL has 2 entries');
+            assert.strictEqual(out.ultra.length, 2, 'UL has 2 entires');
+            out = ohbem.queryPvPRank(1, 0, 37, 1, 1, 15, 14, 17);
+            assert.strictEqual(out.little.length, 1, 'LC with costume has 1 entry');
+            assert.strictEqual(out.great, undefined, 'GL with costume has none');
+            assert.strictEqual(out.ultra, undefined, 'UL with costume has none');
+        });
         ohbemTest('Numel', (ohbem) => {
             const out = ohbem.queryPvPRank(322, 0, 0, 2, 13, 15, 15, 27);
             assert.strictEqual(out.little, undefined, 'No little cup');

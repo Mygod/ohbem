@@ -62,6 +62,7 @@ const ohbem = new Ohbem({
     levelCaps: [50, 51],
     // The following field is required to use queryPvPRank
     // You can skip populating it if you only want to use other helper methods
+    // Requires costume information
     pokemonData,
     // If you have installed lru-cache, uncomment the following to use caching:
     // cachingStrategy: Ohbem.cachingStrategies.balanced,
