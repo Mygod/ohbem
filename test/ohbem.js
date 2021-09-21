@@ -13,6 +13,10 @@ describe('Ohbem', () => {
             assert.strictEqual(out.little.length, 1, 'LC has 1 entry');
             assert.strictEqual(out.great.length, 2, 'GL has 2 entries');
             assert.strictEqual(out.ultra.length, 2, 'UL has 2 entires');
+            out = ohbem.queryPvPRank(1, 0, -1, 1, 1, 15, 14, 17);
+            assert.strictEqual(out.little.length, 1, 'LC has 1 entry for unknown costume');
+            assert.strictEqual(out.great.length, 2, 'GL has 2 entries for unknown costume');
+            assert.strictEqual(out.ultra.length, 2, 'UL has 2 entires for unknown costume');
             out = ohbem.queryPvPRank(1, 0, 37, 1, 1, 15, 14, 17);
             assert.strictEqual(out.little.length, 1, 'LC with costume has 1 entry');
             assert.strictEqual(out.great, undefined, 'GL with costume has none');
