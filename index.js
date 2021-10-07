@@ -399,6 +399,44 @@ class Ohbem {
     }
 
     /**
+     * Return ranked list of PVP statistics for a given Pokemon
+     *
+     * You need to initialize pokemonData in options to use this!
+     *
+     * @param listSize {number} top<n> ranks
+     * @param pokemonId
+     * @param form
+     * @returns {{}|*}
+     */
+    getPvPRankings(listSize, pokemonId, form) {
+        const masterPokemon = this._pokemonData.pokemon[pokemonId];
+        if (!masterPokemon || !masterPokemon.attack) return null;
+        const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
+
+        const results = {}
+        for (const [leagueName, leagueOptions] of Object.entries(this._leagues)) {
+            if (leagueOptions) {
+                const capRankings = {}
+                for (const lvCap of this._levelCaps) {
+                    const {combinations, sortedRanks} = calculateRanksCompact(masterForm, leagueOptions.cap, lvCap);
+
+                    const ranking = []
+                    for (let rank = 0; rank < listSize; rank++) {
+                        const index = sortedRanks[rank].index;
+                        const sta = index % 16;
+                        const def = (index >> 4) % 16;
+                        const atk = (index >> 8) % 16;
+                        ranking.push({ rank: combinations[index],  cp: sortedRanks[rank].cp, level: sortedRanks[rank].level, atk, def, sta })
+                    }
+                    capRankings[lvCap] = ranking
+                }
+                results[leagueName] = capRankings
+            }
+
+        }
+        return results
+    }
+    /**
      * @deprecated
      * @see pokemonData.findBaseStats
      */
