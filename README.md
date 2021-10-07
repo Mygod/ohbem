@@ -120,6 +120,49 @@ ohbem.queryPvPRank(661, 0, 0, 1, 15, 15, 14, 1);
 }
 ```
 
+Sample output showing top 3 ranked Talonflame
+```js
+ohbem.getPvPRankings(3, 663);
+{
+  "little": {
+    "50": [
+      {"rank": 1, "cp": 500, "level": 9, "atk": 0, "def": 14, "sta": 2},
+      {"rank": 2, "cp": 500, "level": 8.5, "atk": 5, "def": 15, "sta": 13},
+      {"rank": 3, "cp": 500, "level": 9, "atk": 0, "def": 5, "sta": 12}
+    ],
+    "51": [
+      {"rank": 1, "cp": 500, "level": 9, "atk": 0, "def": 14, "sta": 2},
+      {"rank": 2, "cp": 500, "level": 8.5, "atk": 5, "def": 15, "sta": 13},
+      {"rank": 3, "cp": 500, "level": 9, "atk": 0, "def": 5, "sta": 12}
+    ]
+  },
+  "great": {
+    "50": [
+      {"rank": 1, "cp": 1496, "level": 26, "atk": 0, "def": 13, "sta": 14},
+      {"rank": 1, "cp": 1500, "level": 26, "atk": 0, "def": 13, "sta": 15},
+      {"rank": 3, "cp": 1500, "level": 26, "atk": 1, "def": 12, "sta": 14}
+    ],
+    "51": [
+      {"rank": 1, "cp": 1496, "level": 26, "atk": 0, "def": 13, "sta": 14},
+      {"rank": 1, "cp": 1500, "level": 26, "atk": 0, "def": 13, "sta": 15},
+      {"rank": 3, "cp": 1500, "level": 26, "atk": 1, "def": 12, "sta": 14}
+    ]
+  },
+  "ultra": {
+    "50": [
+      {"rank": 1, "cp": 2486, "level": 50, "atk": 15, "def": 15, "sta": 14},
+      {"rank": 1, "cp": 2493, "level": 50, "atk": 15, "def": 15, "sta": 15},
+      {"rank": 3, "cp": 2473, "level": 50, "atk": 14, "def": 15, "sta": 14}
+    ],
+    "51": [
+      {"rank": 1, "cp": 2490, "level": 51, "atk": 13, "def": 15, "sta": 14},
+      {"rank": 1, "cp": 2496, "level": 51, "atk": 13, "def": 15, "sta": 15},
+      {"rank": 3, "cp": 2495, "level": 51, "atk": 14, "def": 14, "sta": 14}
+    ]
+  }
+}
+
+```
 
 ## Output format
 
