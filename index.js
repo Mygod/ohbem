@@ -274,6 +274,69 @@ class Ohbem {
     }
 
     /**
+     * Return ranked list of PVP statistics for a given Pokemon.
+     * This calculation does not involve caching.
+     *
+     * @param maxRank {number} Top<n> ranks.
+     * @param pokemonId {number}
+     * @param [form] {number}
+     * @param [evolution] {number}
+     * @returns {{}}
+     */
+    calculateTopRanks(maxRank, pokemonId, form = 0, evolution = 0) {
+        const masterPokemon = this._pokemonData.pokemon[pokemonId];
+        const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
+        const masterEvolution = evolution ? masterForm.temp_evolutions[evolution] : masterForm;
+        const stats = masterEvolution.attack ? masterEvolution : masterForm.attack ? masterForm : masterPokemon;
+        const results = {};
+        for (const [leagueName, leagueOptions] of Object.entries(this._leagues)) {
+            if (leagueOptions === null) continue;
+            if (leagueOptions.little && !(masterForm.little || masterPokemon.little)) continue;
+            const rankings = [];
+            const lastRank = [];
+            function processLevelCap(cap, setOnDup = false) {
+                const { combinations, sortedRanks } = calculateRanksCompact(stats, leagueOptions.cap, cap);
+                for (let i = 0; i < 4096; ++i) {
+                    const stat = sortedRanks[i];
+                    const rank = combinations[stat.index];
+                    if (rank > maxRank) {
+                        while (lastRank.length > i) lastRank.pop();
+                        break;
+                    }
+                    const attack = (stat.index >> 8) % 16;
+                    const defense = (stat.index >> 4) % 16;
+                    const stamina = stat.index % 16;
+                    const lastStat = lastRank[i];
+                    if (lastStat && stat.level === lastStat.level && rank === lastStat.rank &&
+                        attack === lastStat.attack && defense === lastStat.defense && stamina === lastStat.stamina) {
+                        if (setOnDup) lastStat.capped = true;
+                    } else if (!setOnDup) rankings.push(lastRank[i] = {
+                        rank, attack, defense, stamina, cap,
+                        value: Math.floor(stat.value),
+                        level: stat.level,
+                        cp: stat.cp,
+                        percentage: Number((stat.value / sortedRanks[0].value).toFixed(5)),
+                    });
+                }
+            }
+            let maxed = false;
+            for (const cap of this._levelCaps) {
+                if (calculateCp(stats, 15, 15, 15, cap) <= leagueOptions.cap) continue;
+                processLevelCap(cap);
+                if (calculateCp(stats, 0, 0, 0, cap + .5) > leagueOptions.cap) {
+                    maxed = true;
+                    for (const entry of lastRank) entry.capped = true;
+                    break;
+                }
+            }
+            if (!rankings.length) continue;
+            if (!maxed) processLevelCap(maxLevel, true);
+            results[leagueName] = rankings;
+        }
+        return results;
+    }
+
+    /**
      * Update pokemonData with a newer version.
      * @param pokemonData
      */
@@ -312,7 +375,7 @@ class Ohbem {
             for (const [leagueName, leagueOptions] of Object.entries(this._leagues)) {
                 const entries = [];
                 if (leagueOptions !== null) {
-                    if (leagueOptions.little && !(stats.little || masterPokemon.little)) continue;
+                    if (leagueOptions.little && !(masterForm.little || masterPokemon.little)) continue;
                     const combinationIndex = this.calculateAllRanks(stats, leagueOptions.cap);
                     if (combinationIndex === null) continue;
                     for (const [lvCap, combinations] of Object.entries(combinationIndex)) {
@@ -399,54 +462,11 @@ class Ohbem {
     }
 
     /**
-     * Return ranked list of PVP statistics for a given Pokemon.
-     * This calculation does not involve caching.
-     *
-     * You need to initialize pokemonData in options to use this!
-     *
-     * @param listSize {number} top<n> ranks
-     * @param pokemonId
-     * @param form
-     * @param evolution
-     * @returns {{}|*}
-     */
-    getPvPRankings(listSize, pokemonId, form = 0, evolution = 0) {
-        const masterPokemon = this._pokemonData.pokemon[pokemonId];
-        if (!masterPokemon || !masterPokemon.attack) return null;
-        const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
-        let stats = evolution ? masterForm.temp_evolutions[evolution] : masterForm;
-        if (!stats.attack) stats = masterForm.attack ? masterForm : masterPokemon;
-        const results = {};
-        for (const [leagueName, leagueOptions] of Object.entries(this._leagues)) {
-            const capRankings = {};
-            for (const lvCap of this._levelCaps) {
-                const {combinations, sortedRanks} = calculateRanksCompact(stats, leagueOptions.cap, lvCap);
-                const ranking = [];
-                for (let i = 0;;) {
-                    const index = sortedRanks[i++].index;
-                    const rank = combinations[index];
-                    if (rank > listSize) break;
-                    ranking.push({
-                        rank,
-                        cp: sortedRanks[rank].cp,
-                        level: sortedRanks[rank].level,
-                        atk: (index >> 8) % 16,
-                        def: (index >> 4) % 16,
-                        sta: index % 16,
-                    });
-                }
-                capRankings[lvCap] = ranking;
-            }
-            results[leagueName] = capRankings;
-        }
-        return results;
-    }
-    /**
      * @deprecated
      * @see pokemonData.findBaseStats
      */
-    findBaseStats(pokemonId, form = 0) {
-        return this._pokemonData.findBaseStats(pokemonId, form);
+    findBaseStats(pokemonId, form = 0, evolution = 0) {
+        return this._pokemonData.findBaseStats(pokemonId, form, evolution);
     }
 }
 

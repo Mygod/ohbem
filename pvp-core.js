@@ -87,7 +87,7 @@ const calculateRanksCompact = (stats, cpCap, lvCap) => {
             }
         }
     }
-    sortedRanks.sort((a, b) => b.value - a.value);
+    sortedRanks.sort((a, b) => b.value - a.value || a.index - b.index); // enforce sort stability
     for (let i = 0, j = 0; i < sortedRanks.length; i++) {
         const entry = sortedRanks[i];
         if (entry.value < sortedRanks[j].value) j = i;

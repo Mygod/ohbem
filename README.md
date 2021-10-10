@@ -120,48 +120,31 @@ ohbem.queryPvPRank(661, 0, 0, 1, 15, 15, 14, 1);
 }
 ```
 
-Sample output showing top 3 ranked Talonflame
+Sample output showing top 5 ranked Elgyem:
 ```js
-ohbem.getPvPRankings(3, 663);
+ohbem.calculateTopRanks(5, 605);
 {
-  "little": {
-    "50": [
-      {"rank": 1, "cp": 500, "level": 9, "atk": 0, "def": 14, "sta": 2},
-      {"rank": 2, "cp": 500, "level": 8.5, "atk": 5, "def": 15, "sta": 13},
-      {"rank": 3, "cp": 500, "level": 9, "atk": 0, "def": 5, "sta": 12}
-    ],
-    "51": [
-      {"rank": 1, "cp": 500, "level": 9, "atk": 0, "def": 14, "sta": 2},
-      {"rank": 2, "cp": 500, "level": 8.5, "atk": 5, "def": 15, "sta": 13},
-      {"rank": 3, "cp": 500, "level": 9, "atk": 0, "def": 5, "sta": 12}
-    ]
-  },
-  "great": {
-    "50": [
-      {"rank": 1, "cp": 1496, "level": 26, "atk": 0, "def": 13, "sta": 14},
-      {"rank": 1, "cp": 1500, "level": 26, "atk": 0, "def": 13, "sta": 15},
-      {"rank": 3, "cp": 1500, "level": 26, "atk": 1, "def": 12, "sta": 14}
-    ],
-    "51": [
-      {"rank": 1, "cp": 1496, "level": 26, "atk": 0, "def": 13, "sta": 14},
-      {"rank": 1, "cp": 1500, "level": 26, "atk": 0, "def": 13, "sta": 15},
-      {"rank": 3, "cp": 1500, "level": 26, "atk": 1, "def": 12, "sta": 14}
-    ]
-  },
-  "ultra": {
-    "50": [
-      {"rank": 1, "cp": 2486, "level": 50, "atk": 15, "def": 15, "sta": 14},
-      {"rank": 1, "cp": 2493, "level": 50, "atk": 15, "def": 15, "sta": 15},
-      {"rank": 3, "cp": 2473, "level": 50, "atk": 14, "def": 15, "sta": 14}
-    ],
-    "51": [
-      {"rank": 1, "cp": 2490, "level": 51, "atk": 13, "def": 15, "sta": 14},
-      {"rank": 1, "cp": 2496, "level": 51, "atk": 13, "def": 15, "sta": 15},
-      {"rank": 3, "cp": 2495, "level": 51, "atk": 14, "def": 14, "sta": 14}
-    ]
-  }
+  little: [
+    { rank: 1, attack: 0, defense: 14, stamina: 15, cap: 50, value: 337248, level: 14, cp: 500, percentage: 1, capped: true },
+    { rank: 2, attack: 0, defense: 15, stamina: 13, cap: 50, value: 335954, level: 14, cp: 500, percentage: 0.99616, capped: true },
+    { rank: 3, attack: 0, defense: 13, stamina: 15, cap: 50, value: 334290, level: 14, cp: 498, percentage: 0.99123, capped: true },
+    { rank: 4, attack: 1, defense: 15, stamina: 11, cap: 50, value: 333943, level: 14, cp: 500, percentage: 0.9902, capped: true },
+    { rank: 5, attack: 1, defense: 12, stamina: 15, cap: 50, value: 333571, level: 14, cp: 499, percentage: 0.98909, capped: true }
+  ],
+  great: [
+    { rank: 1, attack: 8, defense: 15, stamina: 15, cap: 50, value: 1710113, level: 50, cp: 1498, percentage: 1 },
+    { rank: 2, attack: 11, defense: 15, stamina: 15, cap: 50, value: 1699358, level: 48.5, cp: 1500, percentage: 0.99371 },
+    { rank: 3, attack: 7, defense: 15, stamina: 15, cap: 50, value: 1699151, level: 50, cp: 1489, percentage: 0.99359 },
+    { rank: 4, attack: 10, defense: 15, stamina: 15, cap: 50, value: 1698809, level: 49, cp: 1500, percentage: 0.99339 },
+    { rank: 5, attack: 9, defense: 15, stamina: 14, cap: 50, value: 1698192, level: 49.5, cp: 1494, percentage: 0.99303 },
+    { rank: 5, attack: 9, defense: 15, stamina: 15, cap: 50, value: 1698192, level: 49.5, cp: 1499, percentage: 0.99303 },
+    { rank: 1, attack: 6, defense: 15, stamina: 15, cap: 51, value: 1720993, level: 51, cp: 1497, percentage: 1 },
+    { rank: 2, attack: 7, defense: 14, stamina: 15, cap: 51, value: 1717106, level: 51, cp: 1500, percentage: 0.99774 },
+    { rank: 3, attack: 8, defense: 15, stamina: 15, cap: 51, value: 1710113, level: 50, cp: 1498, percentage: 0.99368 },
+    { rank: 4, attack: 5, defense: 15, stamina: 15, cap: 51, value: 1709818, level: 51, cp: 1487, percentage: 0.99351 },
+    { rank: 5, attack: 7, defense: 15, stamina: 15, cap: 51, value: 1709291, level: 50.5, cp: 1498, percentage: 0.9932 }
+  ]
 }
-
 ```
 
 ## Output format
