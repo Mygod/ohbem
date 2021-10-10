@@ -291,48 +291,61 @@ class Ohbem {
         const stats = masterEvolution.attack ? masterEvolution : masterForm.attack ? masterForm : masterPokemon;
         const results = {};
         for (const [leagueName, leagueOptions] of Object.entries(this._leagues)) {
-            if (leagueOptions === null) continue;
-            if (leagueOptions.little && !(masterForm.little || masterPokemon.little)) continue;
             const rankings = [];
-            const lastRank = [];
-            function processLevelCap(cap, setOnDup = false) {
-                const { combinations, sortedRanks } = calculateRanksCompact(stats, leagueOptions.cap, cap, ivFloor);
-                for (let i = 0; i < sortedRanks.length; ++i) {
-                    const stat = sortedRanks[i];
-                    const rank = combinations[stat.index];
-                    if (rank > maxRank) {
-                        while (lastRank.length > i) lastRank.pop();
+            if (leagueOptions !== null) {
+                if (leagueOptions.little && !(masterForm.little || masterPokemon.little)) continue;
+                const lastRank = [];
+                function processLevelCap(cap, setOnDup = false) {
+                    const { combinations, sortedRanks } = calculateRanksCompact(stats, leagueOptions.cap, cap, ivFloor);
+                    for (let i = 0; i < sortedRanks.length; ++i) {
+                        const stat = sortedRanks[i];
+                        const rank = combinations[stat.index];
+                        if (rank > maxRank) {
+                            while (lastRank.length > i) lastRank.pop();
+                            break;
+                        }
+                        const attack = (stat.index >> 8) % 16;
+                        const defense = (stat.index >> 4) % 16;
+                        const stamina = stat.index % 16;
+                        const lastStat = lastRank[i];
+                        if (lastStat && stat.level === lastStat.level && rank === lastStat.rank &&
+                            attack === lastStat.attack && defense === lastStat.defense &&
+                            stamina === lastStat.stamina) {
+                            if (setOnDup) lastStat.capped = true;
+                        } else if (!setOnDup) rankings.push(lastRank[i] = {
+                            rank, attack, defense, stamina, cap,
+                            value: Math.floor(stat.value),
+                            level: stat.level,
+                            cp: stat.cp,
+                            percentage: Number((stat.value / sortedRanks[0].value).toFixed(5)),
+                        });
+                    }
+                }
+                let maxed = false;
+                for (const cap of this._levelCaps) {
+                    if (calculateCp(stats, 15, 15, 15, cap) <= leagueOptions.cap) continue;
+                    processLevelCap(cap);
+                    if (calculateCp(stats, ivFloor, ivFloor, ivFloor, cap + .5) > leagueOptions.cap) {
+                        maxed = true;
+                        for (const entry of lastRank) entry.capped = true;
                         break;
                     }
-                    const attack = (stat.index >> 8) % 16;
-                    const defense = (stat.index >> 4) % 16;
-                    const stamina = stat.index % 16;
-                    const lastStat = lastRank[i];
-                    if (lastStat && stat.level === lastStat.level && rank === lastStat.rank &&
-                        attack === lastStat.attack && defense === lastStat.defense && stamina === lastStat.stamina) {
-                        if (setOnDup) lastStat.capped = true;
-                    } else if (!setOnDup) rankings.push(lastRank[i] = {
-                        rank, attack, defense, stamina, cap,
-                        value: Math.floor(stat.value),
-                        level: stat.level,
-                        cp: stat.cp,
-                        percentage: Number((stat.value / sortedRanks[0].value).toFixed(5)),
+                }
+                if (rankings.length && !maxed) processLevelCap(maxLevel, true);
+            } else for (const cap of this._levelCaps) {
+                const maxHp = calculateHp(stats, 15, cap);
+                for (let stamina = ivFloor; stamina <= 15; ++stamina) {
+                    if (calculateHp(stats, stamina, cap) === maxHp) rankings.push({
+                        rank: 1,
+                        attack: 15,
+                        defense: 15,
+                        stamina,
+                        level: cap,
+                        percentage: 1,
                     });
                 }
             }
-            let maxed = false;
-            for (const cap of this._levelCaps) {
-                if (calculateCp(stats, 15, 15, 15, cap) <= leagueOptions.cap) continue;
-                processLevelCap(cap);
-                if (calculateCp(stats, ivFloor, ivFloor, ivFloor, cap + .5) > leagueOptions.cap) {
-                    maxed = true;
-                    for (const entry of lastRank) entry.capped = true;
-                    break;
-                }
-            }
-            if (!rankings.length) continue;
-            if (!maxed) processLevelCap(maxLevel, true);
-            results[leagueName] = rankings;
+            if (rankings.length) results[leagueName] = rankings;
         }
         return results;
     }

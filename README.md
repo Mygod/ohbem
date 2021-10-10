@@ -143,6 +143,10 @@ ohbem.calculateTopRanks(5, 605, 0, 0, 0);
     { rank: 3, attack: 8, defense: 15, stamina: 15, cap: 51, value: 1710113, level: 50, cp: 1498, percentage: 0.99368 },
     { rank: 4, attack: 5, defense: 15, stamina: 15, cap: 51, value: 1709818, level: 51, cp: 1487, percentage: 0.99351 },
     { rank: 5, attack: 7, defense: 15, stamina: 15, cap: 51, value: 1709291, level: 50.5, cp: 1498, percentage: 0.9932 }
+  ],
+  master: [
+    { rank: 1, attack: 15, defense: 15, stamina: 15, level: 50, percentage: 1 },
+    { rank: 1, attack: 15, defense: 15, stamina: 15, level: 51, percentage: 1 }
   ]
 }
 ```
