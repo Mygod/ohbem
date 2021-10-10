@@ -399,7 +399,8 @@ class Ohbem {
     }
 
     /**
-     * Return ranked list of PVP statistics for a given Pokemon
+     * Return ranked list of PVP statistics for a given Pokemon.
+     * This calculation does not involve caching.
      *
      * You need to initialize pokemonData in options to use this!
      *
@@ -412,29 +413,31 @@ class Ohbem {
         const masterPokemon = this._pokemonData.pokemon[pokemonId];
         if (!masterPokemon || !masterPokemon.attack) return null;
         const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
-
-        const results = {}
+        const stats = masterForm.attack ? masterForm : masterPokemon;
+        const results = {};
         for (const [leagueName, leagueOptions] of Object.entries(this._leagues)) {
-            if (leagueOptions) {
-                const capRankings = {}
-                for (const lvCap of this._levelCaps) {
-                    const {combinations, sortedRanks} = calculateRanksCompact(masterForm, leagueOptions.cap, lvCap);
-
-                    const ranking = []
-                    for (let rank = 0; rank < listSize; rank++) {
-                        const index = sortedRanks[rank].index;
-                        const sta = index % 16;
-                        const def = (index >> 4) % 16;
-                        const atk = (index >> 8) % 16;
-                        ranking.push({ rank: combinations[index],  cp: sortedRanks[rank].cp, level: sortedRanks[rank].level, atk, def, sta })
-                    }
-                    capRankings[lvCap] = ranking
+            const capRankings = {};
+            for (const lvCap of this._levelCaps) {
+                const {combinations, sortedRanks} = calculateRanksCompact(stats, leagueOptions.cap, lvCap);
+                const ranking = [];
+                for (let i = 0;;) {
+                    const index = sortedRanks[i++].index;
+                    const rank = combinations[index];
+                    if (rank > listSize) break;
+                    ranking.push({
+                        rank,
+                        cp: sortedRanks[rank].cp,
+                        level: sortedRanks[rank].level,
+                        atk: (index >> 8) % 16,
+                        def: (index >> 4) % 16,
+                        sta: index % 16,
+                    });
                 }
-                results[leagueName] = capRankings
+                capRankings[lvCap] = ranking;
             }
-
+            results[leagueName] = capRankings;
         }
-        return results
+        return results;
     }
     /**
      * @deprecated
