@@ -68,5 +68,6 @@ describe('Ohbem', () => {
         const out = ohbem.calculateTopRanks(5, 605);
         assert.strictEqual(out.little.length, 5);
         assert.strictEqual(out.great.length, 11);
+        assert.strictEqual(out.master.length, 2);
     })
 });
