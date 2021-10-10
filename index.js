@@ -281,9 +281,10 @@ class Ohbem {
      * @param pokemonId {number}
      * @param [form] {number}
      * @param [evolution] {number}
+     * @param [ivFloor] {number}
      * @returns {{}}
      */
-    calculateTopRanks(maxRank, pokemonId, form = 0, evolution = 0) {
+    calculateTopRanks(maxRank, pokemonId, form = 0, evolution = 0, ivFloor = 0) {
         const masterPokemon = this._pokemonData.pokemon[pokemonId];
         const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
         const masterEvolution = evolution ? masterForm.temp_evolutions[evolution] : masterForm;
@@ -295,8 +296,8 @@ class Ohbem {
             const rankings = [];
             const lastRank = [];
             function processLevelCap(cap, setOnDup = false) {
-                const { combinations, sortedRanks } = calculateRanksCompact(stats, leagueOptions.cap, cap);
-                for (let i = 0; i < 4096; ++i) {
+                const { combinations, sortedRanks } = calculateRanksCompact(stats, leagueOptions.cap, cap, ivFloor);
+                for (let i = 0; i < sortedRanks.length; ++i) {
                     const stat = sortedRanks[i];
                     const rank = combinations[stat.index];
                     if (rank > maxRank) {
@@ -323,7 +324,7 @@ class Ohbem {
             for (const cap of this._levelCaps) {
                 if (calculateCp(stats, 15, 15, 15, cap) <= leagueOptions.cap) continue;
                 processLevelCap(cap);
-                if (calculateCp(stats, 0, 0, 0, cap + .5) > leagueOptions.cap) {
+                if (calculateCp(stats, ivFloor, ivFloor, ivFloor, cap + .5) > leagueOptions.cap) {
                     maxed = true;
                     for (const entry of lastRank) entry.capped = true;
                     break;

@@ -120,9 +120,9 @@ ohbem.queryPvPRank(661, 0, 0, 1, 15, 15, 14, 1);
 }
 ```
 
-Sample output showing top 5 ranked Elgyem:
+Sample output showing top 5 ranked Elgyem with IV floor 0:
 ```js
-ohbem.calculateTopRanks(5, 605);
+ohbem.calculateTopRanks(5, 605, 0, 0, 0);
 {
   little: [
     { rank: 1, attack: 0, defense: 14, stamina: 15, cap: 50, value: 337248, level: 14, cp: 500, percentage: 1, capped: true },
