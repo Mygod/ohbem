@@ -407,13 +407,15 @@ class Ohbem {
      * @param listSize {number} top<n> ranks
      * @param pokemonId
      * @param form
+     * @param evolution
      * @returns {{}|*}
      */
-    getPvPRankings(listSize, pokemonId, form) {
+    getPvPRankings(listSize, pokemonId, form = 0, evolution = 0) {
         const masterPokemon = this._pokemonData.pokemon[pokemonId];
         if (!masterPokemon || !masterPokemon.attack) return null;
         const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
-        const stats = masterForm.attack ? masterForm : masterPokemon;
+        let stats = evolution ? masterForm.temp_evolutions[evolution] : masterForm;
+        if (!stats.attack) stats = masterForm.attack ? masterForm : masterPokemon;
         const results = {};
         for (const [leagueName, leagueOptions] of Object.entries(this._leagues)) {
             const capRankings = {};
