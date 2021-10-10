@@ -334,7 +334,7 @@ class Ohbem {
                 if (rankings.length && !maxed) processLevelCap(maxLevel, true);
             } else for (const cap of this._levelCaps) {
                 const maxHp = calculateHp(stats, 15, cap);
-                for (let stamina = ivFloor; stamina <= 15; ++stamina) {
+                for (let stamina = ivFloor; stamina < 15; ++stamina) {
                     if (calculateHp(stats, stamina, cap) === maxHp) rankings.push({
                         rank: 1,
                         attack: 15,
