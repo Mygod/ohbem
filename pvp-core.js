@@ -74,20 +74,20 @@ const calculateRanks = (stats, cpCap, lvCap) => {
     return { combinations, sortedRanks };
 };
 
-const calculateRanksCompact = (stats, cpCap, lvCap) => {
+const calculateRanksCompact = (stats, cpCap, lvCap, ivFloor = 0) => {
     // note if you are trying to port it to other languages: use a short (2-byte) array to save RAM
     const combinations = Array(16 * 16 * 16);
     const sortedRanks = [];
-    for (let a = 0; a <= 15; a++) {
-        for (let d = 0; d <= 15; d++) {
-            for (let s = 0; s <= 15; s++) {
+    for (let a = ivFloor; a <= 15; a++) {
+        for (let d = ivFloor; d <= 15; d++) {
+            for (let s = ivFloor; s <= 15; s++) {
                 const entry = calculatePvPStat(stats, a, d, s, cpCap, lvCap);
                 entry.index = (a * 16 + d) * 16 + s;
                 sortedRanks.push(entry);
             }
         }
     }
-    sortedRanks.sort((a, b) => b.value - a.value);
+    sortedRanks.sort((a, b) => b.value - a.value || a.index - b.index); // enforce sort stability
     for (let i = 0, j = 0; i < sortedRanks.length; i++) {
         const entry = sortedRanks[i];
         if (entry.value < sortedRanks[j].value) j = i;

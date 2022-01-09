@@ -4,12 +4,14 @@ module.exports = function addPokemonDataHelpers(pokemonData) {
      *
      * @param pokemonId {number}
      * @param [form] {number}
+     * @param [evolution] {number}
      * @returns {Object}
      */
-    pokemonData.findBaseStats = (pokemonId, form = 0) => {
+    pokemonData.findBaseStats = (pokemonId, form = 0, evolution = 0) => {
         const masterPokemon = pokemonData.pokemon[pokemonId];
         const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
-        return masterForm.attack ? masterForm : masterPokemon;
+        const masterEvolution = evolution ? masterForm.temp_evolutions[evolution] : masterForm;
+        return masterEvolution.attack ? masterEvolution : masterForm.attack ? masterForm : masterPokemon;
     };
 
     /**
