@@ -258,7 +258,7 @@ class Ohbem {
                 return result;
             } : (lvCap) => calculateRanks(stats, cpCap, lvCap).combinations;
             for (const lvCap of this._levelCaps) {
-                if (calculateCp(stats, 15, 15, 15, lvCap) <= cpCap) continue;   // not viable
+                //if (calculateCp(stats, 15, 15, 15, lvCap) <= cpCap) continue;   // not viable
                 if (combinationIndex === null) combinationIndex = { [lvCap]: calculator(lvCap) };
                 else combinationIndex[lvCap] = calculator(lvCap);
                 // check if no more power up is possible: further increasing the cap will not be relevant
@@ -323,7 +323,7 @@ class Ohbem {
                 }
                 let maxed = false;
                 for (const cap of this._levelCaps) {
-                    if (calculateCp(stats, 15, 15, 15, cap) <= leagueOptions.cap) continue;
+                    //if (calculateCp(stats, 15, 15, 15, cap) <= leagueOptions.cap) continue;
                     processLevelCap(cap);
                     if (calculateCp(stats, ivFloor, ivFloor, ivFloor, cap + .5) > leagueOptions.cap) {
                         maxed = true;
