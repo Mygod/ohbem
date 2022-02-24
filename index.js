@@ -212,6 +212,8 @@ class Ohbem {
      * @param {Function} [options.cachingStrategy] An optional function constructing a cache
      *  implementing get(key) and set(key, value), along with a boolean for whether compact mode (#3) should be used.
      *  @see cachingStrategies
+     * @param {boolean} [options.removeUnviablePokemon] A boolean representing whether Ohbem will remove Pokemon
+     *  who do not reach league CP cap at Level Cap even with 15/15/15 stats [default: true]
      */
     constructor(options = {}) {
         this._leagues = {};
@@ -225,6 +227,7 @@ class Ohbem {
             little: name.startsWith("little"),
         };
         this._levelCaps = options.levelCaps || [50, 51];
+        this._removeUnviablePokemon = options.removeUnviablePokemon || true;
         this._pokemonData = options.pokemonData;
         if (options.cachingStrategy) [this._rankCache, this._compactCache] = options.cachingStrategy(); else {
             this._rankCache = null;
@@ -258,7 +261,7 @@ class Ohbem {
                 return result;
             } : (lvCap) => calculateRanks(stats, cpCap, lvCap).combinations;
             for (const lvCap of this._levelCaps) {
-                //if (calculateCp(stats, 15, 15, 15, lvCap) <= cpCap) continue;   // not viable
+                if (this._removeUnviablePokemon && calculateCp(stats, 15, 15, 15, lvCap) <= cpCap) continue;   // not viable
                 if (combinationIndex === null) combinationIndex = { [lvCap]: calculator(lvCap) };
                 else combinationIndex[lvCap] = calculator(lvCap);
                 // check if no more power up is possible: further increasing the cap will not be relevant
@@ -323,7 +326,7 @@ class Ohbem {
                 }
                 let maxed = false;
                 for (const cap of this._levelCaps) {
-                    //if (calculateCp(stats, 15, 15, 15, cap) <= leagueOptions.cap) continue;
+                    if (this._removeUnviablePokemon && calculateCp(stats, 15, 15, 15, cap) <= leagueOptions.cap) continue;
                     processLevelCap(cap);
                     if (calculateCp(stats, ivFloor, ivFloor, ivFloor, cap + .5) > leagueOptions.cap) {
                         maxed = true;
