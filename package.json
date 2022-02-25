@@ -16,12 +16,12 @@
   "dependencies": {},
   "optionalDependencies": {
     "lru-cache": "^6.0.0",
-    "node-fetch": "^2.6.1",
-    "pogo-data-generator": "^1.2.2"
+    "node-fetch": "^2.6.7",
+    "pogo-data-generator": "^1.4.1"
   },
   "devDependencies": {
     "mocha": "^9.1.4",
-    "node-fetch": "^2.6.1",
-    "pogo-data-generator": "^1.2.2"
+    "node-fetch": "^2.6.7",
+    "pogo-data-generator": "^1.4.1"
   }
 }
