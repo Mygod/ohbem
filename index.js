@@ -227,7 +227,7 @@ class Ohbem {
             little: name.startsWith("little"),
         };
         this._levelCaps = options.levelCaps || [50, 51];
-        this._removeUnviablePokemon = options.removeUnviablePokemon || true;
+        this._removeUnviablePokemon = options.removeUnviablePokemon ?? true;
         this._pokemonData = options.pokemonData;
         if (options.cachingStrategy) [this._rankCache, this._compactCache] = options.cachingStrategy(); else {
             this._rankCache = null;
