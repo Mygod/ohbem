@@ -41,6 +41,12 @@ describe('Ohbem', () => {
             assert.strictEqual(out.great.length, 1, 'GL has 1 entries');
             assert.strictEqual(out.ultra, undefined, 'UL has no entires');
         });
+        ohbemTest('Alolan', (ohbem) => {
+            const out = ohbem.queryPvPRank(25, 0, 0, 2, 0, 15, 15, 22);
+            assert.strictEqual(out.little, undefined, 'No little cup');
+            assert.strictEqual(out.great.length, 2, 'GL has 2 entries');
+            assert.strictEqual(out.ultra.length, 2, 'UL has 2 entires');
+        });
         ohbemTest('Elgyem', (ohbem) => {
             const out = ohbem.queryPvPRank(605, 0, 0, 1, 1, 4, 12, 7);
             assert.strictEqual(out.little.length, 1, 'Little cup only has one entry');
