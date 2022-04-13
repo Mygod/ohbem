@@ -70,7 +70,7 @@ const ohbem = new Ohbem({
 ohbem.queryPvPRank(
     /* pokemonId: */    605,
     /* form: */         0,
-    /* costume: */      0,
+    /* costume: */      0,      // costume is used to check for evolutions. To skip this check, always pass 0
     /* gender: */       1,
     /* attack: */       1,
     /* defense: */      4,
