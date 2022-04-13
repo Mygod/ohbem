@@ -57,6 +57,10 @@ describe('Ohbem', () => {
             assert.strictEqual(Ohbem.filterLevelCaps(out.great, [50]).length, 2, 'L50 GL has 2 entries');
             assert.strictEqual(Ohbem.filterLevelCaps(out.great, [51]).length, 2, 'L51 GL has 2 entries');
         });
+        ohbemTest('Costume', (ohbem) => {
+            assert.strictEqual(ohbem.queryPvPRank(176, 0, 10, 1, 0, 15, 15, 28).ultra, undefined, 'NOEVOLVE');
+            assert.strictEqual(ohbem.queryPvPRank(176, 0, 12, 1, 0, 15, 15, 28).ultra.length, 1, 'NOEVOLVE override');
+        })
         // TODO: finish tests
         ohbemTest('Functionally Perfect', (ohbem) => {
             const out = ohbem.queryPvPRank(661, 0, 0, 1, 15, 15, 14, 1);

@@ -444,7 +444,8 @@ class Ohbem {
         pushAllEntries(masterForm.attack ? masterForm : masterPokemon);
         let canEvolve = true;
         if (costume) {
-            canEvolve = !this._pokemonData.costumes[costume];
+            canEvolve = !this._pokemonData.costumes[costume] ||
+                masterForm.costume_override_evos && masterForm.costume_override_evos.includes(costume);
         }
         if (canEvolve && masterForm.evolutions) {
             for (const evolution of masterForm.evolutions) {
@@ -461,8 +462,7 @@ class Ohbem {
                 }
                 if (evolution.gender_requirement && gender !== evolution.gender_requirement) continue;
                 const pushRecursively = (form) => {
-                    // reset costume since we know it can evolve
-                    const evolvedRanks = this.queryPvPRank(evolution.pokemon, form, 0, gender,
+                    const evolvedRanks = this.queryPvPRank(evolution.pokemon, form, costume, gender,
                         attack, defense, stamina, level);
                     for (const [leagueName, results] of Object.entries(evolvedRanks)) {
                         result[leagueName] = result[leagueName] ? result[leagueName].concat(results) : results;
