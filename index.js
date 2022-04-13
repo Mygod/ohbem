@@ -129,6 +129,7 @@ class Ohbem {
                             genderRequirement: true,
                         },
                         little: true,
+                        costumeOverrideEvos: "costumeId",
                     },
                     evolutions: {
                         evoId: true,
@@ -145,6 +146,7 @@ class Ohbem {
                     defense: true,
                     stamina: true,
                     little: true,
+                    costumeOverrideEvos: "costumeId",
                 },
             },
             costumes: {
