@@ -17,11 +17,11 @@
   "optionalDependencies": {
     "lru-cache": "^6.0.0",
     "node-fetch": "^2.6.7",
-    "pogo-data-generator": "^1.4.8"
+    "pogo-data-generator": "^1.9.0"
   },
   "devDependencies": {
     "mocha": "^9.2.2",
     "node-fetch": "^2.6.7",
-    "pogo-data-generator": "^1.4.8"
+    "pogo-data-generator": "^1.9.0"
   }
 }
