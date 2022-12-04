@@ -1,6 +1,6 @@
 {
   "name": "ohbem",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Ohbem judges your Pokemon GO IVs.",
   "main": "index.js",
   "scripts": {
@@ -17,11 +17,11 @@
   "optionalDependencies": {
     "lru-cache": "^6.0.0",
     "node-fetch": "^2.6.7",
-    "pogo-data-generator": "^1.4.8"
+    "pogo-data-generator": "^1.9.0"
   },
   "devDependencies": {
     "mocha": "^9.2.2",
     "node-fetch": "^2.6.7",
-    "pogo-data-generator": "^1.4.9"
+    "pogo-data-generator": "^1.9.0"
   }
 }
