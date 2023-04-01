@@ -29,6 +29,12 @@ describe('PvP Core', () => {
         for (const compact of [false, true]) {
             assert.strictEqual(getRank(pokemon[26], 1500, 40, 15, 15, 15, compact), 742,
                 `Hundo Raichu rank [${compact}]`);
+            assert.strictEqual(getRank(pokemon[76], 1500, 50, 2, 14, 13, compact), 3,
+                `Tied Golem rank 3 [${compact}]`);
+            assert.strictEqual(getRank(pokemon[76], 1500, 50, 1, 15, 13, compact), 4,
+                `Tied Golem rank 4A [${compact}]`);
+            assert.strictEqual(getRank(pokemon[76], 1500, 50, 1, 15, 14, compact), 4,
+                `Tied Golem rank 4B [${compact}]`);
             assert.strictEqual(getRank(pokemon[351], 1500, 51, 4, 14, 15, compact), 56,
                 `Weather boosted Castform rank [${compact}]`);
             assert.strictEqual(getRank(pokemon[660], 1500, 100, 0, 15, 11, compact), 1,

@@ -13,15 +13,6 @@ const calculateCpMultiplier = (level, test = false) => {
 
 const calculateHp = (stats, iv, level) => Math.max(10, Math.floor((stats.stamina + iv) * calculateCpMultiplier(level)));
 
-const calculateStatProduct = (stats, attack, defense, stamina, level) => {
-    const multiplier = calculateCpMultiplier(level);
-    let hp = Math.floor((stamina + stats.stamina) * multiplier);
-    if (hp < 10) hp = 10;
-    return (attack + stats.attack) * multiplier *
-        (defense + stats.defense) * multiplier *
-        hp;
-};
-
 const calculateCp = (stats, attack, defense, stamina, level) => {
     const multiplier = calculateCpMultiplier(level);
 
@@ -44,7 +35,11 @@ const calculatePvPStat = (stats, attack, defense, stamina, cap, lvCap, minLevel 
             bestCP = cp;
         } else highest = mid - .5;
     }
-    return { value: calculateStatProduct(stats, attack, defense, stamina, lowest), level: lowest, cp: bestCP };
+    const multiplier = calculateCpMultiplier(lowest);
+    const atk = (attack + stats.attack) * multiplier;
+    let hp = (stamina + stats.stamina) * multiplier;
+    hp = hp < 10 ? 10 : Math.floor(hp);
+    return { attack: atk, value: atk * (defense + stats.defense) * multiplier * hp, level: lowest, cp: bestCP };
 };
 
 const calculateRanks = (stats, cpCap, lvCap) => {
@@ -63,14 +58,16 @@ const calculateRanks = (stats, cpCap, lvCap) => {
         }
         combinations.push(arrA);
     }
-    sortedRanks.sort((a, b) => b.value - a.value);
+    sortedRanks.sort((a, b) => b.value - a.value || b.attack - a.attack);
     const best = sortedRanks[0].value;
     for (let i = 0, j = 0; i < sortedRanks.length; i++) {
         const entry = sortedRanks[i];
         entry.percentage = Number((entry.value / best).toFixed(5));
-        if (entry.value < sortedRanks[j].value) j = i;
+        if (entry.value < sortedRanks[j].value ||
+            entry.value === sortedRanks[j].value && entry.attack < sortedRanks[j].attack) j = i;
         entry.rank = j + 1;
     }
+    for (const entry of sortedRanks) delete entry.attack;
     return { combinations, sortedRanks };
 };
 
@@ -87,10 +84,12 @@ const calculateRanksCompact = (stats, cpCap, lvCap, ivFloor = 0) => {
             }
         }
     }
-    sortedRanks.sort((a, b) => b.value - a.value || a.index - b.index); // enforce sort stability
+    // enforce sort stability
+    sortedRanks.sort((a, b) => b.value - a.value || b.attack - a.attack || a.index - b.index);
     for (let i = 0, j = 0; i < sortedRanks.length; i++) {
         const entry = sortedRanks[i];
-        if (entry.value < sortedRanks[j].value) j = i;
+        if (entry.value < sortedRanks[j].value ||
+            entry.value === sortedRanks[j].value && entry.attack < sortedRanks[j].attack) j = i;
         combinations[entry.index] = j + 1;
     }
     return { combinations, sortedRanks };

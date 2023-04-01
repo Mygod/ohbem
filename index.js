@@ -408,6 +408,7 @@ class Ohbem {
                                 percentage: Number((stat.value / combinations[4096]).toFixed(5)),
                                 rank: combinations[(attack * 16 + defense) * 16 + stamina],
                             };
+                            delete entry.attack;
                         } else {
                             const ivEntry = combinations[attack][defense][stamina];
                             if (level > ivEntry.level) continue;
