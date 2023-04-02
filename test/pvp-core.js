@@ -22,9 +22,11 @@ describe('PvP Core', () => {
     });
     it('calculateRanks', async () => {
         const { pokemon } = await pokemonData;
-        const getRank = (stats, cpCap, lvCap, a, d, s, compact) => {
-            if (compact) return calculateRanksCompact(stats, cpCap, lvCap).combinations[(a * 16 + d) * 16 + s];
-            return calculateRanks(stats, cpCap, lvCap).combinations[a][d][s].rank;
+        const getRank = (stats, cpCap, lvCap, a, d, s, compact, comparator = Ohbem.rankingComparators.default) => {
+            if (compact) {
+                return calculateRanksCompact(stats, cpCap, lvCap, comparator).combinations[(a * 16 + d) * 16 + s];
+            }
+            return calculateRanks(stats, cpCap, lvCap, comparator).combinations[a][d][s].rank;
         }
         for (const compact of [false, true]) {
             assert.strictEqual(getRank(pokemon[26], 1500, 40, 15, 15, 15, compact), 742,
@@ -35,6 +37,22 @@ describe('PvP Core', () => {
                 `Tied Golem rank 4A [${compact}]`);
             assert.strictEqual(getRank(pokemon[76], 1500, 50, 1, 15, 14, compact), 4,
                 `Tied Golem rank 4B [${compact}]`);
+            assert.strictEqual(getRank(pokemon[227], 1500, 50, 0, 15, 14, compact), 1,
+                `Rank 1 higher CP Skarmory default comparator [${compact}]`);
+            assert.strictEqual(getRank(pokemon[227], 1500, 50, 0, 15, 13, compact), 1,
+                `Rank 1 lower CP Skarmory default comparator [${compact}]`);
+            assert.strictEqual(getRank(pokemon[227], 1500, 50, 0, 15, 14, compact,
+                    Ohbem.rankingComparators.preferHigherCp), 1,
+                `Rank 1 higher CP Skarmory preferHigherCp comparator [${compact}]`);
+            assert.strictEqual(getRank(pokemon[227], 1500, 50, 0, 15, 13, compact,
+                    Ohbem.rankingComparators.preferHigherCp), 2,
+                `Rank 1 lower CP Skarmory preferHigherCp comparator [${compact}]`);
+            assert.strictEqual(getRank(pokemon[227], 1500, 50, 0, 15, 14, compact,
+                    Ohbem.rankingComparators.preferLowerCp), 2,
+                `Rank 1 higher CP Skarmory preferLowerCp comparator [${compact}]`);
+            assert.strictEqual(getRank(pokemon[227], 1500, 50, 0, 15, 13, compact,
+                    Ohbem.rankingComparators.preferLowerCp), 1,
+                `Rank 1 lower CP Skarmory preferLowerCp comparator [${compact}]`);
             assert.strictEqual(getRank(pokemon[351], 1500, 51, 4, 14, 15, compact), 56,
                 `Weather boosted Castform rank [${compact}]`);
             assert.strictEqual(getRank(pokemon[660], 1500, 100, 0, 15, 11, compact), 1,
