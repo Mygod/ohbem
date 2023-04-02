@@ -235,6 +235,7 @@ class Ohbem {
      *  implementing get(key) and set(key, value), along with a boolean for whether compact mode (#3) should be used.
      *  @see cachingStrategies
      * @param {Function} [options.rankingComparator] An optional function determining how everything should be ranked.
+     *  @see rankingComparators.default
      */
     constructor(options = {}) {
         this._leagues = {};
