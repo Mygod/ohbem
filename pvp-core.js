@@ -42,7 +42,9 @@ const calculatePvPStat = (stats, attack, defense, stamina, cap, lvCap, minLevel 
     return { attack: atk, value: atk * (defense + stats.defense) * multiplier * hp, level: lowest, cp: bestCP };
 };
 
-const calculateRanks = (stats, cpCap, lvCap) => {
+const defaultComparator = (a, b) => b.value - a.value || b.attack - a.attack;
+
+const calculateRanks = (stats, cpCap, lvCap, comparator = defaultComparator) => {
     const combinations = [];
     const sortedRanks = [];
     for (let a = 0; a <= 15; a++) {
@@ -58,20 +60,19 @@ const calculateRanks = (stats, cpCap, lvCap) => {
         }
         combinations.push(arrA);
     }
-    sortedRanks.sort((a, b) => b.value - a.value || b.attack - a.attack);
+    sortedRanks.sort(comparator);
     const best = sortedRanks[0].value;
     for (let i = 0, j = 0; i < sortedRanks.length; i++) {
         const entry = sortedRanks[i];
         entry.percentage = Number((entry.value / best).toFixed(5));
-        if (entry.value < sortedRanks[j].value ||
-            entry.value === sortedRanks[j].value && entry.attack < sortedRanks[j].attack) j = i;
+        if (comparator(sortedRanks[j], entry) < 0) j = i;
         entry.rank = j + 1;
     }
     for (const entry of sortedRanks) delete entry.attack;
     return { combinations, sortedRanks };
 };
 
-const calculateRanksCompact = (stats, cpCap, lvCap, ivFloor = 0) => {
+const calculateRanksCompact = (stats, cpCap, lvCap, comparator = defaultComparator, ivFloor = 0) => {
     // note if you are trying to port it to other languages: use a short (2-byte) array to save RAM
     const combinations = Array(16 * 16 * 16);
     const sortedRanks = [];
@@ -84,12 +85,10 @@ const calculateRanksCompact = (stats, cpCap, lvCap, ivFloor = 0) => {
             }
         }
     }
-    // enforce sort stability
-    sortedRanks.sort((a, b) => b.value - a.value || b.attack - a.attack || a.index - b.index);
+    sortedRanks.sort((a, b) => comparator(a, b) || a.index - b.index);  // enforce sort stability
     for (let i = 0, j = 0; i < sortedRanks.length; i++) {
         const entry = sortedRanks[i];
-        if (entry.value < sortedRanks[j].value ||
-            entry.value === sortedRanks[j].value && entry.attack < sortedRanks[j].attack) j = i;
+        if (comparator(sortedRanks[j], entry) < 0) j = i;
         combinations[entry.index] = j + 1;
     }
     return { combinations, sortedRanks };

@@ -75,6 +75,26 @@ class Ohbem {
          */
         lru: (options, compactCache) => () => lruBuilder(options, compactCache),
     };
+    static rankingComparators = {
+        /**
+         * Rank everything by stat product descending then by attack descending.
+         * This is the default behavior, since in general, a higher stat product is usually preferable;
+         * and in case of tying stat products, higher attack means that you would be more likely to win CMP ties.
+         */
+        default: (a, b) => b.value - a.value || b.attack - a.attack,
+        /**
+         * In addition to the default rules, also compare by CP descending in the end.
+         * While ties are not meaningfully different most of the time,
+         * the rationale here is that a higher CP looks more intimidating.
+         */
+        preferHigherCp: (a, b) => b.value - a.value || b.attack - a.attack || b.cp - a.cp,
+        /**
+         * In addition to the default rules, also compare by CP ascending in the end.
+         * While ties are not meaningfully different most of the time,
+         * the rationale here is that you can flex beating your opponent using one with a lower CP.
+         */
+        preferLowerCp: (a, b) => b.value - a.value || b.attack - a.attack || a.cp - b.cp,
+    };
 
     /**
      * Fetches the latest Pokemon data from Masterfile-Generator. Requires optional dependency node-fetch.
@@ -214,6 +234,7 @@ class Ohbem {
      * @param {Function} [options.cachingStrategy] An optional function constructing a cache
      *  implementing get(key) and set(key, value), along with a boolean for whether compact mode (#3) should be used.
      *  @see cachingStrategies
+     * @param {Function} [options.rankingComparator] An optional function determining how everything should be ranked.
      */
     constructor(options = {}) {
         this._leagues = {};
@@ -228,6 +249,7 @@ class Ohbem {
         };
         this._levelCaps = options.levelCaps || [50, 51];
         this._pokemonData = options.pokemonData;
+        this._rankingComparator = options.rankingComparator || Ohbem.rankingComparators.default;
         if (options.cachingStrategy) [this._rankCache, this._compactCache] = options.cachingStrategy(); else {
             this._rankCache = null;
             this._compactCache = false;
@@ -254,11 +276,12 @@ class Ohbem {
             combinationIndex = null;
             let maxed = false;
             const calculator = this._compactCache ? (lvCap) => {
-                const { combinations, sortedRanks } = calculateRanksCompact(stats, cpCap, lvCap);
+                const { combinations, sortedRanks } = calculateRanksCompact(
+                    stats, cpCap, lvCap, this._rankingComparator);
                 const result = combinations;
                 result.push(sortedRanks[0].value);
                 return result;
-            } : (lvCap) => calculateRanks(stats, cpCap, lvCap).combinations;
+            } : (lvCap) => calculateRanks(stats, cpCap, lvCap, this._rankingComparator).combinations;
             for (const lvCap of this._levelCaps) {
                 if (calculateCp(stats, 15, 15, 15, lvCap) <= cpCap) continue;   // not viable
                 if (combinationIndex === null) combinationIndex = { [lvCap]: calculator(lvCap) };
@@ -297,8 +320,10 @@ class Ohbem {
             if (leagueOptions !== null) {
                 if (leagueOptions.little && !(masterForm.little || masterPokemon.little)) continue;
                 const lastRank = [];
+                const comparator = this._rankingComparator;
                 function processLevelCap(cap, setOnDup = false) {
-                    const { combinations, sortedRanks } = calculateRanksCompact(stats, leagueOptions.cap, cap, ivFloor);
+                    const { combinations, sortedRanks } = calculateRanksCompact(
+                        stats, leagueOptions.cap, cap, comparator, ivFloor);
                     for (let i = 0; i < sortedRanks.length; ++i) {
                         const stat = sortedRanks[i];
                         const rank = combinations[stat.index];
