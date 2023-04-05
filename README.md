@@ -66,9 +66,6 @@ const ohbem = new Ohbem({
     pokemonData,
     // If you have installed lru-cache, uncomment the following to use caching:
     // cachingStrategy: Ohbem.cachingStrategies.balanced,
-    // Ohbem's default setting is to remove Pokemon who do not not reach the league CP cap at a given level
-    // cap even with 15/15/15 stats. This can be turned off by uncommenting this line
-    // removeUnviablePokemon: false,
 });
 ohbem.queryPvPRank(
     /* pokemonId: */    605,
