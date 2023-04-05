@@ -75,6 +75,26 @@ class Ohbem {
          */
         lru: (options, compactCache) => () => lruBuilder(options, compactCache),
     };
+    static rankingComparators = {
+        /**
+         * Rank everything by stat product descending then by attack descending.
+         * This is the default behavior, since in general, a higher stat product is usually preferable;
+         * and in case of tying stat products, higher attack means that you would be more likely to win CMP ties.
+         */
+        default: (a, b) => b.value - a.value || b.attack - a.attack,
+        /**
+         * In addition to the default rules, also compare by CP descending in the end.
+         * While ties are not meaningfully different most of the time,
+         * the rationale here is that a higher CP looks more intimidating.
+         */
+        preferHigherCp: (a, b) => b.value - a.value || b.attack - a.attack || b.cp - a.cp,
+        /**
+         * In addition to the default rules, also compare by CP ascending in the end.
+         * While ties are not meaningfully different most of the time,
+         * the rationale here is that you can flex beating your opponent using one with a lower CP.
+         */
+        preferLowerCp: (a, b) => b.value - a.value || b.attack - a.attack || a.cp - b.cp,
+    };
 
     /**
      * Fetches the latest Pokemon data from Masterfile-Generator. Requires optional dependency node-fetch.
@@ -129,6 +149,7 @@ class Ohbem {
                             genderRequirement: true,
                         },
                         little: true,
+                        costumeOverrideEvos: "costumeId",
                     },
                     evolutions: {
                         evoId: true,
@@ -145,6 +166,7 @@ class Ohbem {
                     defense: true,
                     stamina: true,
                     little: true,
+                    costumeOverrideEvos: "costumeId",
                 },
             },
             costumes: {
@@ -214,6 +236,8 @@ class Ohbem {
      *  @see cachingStrategies
      * @param {boolean} [options.removeUnviablePokemon] A boolean representing whether Ohbem will remove Pokemon
      *  who do not reach league CP cap at Level Cap even with 15/15/15 stats [default: true]
+     * @param {Function} [options.rankingComparator] An optional function determining how everything should be ranked.
+     *  @see rankingComparators.default
      */
     constructor(options = {}) {
         this._leagues = {};
@@ -229,6 +253,7 @@ class Ohbem {
         this._levelCaps = options.levelCaps || [50, 51];
         this._removeUnviablePokemon = options.removeUnviablePokemon ?? true;
         this._pokemonData = options.pokemonData;
+        this._rankingComparator = options.rankingComparator || Ohbem.rankingComparators.default;
         if (options.cachingStrategy) [this._rankCache, this._compactCache] = options.cachingStrategy(); else {
             this._rankCache = null;
             this._compactCache = false;
@@ -255,11 +280,12 @@ class Ohbem {
             combinationIndex = null;
             let maxed = false;
             const calculator = this._compactCache ? (lvCap) => {
-                const { combinations, sortedRanks } = calculateRanksCompact(stats, cpCap, lvCap);
+                const { combinations, sortedRanks } = calculateRanksCompact(
+                    stats, cpCap, lvCap, this._rankingComparator);
                 const result = combinations;
                 result.push(sortedRanks[0].value);
                 return result;
-            } : (lvCap) => calculateRanks(stats, cpCap, lvCap).combinations;
+            } : (lvCap) => calculateRanks(stats, cpCap, lvCap, this._rankingComparator).combinations;
             for (const lvCap of this._levelCaps) {
                 if (this._removeUnviablePokemon && calculateCp(stats, 15, 15, 15, lvCap) <= cpCap) continue;   // not viable
                 if (combinationIndex === null) combinationIndex = { [lvCap]: calculator(lvCap) };
@@ -298,8 +324,10 @@ class Ohbem {
             if (leagueOptions !== null) {
                 if (leagueOptions.little && !(masterForm.little || masterPokemon.little)) continue;
                 const lastRank = [];
+                const comparator = this._rankingComparator;
                 function processLevelCap(cap, setOnDup = false) {
-                    const { combinations, sortedRanks } = calculateRanksCompact(stats, leagueOptions.cap, cap, ivFloor);
+                    const { combinations, sortedRanks } = calculateRanksCompact(
+                        stats, leagueOptions.cap, cap, comparator, ivFloor);
                     for (let i = 0; i < sortedRanks.length; ++i) {
                         const stat = sortedRanks[i];
                         const rank = combinations[stat.index];
@@ -409,6 +437,7 @@ class Ohbem {
                                 percentage: Number((stat.value / combinations[4096]).toFixed(5)),
                                 rank: combinations[(attack * 16 + defense) * 16 + stamina],
                             };
+                            delete entry.attack;
                         } else {
                             const ivEntry = combinations[attack][defense][stamina];
                             if (level > ivEntry.level) continue;
@@ -445,7 +474,8 @@ class Ohbem {
         pushAllEntries(masterForm.attack ? masterForm : masterPokemon);
         let canEvolve = true;
         if (costume) {
-            canEvolve = !this._pokemonData.costumes[costume];
+            canEvolve = !this._pokemonData.costumes[costume] ||
+                masterForm.costume_override_evos && masterForm.costume_override_evos.includes(costume);
         }
         if (canEvolve && masterForm.evolutions) {
             for (const evolution of masterForm.evolutions) {
@@ -461,11 +491,19 @@ class Ohbem {
                         break;
                 }
                 if (evolution.gender_requirement && gender !== evolution.gender_requirement) continue;
-                // reset costume since we know it can evolve
-                const evolvedRanks = this.queryPvPRank(evolution.pokemon, evolution.form || 0, 0, gender,
-                    attack, defense, stamina, level);
-                for (const [leagueName, results] of Object.entries(evolvedRanks)) {
-                    result[leagueName] = result[leagueName] ? result[leagueName].concat(results) : results;
+                const pushRecursively = (form) => {
+                    const evolvedRanks = this.queryPvPRank(evolution.pokemon, form, costume, gender,
+                        attack, defense, stamina, level);
+                    for (const [leagueName, results] of Object.entries(evolvedRanks)) {
+                        result[leagueName] = result[leagueName] ? result[leagueName].concat(results) : results;
+                    }
+                };
+                pushRecursively(evolution.form || 0);
+                switch (evolution.pokemon) {
+                    case 26:  pushRecursively(50); break;   // RAICHU_ALOLA
+                    case 103: pushRecursively(78); break;   // EXEGGUTOR_ALOLA
+                    case 105: pushRecursively(80); break;   // MAROWAK_ALOLA
+                    case 110: pushRecursively(944); break;  // WEEZING_GALARIAN
                 }
             }
         }
