@@ -491,19 +491,10 @@ class Ohbem {
                         break;
                 }
                 if (evolution.gender_requirement && gender !== evolution.gender_requirement) continue;
-                const pushRecursively = (form) => {
-                    const evolvedRanks = this.queryPvPRank(evolution.pokemon, form, costume, gender,
-                        attack, defense, stamina, level);
-                    for (const [leagueName, results] of Object.entries(evolvedRanks)) {
-                        result[leagueName] = result[leagueName] ? result[leagueName].concat(results) : results;
-                    }
-                };
-                pushRecursively(evolution.form || 0);
-                switch (evolution.pokemon) {
-                    case 26:  pushRecursively(50); break;   // RAICHU_ALOLA
-                    case 103: pushRecursively(78); break;   // EXEGGUTOR_ALOLA
-                    case 105: pushRecursively(80); break;   // MAROWAK_ALOLA
-                    case 110: pushRecursively(944); break;  // WEEZING_GALARIAN
+                const evolvedRanks = this.queryPvPRank(evolution.pokemon, evolution.form || 0, costume, gender,
+                    attack, defense, stamina, level);
+                for (const [leagueName, results] of Object.entries(evolvedRanks)) {
+                    result[leagueName] = result[leagueName] ? result[leagueName].concat(results) : results;
                 }
             }
         }
