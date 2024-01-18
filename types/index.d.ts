@@ -1,5 +1,3 @@
-export type Leagues = "little" | "great" | "ultra" | "master";
-
 export interface Stats {
     attack: number;
     defense: number;
@@ -105,7 +103,7 @@ export interface PokemonTempEvolution {
     unreleased?: boolean;
 }
 
-export type PvPQueryResult = Partial<Record<Leagues, PvPStat[]>>;
+export type PvPQueryResult = Record<string, PvPStat[]>;
 
 declare class Ohbem {
     static calculateCpMultiplier: (level: number, test?: boolean) => number;
