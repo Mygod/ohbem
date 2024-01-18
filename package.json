@@ -3,6 +3,7 @@
   "version": "1.5.2",
   "description": "Ohbem judges your Pokemon GO IVs.",
   "main": "index.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "test": "mocha"
   },
