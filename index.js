@@ -22,99 +22,27 @@ const dayOldCacheOptions = {
 };
 
 class Ohbem {
-    /**
-     * Calculate CP multiplier, with estimated CPM for L55+.
-     *
-     * @param level
-     * @returns {number}
-     */
     static calculateCpMultiplier = calculateCpMultiplier;
-    /**
-     * Calculate CP.
-     *
-     * @param stats {Object} An object containing the base stats.
-     * @param stats.attack {number} Base attack.
-     * @param stats.defense {number} Base defense.
-     * @param stats.stamina {number} Base stamina.
-     * @param attack {number} Attack IV.
-     * @param defense {number} Defense IV.
-     * @param stamina {number} Stamina IV.
-     * @param level {number}
-     * @returns {number}
-     */
     static calculateCp = calculateCp;
 
     static cachingStrategies = {
-        /**
-         * Rankings will not be cached.
-         *
-         * Usage: cachingStrategies.cpuHeavy.
-         */
         cpuHeavy: null,
-        /**
-         * Rankings will always be cached for 24 hours. Requires optional dependency lru-cache.
-         * Furthermore, the cache will be optimized towards using less RAM.
-         *
-         * Usage: cachingStrategies.balanced
-         */
         balanced: () => lruBuilder(dayOldCacheOptions, true),
-        /**
-         * Rankings will always be cached for 24 hours. Requires optional dependency lru-cache.
-         * Furthermore, the cache will be optimized towards using less CPU.
-         *
-         * Usage: cachingStrategies.memoryHeavy
-         */
         memoryHeavy: () => lruBuilder(dayOldCacheOptions, false),
-        /**
-         * Rankings will be cached by LRUCache. Requires optional dependency lru-cache.
-         *
-         * Usage: cachingStrategies.lru({...}, true/false)
-         *
-         * @param options This will be used as the options to create the LRUCache.
-         * @param compactCache Whether the cache should be optimized for lower RAM (true) or lower CPU (false).
-         */
         lru: (options, compactCache) => () => lruBuilder(options, compactCache),
     };
     static rankingComparators = {
-        /**
-         * Rank everything by stat product descending then by attack descending.
-         * This is the default behavior, since in general, a higher stat product is usually preferable;
-         * and in case of tying stat products, higher attack means that you would be more likely to win CMP ties.
-         */
         default: (a, b) => b.value - a.value || b.attack - a.attack,
-        /**
-         * In addition to the default rules, also compare by CP descending in the end.
-         * While ties are not meaningfully different most of the time,
-         * the rationale here is that a higher CP looks more intimidating.
-         */
         preferHigherCp: (a, b) => b.value - a.value || b.attack - a.attack || b.cp - a.cp,
-        /**
-         * In addition to the default rules, also compare by CP ascending in the end.
-         * While ties are not meaningfully different most of the time,
-         * the rationale here is that you can flex beating your opponent using one with a lower CP.
-         */
         preferLowerCp: (a, b) => b.value - a.value || b.attack - a.attack || a.cp - b.cp,
     };
 
-    /**
-     * Fetches the latest Pokemon data from Masterfile-Generator. Requires optional dependency node-fetch.
-     *
-     * @returns {Promise<object>} See pokemon-data.js for some helper methods.
-     * @see addPokemonDataHelpers
-     */
     static async fetchPokemonData() {
         const fetch = require('node-fetch');
         const response = await fetch('https://raw.githubusercontent.com/WatWowMap/Masterfile-Generator/master/master-latest-basics.json');
         const json = await response.json();
         return addPokemonDataHelpers(json);
     }
-
-    /**
-     * Generates and fetches the latest Pokemon data from Pogo Data Generator. Requires optional dependency pogo-data-generator.
-     *
-     * @returns {Promise<object>} See pokemon-data.js for some helper methods.
-     * @see addPokemonDataHelpers
-     */
     static async fetchPokemonDataUnstable() {
         const { generate } = require('pogo-data-generator');
         const template = {
@@ -183,15 +111,6 @@ class Ohbem {
         return addPokemonDataHelpers(response);
     }
 
-    /**
-     * Filter the output of queryPvPRank with a subset of interested level caps.
-     *
-     * @param entries {Object[]}
-     *  An array containing PvP combinations for a specific league from the output of queryPvPRank.
-     * @param interestedLevelCaps {number[]}
-     *  A non-empty array containing a list of interested level caps in ascending order.
-     * @returns {Object[]} The filtered array containing only capped entries and those whose cap matches the given caps.
-     */
     static filterLevelCaps(entries, interestedLevelCaps) {
         const result = [];
         let last;
@@ -217,28 +136,6 @@ class Ohbem {
         return result;
     }
 
-    /**
-     * Initialize your overlord Ohbem.
-     *
-     * @param {Object} options An object containing your preferences. See more options below.
-     * @param {Object} [options.leagues] An object containing key-value pair, where keys correspond to league names,
-     *  and value could either be a Number indicating the CP cap, or an Object like {little: true, cap: 500},
-     *  or null indicating functionally perfect.
-     *  If key starts with "little" and the value is a Number, it will be assumed to be a little cup.
-     * @param {Number[]} [options.levelCaps] An array containing a list of Numbers in ascending order,
-     *  indicating the interested level caps.
-     * @param {Object} [options.pokemonData.pokemon] An object containing Pokemon data from Masterfile-Generator.
-     *  This field is required for calling queryPvPRank.
-     *  @see fetchPokemonData
-     *  @see queryPvPRank
-     * @param {Function} [options.cachingStrategy] An optional function constructing a cache
-     *  implementing get(key) and set(key, value), along with a boolean for whether compact mode (#3) should be used.
-     *  @see cachingStrategies
-     * @param {boolean} [options.removeUnviablePokemon] A boolean representing whether Ohbem will remove Pokemon
-     *  who do not reach league CP cap at Level Cap even with 15/15/15 stats [default: true]
-     * @param {Function} [options.rankingComparator] An optional function determining how everything should be ranked.
-     *  @see rankingComparators.default
-     */
     constructor(options = {}) {
         this._leagues = {};
         for (const [name, cap] of Object.entries(options.leagues || {
