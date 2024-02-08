@@ -149,7 +149,7 @@ export interface PokemonTempEvolution {
 
 export type PvPQueryResult = Record<string, PvPStat[]>;
 
-declare class Ohbem {
+export default class Ohbem {
     /**
      * Calculate CP multiplier, with estimated CPM for L55+.
      */
@@ -301,5 +301,3 @@ declare class Ohbem {
      */
     findBaseStats(pokemonId: number, form?: number, evolution?: number): Pokemon;
 }
-
-export = Ohbem;
