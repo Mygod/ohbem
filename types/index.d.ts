@@ -154,6 +154,7 @@ declare class Ohbem {
      * Calculate CP multiplier, with estimated CPM for L55+.
      */
     static calculateCpMultiplier: (level: number, test?: boolean) => number;
+
     /**
      * Calculate CP.
      *
@@ -195,6 +196,7 @@ declare class Ohbem {
          */
         lru: (options: any, compactCache: boolean) => CachingStrategy;
     };
+
     static rankingComparators: {
         /**
          * Rank everything by stat product descending then by attack descending.
@@ -223,6 +225,7 @@ declare class Ohbem {
      * @see addPokemonDataHelpers
      */
     static fetchPokemonData(): Promise<PokemonData>;
+
     /**
      * Generates and fetches the latest Pokemon data from Pogo Data Generator. Requires optional dependency pogo-data-generator.
      *
@@ -245,10 +248,57 @@ declare class Ohbem {
      */
     constructor(options?: OhbemOptions);
 
-    calculateAllRanks(stats: Stats, cpCap: number): Record<string, RankResult[][][]> | null;
+    /**
+     * Calculate all PvP ranks for a specific base stats with the specified CP cap.
+     *
+     * The return value of this method is subject to change. Ask maintainer before attempting to invoke it.
+     *
+     * @param stats {Stats} An object containing the base stats.
+     * @param cpCap {number} The CP cap.
+     * @returns An object mapping level cap to combinations (whose content depends on compactCache),
+     *  or null if the Pokemon does not hit the cpCap at any level cap.
+     */
+    calculateAllRanks(stats: Stats, cpCap: number): Record<string, number[] | RankResult[][][]> | null;
+
+    /**
+     * Return ranked list of PVP statistics for a given Pokemon.
+     * This calculation does not involve caching.
+     *
+     * @param maxRank {number} Top<n> ranks.
+     * @param pokemonId {number}
+     * @param [form] {number}
+     * @param [evolution] {number}
+     * @param [ivFloor] {number}
+     */
     calculateTopRanks(maxRank: number, pokemonId: number, form?: number, evolution?: number, ivFloor?: number): PvPQueryResult;
+
+    /**
+     * Update pokemonData with a newer version.
+     * @param pokemonData
+     */
+
     updatePokemonData(pokemonData: PokemonData): void;
+    /**
+     * Query all ranks for a specific Pokemon, including its possible evolutions.
+     *
+     * You need to initialize pokemonData in options to use this!
+     *
+     * @param pokemonId {number}
+     * @param form {number}
+     * @param costume {number} This will be used to check whether it can evolve.
+     * @param gender {number}
+     *  This will be used for checking gender-locked evolutions.
+     * @param attack {number} Attack IV.
+     * @param defense {number} Defense IV.
+     * @param stamina {number} Stamina IV.
+     * @param level {number} Level.
+     */
     queryPvPRank(pokemonId: number, form: number, costume: number, gender: number, attack: number, defense: number, stamina: number, level: number): PvPQueryResult;
+
+    /**
+     * @deprecated
+     * @see pokemonData.findBaseStats
+     */
     findBaseStats(pokemonId: number, form?: number, evolution?: number): Pokemon;
 }
 

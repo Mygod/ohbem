@@ -43,6 +43,7 @@ class Ohbem {
         const json = await response.json();
         return addPokemonDataHelpers(json);
     }
+
     static async fetchPokemonDataUnstable() {
         const { generate } = require('pogo-data-generator');
         const template = {
@@ -157,19 +158,6 @@ class Ohbem {
         }
     }
 
-    /**
-     * Calculate all PvP ranks for a specific base stats with the specified CP cap.
-     *
-     * The return value of this method is subject to change. Ask maintainer before attempting to invoke it.
-     *
-     * @param stats {Object} An object containing the base stats.
-     * @param stats.attack {number} Base attack.
-     * @param stats.defense {number} Base defense.
-     * @param stats.stamina {number} Base stamina.
-     * @param cpCap {number} The CP cap.
-     * @returns {[Object]} An object mapping level cap to combinations (whose content depends on compactCache),
-     *  or null if the Pokemon does not hit the cpCap at any level cap.
-     */
     calculateAllRanks(stats, cpCap) {
         const key = `${stats.attack},${stats.defense},${stats.stamina},${cpCap}`;
         let combinationIndex = this._rankCache ? this._rankCache.get(key) : undefined;
@@ -199,17 +187,6 @@ class Ohbem {
         return combinationIndex;
     }
 
-    /**
-     * Return ranked list of PVP statistics for a given Pokemon.
-     * This calculation does not involve caching.
-     *
-     * @param maxRank {number} Top<n> ranks.
-     * @param pokemonId {number}
-     * @param [form] {number}
-     * @param [evolution] {number}
-     * @param [ivFloor] {number}
-     * @returns {{}}
-     */
     calculateTopRanks(maxRank, pokemonId, form = 0, evolution = 0, ivFloor = 0) {
         const masterPokemon = this._pokemonData.pokemon[pokemonId];
         const masterForm = form ? masterPokemon.forms[form] || masterPokemon : masterPokemon;
@@ -278,30 +255,10 @@ class Ohbem {
         return results;
     }
 
-    /**
-     * Update pokemonData with a newer version.
-     * @param pokemonData
-     */
     updatePokemonData(pokemonData) {
         this._pokemonData = pokemonData;
     }
 
-    /**
-     * Query all ranks for a specific Pokemon, including its possible evolutions.
-     *
-     * You need to initialize pokemonData in options to use this!
-     *
-     * @param pokemonId {number}
-     * @param form {number}
-     * @param costume {number} This will be used to check whether it can evolve.
-     * @param gender {number}
-     *  This will be used for checking gender-locked evolutions.
-     * @param attack {number} Attack IV.
-     * @param defense {number} Defense IV.
-     * @param stamina {number} Stamina IV.
-     * @param level {number} Level.
-     * @returns {{}}
-     */
     queryPvPRank(pokemonId, form, costume, gender, attack, defense, stamina, level) {
         if (!((attack = parseInt(attack)) >= 0 && attack <= 15)) throw new RangeError('attack');
         if (!((defense = parseInt(defense)) >= 0 && defense <= 15)) throw new RangeError('defense');
@@ -404,10 +361,6 @@ class Ohbem {
         return result;
     }
 
-    /**
-     * @deprecated
-     * @see pokemonData.findBaseStats
-     */
     findBaseStats(pokemonId, form = 0, evolution = 0) {
         return this._pokemonData.findBaseStats(pokemonId, form, evolution);
     }
