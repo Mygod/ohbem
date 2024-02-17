@@ -14,30 +14,34 @@ export interface Stats {
 }
 
 export interface PvPStat {
-    rank: number;
     attack: number;
-    defense: number;
-    stamina: number;
-    cap: number;
     value: number;
     level: number;
     cp: number;
+}
+
+export interface TopRankEntry extends PvPStat {
+    rank: number;
+    defense: number;
+    stamina: number;
+    cap: number;
     percentage?: number;
     capped?: boolean;
     evolution?: number;
     form?: number;
 }
 
-export interface RankEntry {
+export interface PvPRankEntry {
     pokemon: number;
+    level: number;
+    rank: number;
+    percentage: number;
     form?: number;
     evolution?: number;
-    cap: number;
+    cap?: number;
     capped?: boolean;
-    level: number;
-    cp: number;
-    value: number;
-    percentage: number;
+    cp?: number;
+    value?: number;
 }
 
 export interface RankResult {
@@ -147,8 +151,6 @@ export interface PokemonTempEvolution {
     unreleased?: boolean;
 }
 
-export type PvPQueryResult = Record<string, PvPStat[]>;
-
 export default class Ohbem {
     /**
      * Calculate CP multiplier, with estimated CPM for L55+.
@@ -241,7 +243,7 @@ export default class Ohbem {
      * @param interestedLevelCaps A non-empty array containing a list of interested level caps in ascending order.
      * @returns The filtered array containing only capped entries and those whose cap matches the given caps.
      */
-    static filterLevelCaps(entries: RankEntry[], interestedLevelCaps: number[]): RankEntry[];
+    static filterLevelCaps(entries: PvPRankEntry[], interestedLevelCaps: number[]): PvPRankEntry[];
 
     /**
      * Initialize your overlord Ohbem.
@@ -270,7 +272,7 @@ export default class Ohbem {
      * @param [evolution] {number}
      * @param [ivFloor] {number}
      */
-    calculateTopRanks(maxRank: number, pokemonId: number, form?: number, evolution?: number, ivFloor?: number): PvPQueryResult;
+    calculateTopRanks(maxRank: number, pokemonId: number, form?: number, evolution?: number, ivFloor?: number): Record<string, TopRankEntry[]>;
 
     /**
      * Update pokemonData with a newer version.
@@ -293,7 +295,7 @@ export default class Ohbem {
      * @param stamina {number} Stamina IV.
      * @param level {number} Level.
      */
-    queryPvPRank(pokemonId: number, form: number, costume: number, gender: number, attack: number, defense: number, stamina: number, level: number): PvPQueryResult;
+    queryPvPRank(pokemonId: number, form: number, costume: number, gender: number, attack: number, defense: number, stamina: number, level: number): Record<string, PvPRankEntry[]>;
 
     /**
      * @deprecated
