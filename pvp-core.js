@@ -39,7 +39,25 @@ const calculatePvPStat = (stats, attack, defense, stamina, cap, lvCap, minLevel 
     const atk = (attack + stats.attack) * multiplier;
     let hp = (stamina + stats.stamina) * multiplier;
     hp = hp < 10 ? 10 : Math.floor(hp);
-    return { attack: atk, value: atk * (defense + stats.defense) * multiplier * hp, level: lowest, cp: bestCP };
+    return { attack: atk, hp, value: atk * (defense + stats.defense) * multiplier * hp, level: lowest, cp: bestCP };
+};
+const calculatePvPStatFormChange = (defaultStats, alternateStats, attack, defense, stamina, cap, lvCap, minLevel = 1) => {
+    const defaultPvPStat = calculatePvPStat(defaultStats, attack, defense, stamina, cap, lvCap, minLevel);
+    if (!defaultPvPStat) return null;
+    let bestCP = calculateCp(alternateStats, attack, defense, stamina, minLevel);
+    if (bestCP > cap) return null;
+    let lowest = minLevel, highest = lvCap; // TODO: levels need to be nerfed if defaultPvPStat cp is too low but how?
+    for (let mid = Math.ceil((lowest + highest) / 2); lowest < highest; mid = Math.ceil((lowest + highest) / 2)) {
+        const cp = calculateCp(alternateStats, attack, defense, stamina, mid);
+        if (cp <= cap) {
+            lowest = mid;
+            bestCP = cp;
+        } else highest = mid - 1;
+    }
+    const multiplier = calculateCpMultiplier(lowest);
+    const atk = (attack + alternateStats.attack) * multiplier;
+    const hp = defaultPvPStat.hp;
+    return { attack: atk, hp, value: atk * (defense + alternateStats.defense) * multiplier * hp, level: lowest, cp: bestCP };
 };
 
 const defaultComparator = (a, b) => b.value - a.value || b.attack - a.attack;
@@ -53,6 +71,36 @@ const calculateRanks = (stats, cpCap, lvCap, comparator = defaultComparator) => 
             const arrD = [];
             for (let s = 0; s <= 15; s++) {
                 const currentStat = calculatePvPStat(stats, a, d, s, cpCap, lvCap);
+                arrD.push(currentStat);
+                sortedRanks.push(currentStat);
+            }
+            arrA.push(arrD);
+        }
+        combinations.push(arrA);
+    }
+    sortedRanks.sort(comparator);
+    const best = sortedRanks[0].value;
+    for (let i = 0, j = 0; i < sortedRanks.length; i++) {
+        const entry = sortedRanks[i];
+        entry.percentage = Number((entry.value / best).toFixed(5));
+        if (comparator(sortedRanks[j], entry) < 0) j = i;
+        entry.rank = j + 1;
+    }
+    for (const entry of sortedRanks) delete entry.attack;
+    return { combinations, sortedRanks };
+};
+const calculateRanksFormChange = (defaultStats, alternateStats, cpCap, lvCap, comparator = defaultComparator) => {
+    const combinations = [];
+    const sortedRanks = [];
+    for (let a = 0; a <= 15; a++) {
+        const arrA = [];
+        for (let d = 0; d <= 15; d++) {
+            const arrD = [];
+            for (let s = 0; s <= 15; s++) {
+                const currentStat = calculatePvPStatFormChange(defaultStats, alternateStats, a, d, s, cpCap, lvCap);
+                currentStat.a = a;
+                currentStat.d = d;
+                currentStat.s = s;
                 arrD.push(currentStat);
                 sortedRanks.push(currentStat);
             }
@@ -93,6 +141,27 @@ const calculateRanksCompact = (stats, cpCap, lvCap, comparator = defaultComparat
     }
     return { combinations, sortedRanks };
 }
+const calculateRanksFormChangeCompact = (defaultStats, alternateStats, cpCap, lvCap, comparator = defaultComparator, ivFloor = 0) => {
+    // note if you are trying to port it to other languages: use a short (2-byte) array to save RAM
+    const combinations = Array(16 * 16 * 16);
+    const sortedRanks = [];
+    for (let a = ivFloor; a <= 15; a++) {
+        for (let d = ivFloor; d <= 15; d++) {
+            for (let s = ivFloor; s <= 15; s++) {
+                const entry = calculatePvPStatFormChange(defaultStats, alternateStats, a, d, s, cpCap, lvCap);
+                entry.index = (a * 16 + d) * 16 + s;
+                sortedRanks.push(entry);
+            }
+        }
+    }
+    sortedRanks.sort((a, b) => comparator(a, b) || a.index - b.index);  // enforce sort stability
+    for (let i = 0, j = 0; i < sortedRanks.length; i++) {
+        const entry = sortedRanks[i];
+        if (comparator(sortedRanks[j], entry) < 0) j = i;
+        combinations[entry.index] = j + 1;
+    }
+    return { combinations, sortedRanks };
+}
 
 module.exports = {
     calculateCpMultiplier,
@@ -100,5 +169,7 @@ module.exports = {
     calculateCp,
     calculatePvPStat,
     calculateRanks,
+    calculateRanksFormChange,
     calculateRanksCompact,
+    calculateRanksFormChangeCompact,
 };
