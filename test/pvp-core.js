@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { calculateCpMultiplier, calculateCp, calculateRanks, calculateRanksCompact } = require('../pvp-core.js');
+const { calculateCpMultiplier, calculateCp, calculateRanks, calculateRanksCompact, calculatePvPStat, calculatePvPStatFormChange, calculateRanksFormChange } = require('../pvp-core.js');
 const Ohbem = require('../index.js');
 const cpMultipliers = require('../cpm.json');
 
@@ -28,6 +28,21 @@ describe('PvP Core', () => {
             }
             return calculateRanks(stats, cpCap, lvCap, comparator).combinations[a][d][s].rank;
         }
+
+        const shieldCp = 1495, bladeCp = 1473;
+        for (let a = 0; a <= 15; a++) {
+            for (let d = 0; d <= 15; d++) {
+                for (let s = 0; s <= 15; s++) {
+                    const shieldStat = calculatePvPStat({ attack: 97, defense: 272, stamina: 155 }, a, d, s, shieldCp, 50);
+                    if (shieldStat.cp < shieldCp) continue;
+                    const bladeStat = calculatePvPStatFormChange({ attack: 97, defense: 272, stamina: 155 }, { attack: 272, defense: 97, stamina: 155 }, a, d, s, bladeCp, 50);
+                    if (bladeStat.cp === bladeCp) console.log(`Found ${a}/${d}/${s} ${shieldStat.level} -> ${bladeStat.level}`);
+                }
+            }
+        }
+        // console.log(JSON.stringify(calculateRanksFormChange({ attack: 97, defense: 272, stamina: 155 }, { attack: 272, defense: 97, stamina: 155 }, 2500, 50).sortedRanks));
+        // calculateRanksFormChange({ attack: 97, defense: 272, stamina: 155 }, { attack: 272, defense: 97, stamina: 155 }, 1500, 50).sortedRanks.forEach(
+        //     e => console.log(JSON.stringify(e)));
         for (const compact of [false, true]) {
             assert.strictEqual(getRank(pokemon[26], 1500, 40, 15, 15, 15, compact), 742,
                 `Hundo Raichu rank [${compact}]`);

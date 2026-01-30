@@ -1,0 +1,12989 @@
+{
+ "1": {
+  "pokemonName": "Bulbasaur",
+  "forms": {
+   "163": {
+    "formName": "Normal"
+   },
+   "897": {
+    "formName": "Fall 2019"
+   }
+  },
+  "height": 0.7,
+  "weight": 6.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "2": {
+  "pokemonName": "Ivysaur",
+  "forms": {
+   "166": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 13,
+  "evolutions": [
+   {}
+  ]
+ },
+ "3": {
+  "pokemonName": "Venusaur",
+  "forms": {
+   "169": {
+    "formName": "Normal"
+   },
+   "950": {
+    "formName": "Copy 2019"
+   }
+  },
+  "height": 2,
+  "weight": 100,
+  "tempEvolutions": {
+   "1": {
+    "height": 2.4,
+    "weight": 155.5
+   },
+   "Gmax": {}
+  }
+ },
+ "4": {
+  "pokemonName": "Charmander",
+  "forms": {
+   "172": {
+    "formName": "Normal"
+   },
+   "896": {
+    "formName": "Fall 2019"
+   }
+  },
+  "height": 0.6,
+  "weight": 8.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "5": {
+  "pokemonName": "Charmeleon",
+  "forms": {
+   "175": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.1,
+  "weight": 19,
+  "evolutions": [
+   {}
+  ]
+ },
+ "6": {
+  "pokemonName": "Charizard",
+  "forms": {
+   "178": {
+    "formName": "Normal"
+   },
+   "951": {
+    "formName": "Copy 2019"
+   }
+  },
+  "height": 1.7,
+  "weight": 90.5,
+  "tempEvolutions": {
+   "2": {
+    "weight": 110.5
+   },
+   "3": {
+    "weight": 100.5
+   },
+   "Gmax": {}
+  }
+ },
+ "7": {
+  "pokemonName": "Squirtle",
+  "forms": {
+   "181": {
+    "formName": "Normal"
+   },
+   "895": {
+    "formName": "Fall 2019"
+   }
+  },
+  "height": 0.5,
+  "weight": 9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "8": {
+  "pokemonName": "Wartortle",
+  "forms": {
+   "184": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 22.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "9": {
+  "pokemonName": "Blastoise",
+  "forms": {
+   "187": {
+    "formName": "Normal"
+   },
+   "952": {
+    "formName": "Copy 2019"
+   }
+  },
+  "height": 1.6,
+  "weight": 85.5,
+  "tempEvolutions": {
+   "1": {
+    "weight": 101.1
+   },
+   "Gmax": {}
+  }
+ },
+ "10": {
+  "pokemonName": "Caterpie",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 2.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "11": {
+  "pokemonName": "Metapod",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 9.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "12": {
+  "pokemonName": "Butterfree",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 32,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "13": {
+  "pokemonName": "Weedle",
+  "forms": {
+   "616": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.3,
+  "weight": 3.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "14": {
+  "pokemonName": "Kakuna",
+  "forms": {
+   "619": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.6,
+  "weight": 10,
+  "evolutions": [
+   {}
+  ]
+ },
+ "15": {
+  "pokemonName": "Beedrill",
+  "forms": {
+   "622": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 29.5,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.4,
+    "weight": 40.5
+   }
+  }
+ },
+ "16": {
+  "pokemonName": "Pidgey",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "17": {
+  "pokemonName": "Pidgeotto",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 30,
+  "evolutions": [
+   {}
+  ]
+ },
+ "18": {
+  "pokemonName": "Pidgeot",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 39.5,
+  "tempEvolutions": {
+   "1": {
+    "height": 2.2,
+    "weight": 50.5
+   }
+  }
+ },
+ "19": {
+  "pokemonName": "Rattata",
+  "forms": {
+   "45": {
+    "formName": "Normal"
+   },
+   "46": {
+    "formName": "Alola",
+    "height": 0.3,
+    "weight": 3.8
+   }
+  },
+  "height": 0.3,
+  "weight": 3.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "20": {
+  "pokemonName": "Raticate",
+  "forms": {
+   "47": {
+    "formName": "Normal"
+   },
+   "48": {
+    "formName": "Alola",
+    "height": 0.7,
+    "weight": 25.5
+   }
+  },
+  "height": 0.7,
+  "weight": 18.5
+ },
+ "21": {
+  "pokemonName": "Spearow",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "22": {
+  "pokemonName": "Fearow",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 38
+ },
+ "23": {
+  "pokemonName": "Ekans",
+  "forms": {
+   "697": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2,
+  "weight": 6.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "24": {
+  "pokemonName": "Arbok",
+  "forms": {
+   "700": {
+    "formName": "Normal"
+   }
+  },
+  "height": 3.5,
+  "weight": 65
+ },
+ "25": {
+  "pokemonName": "Pikachu",
+  "forms": {
+   "598": {
+    "formName": "Normal"
+   },
+   "894": {
+    "formName": "Fall 2019"
+   },
+   "901": {
+    "formName": "Vs 2019"
+   },
+   "949": {
+    "formName": "Copy 2019"
+   },
+   "2332": {
+    "formName": "Costume 2020"
+   },
+   "2669": {
+    "formName": "Adventure Hat 2020"
+   },
+   "2670": {
+    "formName": "Winter 2020"
+   },
+   "2675": {
+    "formName": "Kariyushi"
+   },
+   "2676": {
+    "formName": "Pop Star"
+   },
+   "2677": {
+    "formName": "Rock Star"
+   },
+   "2678": {
+    "formName": "Flying 5th Anniv"
+   },
+   "2736": {
+    "formName": "Flying Okinawa"
+   },
+   "2805": {
+    "formName": "Gofest 2022"
+   },
+   "2806": {
+    "formName": "Wcs 2022"
+   },
+   "2813": {
+    "formName": "Tshirt 01"
+   },
+   "2814": {
+    "formName": "Tshirt 02"
+   },
+   "2815": {
+    "formName": "Flying 01"
+   },
+   "2816": {
+    "formName": "Flying 02"
+   },
+   "2825": {
+    "formName": "Gotour 2024 A"
+   },
+   "2826": {
+    "formName": "Gotour 2024 B"
+   },
+   "2827": {
+    "formName": "Gotour 2024 A 02"
+   },
+   "2828": {
+    "formName": "Gotour 2024 B 02"
+   },
+   "2832": {
+    "formName": "Tshirt 03"
+   },
+   "2833": {
+    "formName": "Flying 04"
+   },
+   "2842": {
+    "formName": "Horizons"
+   },
+   "2843": {
+    "formName": "Gofest 2024 Stiara"
+   },
+   "2844": {
+    "formName": "Gofest 2024 Mtiara"
+   },
+   "3002": {
+    "formName": "Summer 2023 A"
+   },
+   "3003": {
+    "formName": "Summer 2023 B"
+   },
+   "3004": {
+    "formName": "Summer 2023 C"
+   },
+   "3005": {
+    "formName": "Summer 2023 D"
+   },
+   "3010": {
+    "formName": "Summer 2023 E"
+   },
+   "3011": {
+    "formName": "Flying 03"
+   },
+   "3012": {
+    "formName": "Jeju"
+   },
+   "3013": {
+    "formName": "Doctor"
+   },
+   "3014": {
+    "formName": "Wcs 2023"
+   }
+  },
+  "height": 0.4,
+  "weight": 6,
+  "evolutions": [
+   {},
+   {}
+  ],
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "26": {
+  "pokemonName": "Raichu",
+  "forms": {
+   "49": {
+    "formName": "Normal"
+   },
+   "50": {
+    "formName": "Alola",
+    "height": 0.7,
+    "weight": 21
+   }
+  },
+  "height": 0.8,
+  "weight": 30
+ },
+ "27": {
+  "pokemonName": "Sandshrew",
+  "forms": {
+   "51": {
+    "formName": "Normal"
+   },
+   "52": {
+    "formName": "Alola",
+    "height": 0.7,
+    "weight": 40
+   }
+  },
+  "height": 0.6,
+  "weight": 12,
+  "evolutions": [
+   {}
+  ]
+ },
+ "28": {
+  "pokemonName": "Sandslash",
+  "forms": {
+   "53": {
+    "formName": "Normal"
+   },
+   "54": {
+    "formName": "Alola",
+    "height": 1.2,
+    "weight": 55
+   }
+  },
+  "height": 1,
+  "weight": 29.5
+ },
+ "29": {
+  "pokemonName": "Nidoran♀",
+  "forms": {
+   "776": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.4,
+  "weight": 7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "30": {
+  "pokemonName": "Nidorina",
+  "forms": {
+   "779": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.8,
+  "weight": 20,
+  "evolutions": [
+   {}
+  ]
+ },
+ "31": {
+  "pokemonName": "Nidoqueen",
+  "forms": {
+   "782": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.3,
+  "weight": 60
+ },
+ "32": {
+  "pokemonName": "Nidoran♂",
+  "forms": {
+   "776": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.5,
+  "weight": 9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "33": {
+  "pokemonName": "Nidorino",
+  "forms": {
+   "785": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.9,
+  "weight": 19.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "34": {
+  "pokemonName": "Nidoking",
+  "forms": {
+   "788": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.4,
+  "weight": 62
+ },
+ "35": {
+  "pokemonName": "Clefairy",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 7.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "36": {
+  "pokemonName": "Clefable",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 40
+ },
+ "37": {
+  "pokemonName": "Vulpix",
+  "forms": {
+   "55": {
+    "formName": "Normal"
+   },
+   "56": {
+    "formName": "Alola"
+   }
+  },
+  "height": 0.6,
+  "weight": 9.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "38": {
+  "pokemonName": "Ninetales",
+  "forms": {
+   "57": {
+    "formName": "Normal"
+   },
+   "58": {
+    "formName": "Alola"
+   }
+  },
+  "height": 1.1,
+  "weight": 19.9
+ },
+ "39": {
+  "pokemonName": "Jigglypuff",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 5.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "40": {
+  "pokemonName": "Wigglytuff",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 12
+ },
+ "41": {
+  "pokemonName": "Zubat",
+  "forms": {
+   "157": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.8,
+  "weight": 7.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "42": {
+  "pokemonName": "Golbat",
+  "forms": {
+   "160": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.6,
+  "weight": 55,
+  "evolutions": [
+   {}
+  ]
+ },
+ "43": {
+  "pokemonName": "Oddish",
+  "forms": {
+   "265": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.5,
+  "weight": 5.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "44": {
+  "pokemonName": "Gloom",
+  "forms": {
+   "268": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.8,
+  "weight": 8.6,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "45": {
+  "pokemonName": "Vileplume",
+  "forms": {
+   "271": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.2,
+  "weight": 18.6
+ },
+ "46": {
+  "pokemonName": "Paras",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 5.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "47": {
+  "pokemonName": "Parasect",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 29.5
+ },
+ "48": {
+  "pokemonName": "Venonat",
+  "forms": {
+   "259": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 30,
+  "evolutions": [
+   {}
+  ]
+ },
+ "49": {
+  "pokemonName": "Venomoth",
+  "forms": {
+   "262": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 12.5
+ },
+ "50": {
+  "pokemonName": "Diglett",
+  "forms": {
+   "59": {
+    "formName": "Normal"
+   },
+   "60": {
+    "formName": "Alola",
+    "height": 0.2,
+    "weight": 1
+   }
+  },
+  "height": 0.2,
+  "weight": 0.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "51": {
+  "pokemonName": "Dugtrio",
+  "forms": {
+   "61": {
+    "formName": "Normal"
+   },
+   "62": {
+    "formName": "Alola",
+    "height": 0.7,
+    "weight": 66.6
+   }
+  },
+  "height": 0.7,
+  "weight": 33.3
+ },
+ "52": {
+  "pokemonName": "Meowth",
+  "forms": {
+   "63": {
+    "formName": "Normal"
+   },
+   "64": {
+    "formName": "Alola"
+   },
+   "2335": {
+    "formName": "Galarian",
+    "height": 0.4,
+    "weight": 7.5
+   }
+  },
+  "height": 0.4,
+  "weight": 4.2,
+  "evolutions": [
+   {}
+  ],
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "53": {
+  "pokemonName": "Persian",
+  "forms": {
+   "65": {
+    "formName": "Normal"
+   },
+   "66": {
+    "formName": "Alola",
+    "height": 1.1,
+    "weight": 33
+   }
+  },
+  "height": 1,
+  "weight": 32
+ },
+ "54": {
+  "pokemonName": "Psyduck",
+  "forms": {
+   "286": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.8,
+  "weight": 19.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "55": {
+  "pokemonName": "Golduck",
+  "forms": {
+   "289": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.7,
+  "weight": 76.6
+ },
+ "56": {
+  "pokemonName": "Mankey",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 28,
+  "evolutions": [
+   {}
+  ]
+ },
+ "57": {
+  "pokemonName": "Primeape",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 32,
+  "evolutions": [
+   {}
+  ]
+ },
+ "58": {
+  "pokemonName": "Growlithe",
+  "forms": {
+   "280": {
+    "formName": "Normal"
+   },
+   "2792": {
+    "formName": "Hisuian",
+    "height": 0.8,
+    "weight": 22.7
+   }
+  },
+  "height": 0.7,
+  "weight": 19,
+  "evolutions": [
+   {}
+  ]
+ },
+ "59": {
+  "pokemonName": "Arcanine",
+  "forms": {
+   "283": {
+    "formName": "Normal"
+   },
+   "2793": {
+    "formName": "Hisuian",
+    "height": 2,
+    "weight": 168
+   }
+  },
+  "height": 1.9,
+  "weight": 155
+ },
+ "60": {
+  "pokemonName": "Poliwag",
+  "forms": {
+   "235": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.6,
+  "weight": 12.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "61": {
+  "pokemonName": "Poliwhirl",
+  "forms": {
+   "238": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 20,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "62": {
+  "pokemonName": "Poliwrath",
+  "forms": {
+   "241": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.3,
+  "weight": 54
+ },
+ "63": {
+  "pokemonName": "Abra",
+  "forms": {
+   "304": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.9,
+  "weight": 19.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "64": {
+  "pokemonName": "Kadabra",
+  "forms": {
+   "307": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.3,
+  "weight": 56.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "65": {
+  "pokemonName": "Alakazam",
+  "forms": {
+   "310": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 48,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.2
+   }
+  }
+ },
+ "66": {
+  "pokemonName": "Machop",
+  "forms": {
+   "809": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.8,
+  "weight": 19.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "67": {
+  "pokemonName": "Machoke",
+  "forms": {
+   "812": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 70.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "68": {
+  "pokemonName": "Machamp",
+  "forms": {
+   "815": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.6,
+  "weight": 130,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "69": {
+  "pokemonName": "Bellsprout",
+  "forms": {
+   "664": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.7,
+  "weight": 4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "70": {
+  "pokemonName": "Weepinbell",
+  "forms": {
+   "667": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 6.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "71": {
+  "pokemonName": "Victreebel",
+  "forms": {
+   "670": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.7,
+  "weight": 15.5
+ },
+ "72": {
+  "pokemonName": "Tentacool",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 45.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "73": {
+  "pokemonName": "Tentacruel",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 55
+ },
+ "74": {
+  "pokemonName": "Geodude",
+  "forms": {
+   "67": {
+    "formName": "Normal"
+   },
+   "68": {
+    "formName": "Alola",
+    "height": 0.4,
+    "weight": 20.3
+   }
+  },
+  "height": 0.4,
+  "weight": 20,
+  "evolutions": [
+   {}
+  ]
+ },
+ "75": {
+  "pokemonName": "Graveler",
+  "forms": {
+   "69": {
+    "formName": "Normal"
+   },
+   "70": {
+    "formName": "Alola",
+    "height": 1,
+    "weight": 110
+   }
+  },
+  "height": 1,
+  "weight": 105,
+  "evolutions": [
+   {}
+  ]
+ },
+ "76": {
+  "pokemonName": "Golem",
+  "forms": {
+   "71": {
+    "formName": "Normal"
+   },
+   "72": {
+    "formName": "Alola",
+    "height": 1.7,
+    "weight": 316
+   }
+  },
+  "height": 1.4,
+  "weight": 300
+ },
+ "77": {
+  "pokemonName": "Ponyta",
+  "forms": {
+   "1011": {
+    "formName": "Normal"
+   },
+   "2336": {
+    "formName": "Galarian",
+    "height": 0.8,
+    "weight": 24
+   }
+  },
+  "height": 1,
+  "weight": 30,
+  "evolutions": [
+   {}
+  ]
+ },
+ "78": {
+  "pokemonName": "Rapidash",
+  "forms": {
+   "1014": {
+    "formName": "Normal"
+   },
+   "2337": {
+    "formName": "Galarian",
+    "height": 1.7,
+    "weight": 80
+   }
+  },
+  "height": 1.7,
+  "weight": 95
+ },
+ "79": {
+  "pokemonName": "Slowpoke",
+  "forms": {
+   "1017": {
+    "formName": "Normal"
+   },
+   "2582": {
+    "formName": "Galarian"
+   },
+   "2673": {
+    "formName": "2020"
+   }
+  },
+  "height": 1.2,
+  "weight": 36,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "80": {
+  "pokemonName": "Slowbro",
+  "forms": {
+   "1020": {
+    "formName": "Normal"
+   },
+   "2583": {
+    "formName": "Galarian",
+    "height": 1.6,
+    "weight": 70.5
+   },
+   "2674": {
+    "formName": "2021"
+   }
+  },
+  "height": 1.6,
+  "weight": 78.5,
+  "tempEvolutions": {
+   "1": {
+    "height": 2,
+    "weight": 120
+   }
+  }
+ },
+ "81": {
+  "pokemonName": "Magnemite",
+  "forms": {
+   "655": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.3,
+  "weight": 6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "82": {
+  "pokemonName": "Magneton",
+  "forms": {
+   "658": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 60,
+  "evolutions": [
+   {}
+  ]
+ },
+ "83": {
+  "pokemonName": "Farfetchd",
+  "forms": {
+   "1023": {
+    "formName": "Normal"
+   },
+   "2338": {
+    "formName": "Galarian",
+    "height": 0.8,
+    "weight": 42
+   }
+  },
+  "height": 0.8,
+  "weight": 15
+ },
+ "84": {
+  "pokemonName": "Doduo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 39.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "85": {
+  "pokemonName": "Dodrio",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 85.2
+ },
+ "86": {
+  "pokemonName": "Seel",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 90,
+  "evolutions": [
+   {}
+  ]
+ },
+ "87": {
+  "pokemonName": "Dewgong",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 120
+ },
+ "88": {
+  "pokemonName": "Grimer",
+  "forms": {
+   "73": {
+    "formName": "Normal"
+   },
+   "74": {
+    "formName": "Alola",
+    "height": 0.7,
+    "weight": 42
+   }
+  },
+  "height": 0.9,
+  "weight": 30,
+  "evolutions": [
+   {}
+  ]
+ },
+ "89": {
+  "pokemonName": "Muk",
+  "forms": {
+   "75": {
+    "formName": "Normal"
+   },
+   "76": {
+    "formName": "Alola",
+    "height": 1,
+    "weight": 52
+   }
+  },
+  "height": 1.2,
+  "weight": 30
+ },
+ "90": {
+  "pokemonName": "Shellder",
+  "forms": {
+   "876": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.3,
+  "weight": 4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "91": {
+  "pokemonName": "Cloyster",
+  "forms": {
+   "879": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 132.5
+ },
+ "92": {
+  "pokemonName": "Gastly",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 0.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "93": {
+  "pokemonName": "Haunter",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 0.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "94": {
+  "pokemonName": "Gengar",
+  "forms": {
+   "1044": {
+    "formName": "Normal"
+   },
+   "2586": {
+    "formName": "Costume 2020"
+   }
+  },
+  "height": 1.5,
+  "weight": 40.5,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.4
+   },
+   "Gmax": {}
+  }
+ },
+ "95": {
+  "pokemonName": "Onix",
+  "forms": {
+   "902": {
+    "formName": "Normal"
+   }
+  },
+  "height": 8.8,
+  "weight": 210,
+  "evolutions": [
+   {}
+  ]
+ },
+ "96": {
+  "pokemonName": "Drowzee",
+  "forms": {
+   "214": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 32.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "97": {
+  "pokemonName": "Hypno",
+  "forms": {
+   "217": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.6,
+  "weight": 75.6
+ },
+ "98": {
+  "pokemonName": "Krabby",
+  "forms": {
+   "870": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.4,
+  "weight": 6.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "99": {
+  "pokemonName": "Kingler",
+  "forms": {
+   "873": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.3,
+  "weight": 60,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "100": {
+  "pokemonName": "Voltorb",
+  "forms": {
+   "1047": {
+    "formName": "Normal"
+   },
+   "2728": {
+    "formName": "Hisuian",
+    "height": 0.5,
+    "weight": 13
+   }
+  },
+  "height": 0.5,
+  "weight": 10.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "101": {
+  "pokemonName": "Electrode",
+  "forms": {
+   "1050": {
+    "formName": "Normal"
+   },
+   "2735": {
+    "formName": "Hisuian",
+    "height": 1.2,
+    "weight": 71
+   }
+  },
+  "height": 1.2,
+  "weight": 66.6
+ },
+ "102": {
+  "pokemonName": "Exeggcute",
+  "forms": {
+   "729": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.4,
+  "weight": 2.5,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "103": {
+  "pokemonName": "Exeggutor",
+  "forms": {
+   "77": {
+    "formName": "Normal"
+   },
+   "78": {
+    "formName": "Alola",
+    "height": 10.9,
+    "weight": 415.6
+   }
+  },
+  "height": 2,
+  "weight": 120
+ },
+ "104": {
+  "pokemonName": "Cubone",
+  "forms": {
+   "224": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.4,
+  "weight": 6.5,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "105": {
+  "pokemonName": "Marowak",
+  "forms": {
+   "79": {
+    "formName": "Normal"
+   },
+   "80": {
+    "formName": "Alola",
+    "height": 1,
+    "weight": 34
+   }
+  },
+  "height": 1,
+  "weight": 45
+ },
+ "106": {
+  "pokemonName": "Hitmonlee",
+  "forms": {
+   "713": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 49.8
+ },
+ "107": {
+  "pokemonName": "Hitmonchan",
+  "forms": {
+   "277": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.4,
+  "weight": 50.2
+ },
+ "108": {
+  "pokemonName": "Lickitung",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 65.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "109": {
+  "pokemonName": "Koffing",
+  "forms": {
+   "703": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.6,
+  "weight": 1,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "110": {
+  "pokemonName": "Weezing",
+  "forms": {
+   "706": {
+    "formName": "Normal"
+   },
+   "944": {
+    "formName": "Galarian",
+    "height": 3,
+    "weight": 16
+   }
+  },
+  "height": 1.2,
+  "weight": 9.5
+ },
+ "111": {
+  "pokemonName": "Rhyhorn",
+  "forms": {
+   "846": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 115,
+  "evolutions": [
+   {}
+  ]
+ },
+ "112": {
+  "pokemonName": "Rhydon",
+  "forms": {
+   "849": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.9,
+  "weight": 120,
+  "evolutions": [
+   {}
+  ]
+ },
+ "113": {
+  "pokemonName": "Chansey",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 34.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "114": {
+  "pokemonName": "Tangela",
+  "forms": {
+   "1059": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 35,
+  "evolutions": [
+   {}
+  ]
+ },
+ "115": {
+  "pokemonName": "Kangaskhan",
+  "forms": {
+   "839": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.2,
+  "weight": 80,
+  "tempEvolutions": {
+   "1": {
+    "weight": 100
+   }
+  }
+ },
+ "116": {
+  "pokemonName": "Horsea",
+  "forms": {
+   "1062": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.4,
+  "weight": 8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "117": {
+  "pokemonName": "Seadra",
+  "forms": {
+   "1065": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.2,
+  "weight": 25,
+  "evolutions": [
+   {}
+  ]
+ },
+ "118": {
+  "pokemonName": "Goldeen",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 15,
+  "evolutions": [
+   {}
+  ]
+ },
+ "119": {
+  "pokemonName": "Seaking",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 39
+ },
+ "120": {
+  "pokemonName": "Staryu",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 34.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "121": {
+  "pokemonName": "Starmie",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 80
+ },
+ "122": {
+  "pokemonName": "Mr Mime",
+  "forms": {
+   "1080": {
+    "formName": "Normal"
+   },
+   "2339": {
+    "formName": "Galarian",
+    "height": 1.4,
+    "weight": 56.8
+   }
+  },
+  "height": 1.3,
+  "weight": 54.5
+ },
+ "123": {
+  "pokemonName": "Scyther",
+  "forms": {
+   "247": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 56,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "124": {
+  "pokemonName": "Jynx",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 40.6
+ },
+ "125": {
+  "pokemonName": "Electabuzz",
+  "forms": {
+   "640": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.1,
+  "weight": 30,
+  "evolutions": [
+   {}
+  ]
+ },
+ "126": {
+  "pokemonName": "Magmar",
+  "forms": {
+   "634": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.3,
+  "weight": 44.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "127": {
+  "pokemonName": "Pinsir",
+  "forms": {
+   "898": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 55,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.7,
+    "weight": 59
+   }
+  }
+ },
+ "128": {
+  "pokemonName": "Tauros",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 88.4
+ },
+ "129": {
+  "pokemonName": "Magikarp",
+  "forms": {
+   "253": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.9,
+  "weight": 10,
+  "evolutions": [
+   {}
+  ]
+ },
+ "130": {
+  "pokemonName": "Gyarados",
+  "forms": {
+   "256": {
+    "formName": "Normal"
+   }
+  },
+  "height": 6.5,
+  "weight": 235,
+  "tempEvolutions": {
+   "1": {
+    "weight": 305
+   }
+  }
+ },
+ "131": {
+  "pokemonName": "Lapras",
+  "forms": {
+   "322": {
+    "formName": "Normal"
+   },
+   "2585": {
+    "formName": "Costume 2020"
+   }
+  },
+  "height": 2.5,
+  "weight": 220,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "132": {
+  "pokemonName": "Ditto",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 4
+ },
+ "133": {
+  "pokemonName": "Eevee",
+  "forms": {
+   "1092": {
+    "formName": "Normal"
+   },
+   "2845": {
+    "formName": "Gofest 2024 Stiara"
+   },
+   "2846": {
+    "formName": "Gofest 2024 Mtiara"
+   }
+  },
+  "height": 0.3,
+  "weight": 6.5,
+  "evolutions": [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "134": {
+  "pokemonName": "Vaporeon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 29
+ },
+ "135": {
+  "pokemonName": "Jolteon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 24.5
+ },
+ "136": {
+  "pokemonName": "Flareon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 25
+ },
+ "137": {
+  "pokemonName": "Porygon",
+  "forms": {
+   "677": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.8,
+  "weight": 36.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "138": {
+  "pokemonName": "Omanyte",
+  "forms": {
+   "740": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.4,
+  "weight": 7.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "139": {
+  "pokemonName": "Omastar",
+  "forms": {
+   "743": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 35
+ },
+ "140": {
+  "pokemonName": "Kabuto",
+  "forms": {
+   "1104": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.5,
+  "weight": 11.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "141": {
+  "pokemonName": "Kabutops",
+  "forms": {
+   "1107": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.3,
+  "weight": 40.5
+ },
+ "142": {
+  "pokemonName": "Aerodactyl",
+  "forms": {
+   "1110": {
+    "formName": "Normal"
+   },
+   "3001": {
+    "formName": "Summer 2023"
+   }
+  },
+  "height": 1.8,
+  "weight": 59,
+  "tempEvolutions": {
+   "1": {
+    "height": 2.1,
+    "weight": 79
+   }
+  }
+ },
+ "143": {
+  "pokemonName": "Snorlax",
+  "forms": {
+   "199": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.1,
+  "weight": 460,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "144": {
+  "pokemonName": "Articuno",
+  "forms": {
+   "716": {
+    "formName": "Normal"
+   },
+   "2801": {
+    "formName": "Galarian",
+    "height": 1.7,
+    "weight": 50.9
+   }
+  },
+  "height": 1.7,
+  "weight": 55.4
+ },
+ "145": {
+  "pokemonName": "Zapdos",
+  "forms": {
+   "773": {
+    "formName": "Normal"
+   },
+   "2800": {
+    "formName": "Galarian",
+    "height": 1.6,
+    "weight": 58.2
+   }
+  },
+  "height": 1.6,
+  "weight": 52.6
+ },
+ "146": {
+  "pokemonName": "Moltres",
+  "forms": {
+   "836": {
+    "formName": "Normal"
+   },
+   "2799": {
+    "formName": "Galarian",
+    "height": 2,
+    "weight": 66
+   }
+  },
+  "height": 2,
+  "weight": 60
+ },
+ "147": {
+  "pokemonName": "Dratini",
+  "forms": {
+   "190": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.8,
+  "weight": 3.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "148": {
+  "pokemonName": "Dragonair",
+  "forms": {
+   "193": {
+    "formName": "Normal"
+   }
+  },
+  "height": 4,
+  "weight": 16.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "149": {
+  "pokemonName": "Dragonite",
+  "forms": {
+   "196": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.2,
+  "weight": 210
+ },
+ "150": {
+  "pokemonName": "Mewtwo",
+  "forms": {
+   "133": {
+    "formName": "A"
+   },
+   "135": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2,
+  "weight": 122,
+  "tempEvolutions": {
+   "2": {},
+   "3": {}
+  }
+ },
+ "151": {
+  "pokemonName": "Mew",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 4
+ },
+ "152": {
+  "pokemonName": "Chikorita",
+  "forms": {
+   "1118": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.89,
+  "weight": 6.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "153": {
+  "pokemonName": "Bayleef",
+  "forms": {
+   "1121": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.19,
+  "weight": 15.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "154": {
+  "pokemonName": "Meganium",
+  "forms": {
+   "1124": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.8,
+  "weight": 100.5
+ },
+ "155": {
+  "pokemonName": "Cyndaquil",
+  "forms": {
+   "1127": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.51,
+  "weight": 7.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "156": {
+  "pokemonName": "Quilava",
+  "forms": {
+   "1130": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.89,
+  "weight": 19,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "157": {
+  "pokemonName": "Typhlosion",
+  "forms": {
+   "1133": {
+    "formName": "Normal"
+   },
+   "2786": {
+    "formName": "Hisuian",
+    "height": 1.6,
+    "weight": 69.8
+   }
+  },
+  "height": 1.7,
+  "weight": 79.5
+ },
+ "158": {
+  "pokemonName": "Totodile",
+  "forms": {
+   "1136": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 9.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "159": {
+  "pokemonName": "Croconaw",
+  "forms": {
+   "1139": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.09,
+  "weight": 25,
+  "evolutions": [
+   {}
+  ]
+ },
+ "160": {
+  "pokemonName": "Feraligatr",
+  "forms": {
+   "1142": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.31,
+  "weight": 88.8
+ },
+ "161": {
+  "pokemonName": "Sentret",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.79,
+  "weight": 6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "162": {
+  "pokemonName": "Furret",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 32.5
+ },
+ "163": {
+  "pokemonName": "Hoothoot",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.71,
+  "weight": 21.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "164": {
+  "pokemonName": "Noctowl",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 40.8
+ },
+ "165": {
+  "pokemonName": "Ledyba",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.99,
+  "weight": 10.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "166": {
+  "pokemonName": "Ledian",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 35.6
+ },
+ "167": {
+  "pokemonName": "Spinarak",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.51,
+  "weight": 8.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "168": {
+  "pokemonName": "Ariados",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.09,
+  "weight": 33.5
+ },
+ "169": {
+  "pokemonName": "Crobat",
+  "forms": {
+   "202": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.8,
+  "weight": 75
+ },
+ "170": {
+  "pokemonName": "Chinchou",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.51,
+  "weight": 12,
+  "evolutions": [
+   {}
+  ]
+ },
+ "171": {
+  "pokemonName": "Lanturn",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.19,
+  "weight": 22.5
+ },
+ "172": {
+  "pokemonName": "Pichu",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "173": {
+  "pokemonName": "Cleffa",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "174": {
+  "pokemonName": "Igglybuff",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "175": {
+  "pokemonName": "Togepi",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "176": {
+  "pokemonName": "Togetic",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 3.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "177": {
+  "pokemonName": "Natu",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "178": {
+  "pokemonName": "Xatu",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 15
+ },
+ "179": {
+  "pokemonName": "Mareep",
+  "forms": {
+   "646": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 7.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "180": {
+  "pokemonName": "Flaaffy",
+  "forms": {
+   "649": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.79,
+  "weight": 13.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "181": {
+  "pokemonName": "Ampharos",
+  "forms": {
+   "652": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.4,
+  "weight": 61.5,
+  "tempEvolutions": {
+   "1": {}
+  }
+ },
+ "182": {
+  "pokemonName": "Bellossom",
+  "forms": {
+   "274": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.41,
+  "weight": 5.8
+ },
+ "183": {
+  "pokemonName": "Marill",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.41,
+  "weight": 8.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "184": {
+  "pokemonName": "Azumarill",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.79,
+  "weight": 28.5
+ },
+ "185": {
+  "pokemonName": "Sudowoodo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.19,
+  "weight": 38
+ },
+ "186": {
+  "pokemonName": "Politoed",
+  "forms": {
+   "244": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.09,
+  "weight": 33.9
+ },
+ "187": {
+  "pokemonName": "Hoppip",
+  "forms": {
+   "1205": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.41,
+  "weight": 0.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "188": {
+  "pokemonName": "Skiploom",
+  "forms": {
+   "1208": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "189": {
+  "pokemonName": "Jumpluff",
+  "forms": {
+   "1211": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.79,
+  "weight": 3
+ },
+ "190": {
+  "pokemonName": "Aipom",
+  "forms": {
+   "1214": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.79,
+  "weight": 11.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "191": {
+  "pokemonName": "Sunkern",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "192": {
+  "pokemonName": "Sunflora",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.79,
+  "weight": 8.5
+ },
+ "193": {
+  "pokemonName": "Yanma",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.19,
+  "weight": 38,
+  "evolutions": [
+   {}
+  ]
+ },
+ "194": {
+  "pokemonName": "Wooper",
+  "forms": {
+   "1226": {
+    "formName": "Normal"
+   },
+   "3009": {
+    "formName": "Paldea",
+    "height": 0.41,
+    "weight": 11
+   }
+  },
+  "height": 0.41,
+  "weight": 8.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "195": {
+  "pokemonName": "Quagsire",
+  "forms": {
+   "1229": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.4,
+  "weight": 75
+ },
+ "196": {
+  "pokemonName": "Espeon",
+  "forms": {
+   "1232": {
+    "formName": "Normal"
+   },
+   "2847": {
+    "formName": "Gofest 2024 Sscarf"
+   }
+  },
+  "height": 0.89,
+  "weight": 26.5
+ },
+ "197": {
+  "pokemonName": "Umbreon",
+  "forms": {
+   "1235": {
+    "formName": "Normal"
+   },
+   "2848": {
+    "formName": "Gofest 2024 Mscarf"
+   }
+  },
+  "height": 0.99,
+  "weight": 27
+ },
+ "198": {
+  "pokemonName": "Murkrow",
+  "forms": {
+   "855": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.51,
+  "weight": 2.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "199": {
+  "pokemonName": "Slowking",
+  "forms": {
+   "1238": {
+    "formName": "Normal"
+   },
+   "2584": {
+    "formName": "Galarian",
+    "height": 1.8,
+    "weight": 79.5
+   },
+   "2734": {
+    "formName": "2022"
+   }
+  },
+  "height": 2.01,
+  "weight": 79.5
+ },
+ "200": {
+  "pokemonName": "Misdreavus",
+  "forms": {
+   "719": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.71,
+  "weight": 1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "201": {
+  "pokemonName": "Unown",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.51,
+  "weight": 5
+ },
+ "202": {
+  "pokemonName": "Wobbuffet",
+  "forms": {
+   "602": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.3,
+  "weight": 28.5
+ },
+ "203": {
+  "pokemonName": "Girafarig",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 41.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "204": {
+  "pokemonName": "Pineco",
+  "forms": {
+   "1244": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 7.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "205": {
+  "pokemonName": "Forretress",
+  "forms": {
+   "1247": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.19,
+  "weight": 125.8
+ },
+ "206": {
+  "pokemonName": "Dunsparce",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 14,
+  "evolutions": [
+   {}
+  ]
+ },
+ "207": {
+  "pokemonName": "Gligar",
+  "forms": {
+   "803": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.09,
+  "weight": 64.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "208": {
+  "pokemonName": "Steelix",
+  "forms": {
+   "905": {
+    "formName": "Normal"
+   }
+  },
+  "height": 9.19,
+  "weight": 400,
+  "tempEvolutions": {
+   "1": {
+    "height": 10.5,
+    "weight": 740
+   }
+  }
+ },
+ "209": {
+  "pokemonName": "Snubbull",
+  "forms": {
+   "1253": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 7.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "210": {
+  "pokemonName": "Granbull",
+  "forms": {
+   "1256": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.4,
+  "weight": 48.7
+ },
+ "211": {
+  "pokemonName": "Qwilfish",
+  "forms": {
+   "1259": {
+    "formName": "Normal"
+   },
+   "2788": {
+    "formName": "Hisuian"
+   }
+  },
+  "height": 0.51,
+  "weight": 3.9
+ },
+ "212": {
+  "pokemonName": "Scizor",
+  "forms": {
+   "250": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.01,
+  "weight": 125,
+  "tempEvolutions": {
+   "1": {
+    "height": 2
+   }
+  }
+ },
+ "213": {
+  "pokemonName": "Shuckle",
+  "forms": {
+   "827": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 20.5
+ },
+ "214": {
+  "pokemonName": "Heracross",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 54,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.7,
+    "weight": 62.5
+   }
+  }
+ },
+ "215": {
+  "pokemonName": "Sneasel",
+  "forms": {
+   "797": {
+    "formName": "Normal"
+   },
+   "2794": {
+    "formName": "Hisuian",
+    "height": 0.9,
+    "weight": 27
+   }
+  },
+  "height": 0.89,
+  "weight": 28,
+  "evolutions": [
+   {}
+  ]
+ },
+ "216": {
+  "pokemonName": "Teddiursa",
+  "forms": {
+   "1265": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 8.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "217": {
+  "pokemonName": "Ursaring",
+  "forms": {
+   "1268": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.8,
+  "weight": 125.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "218": {
+  "pokemonName": "Slugma",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.71,
+  "weight": 35,
+  "evolutions": [
+   {}
+  ]
+ },
+ "219": {
+  "pokemonName": "Magcargo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.79,
+  "weight": 55
+ },
+ "220": {
+  "pokemonName": "Swinub",
+  "forms": {
+   "1277": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.41,
+  "weight": 6.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "221": {
+  "pokemonName": "Piloswine",
+  "forms": {
+   "1280": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.09,
+  "weight": 55.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "222": {
+  "pokemonName": "Corsola",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "223": {
+  "pokemonName": "Remoraid",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 12,
+  "evolutions": [
+   {}
+  ]
+ },
+ "224": {
+  "pokemonName": "Octillery",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.89,
+  "weight": 28.5
+ },
+ "225": {
+  "pokemonName": "Delibird",
+  "forms": {
+   "938": {
+    "formName": "Normal"
+   },
+   "2671": {
+    "formName": "Winter 2020"
+   }
+  },
+  "height": 0.89,
+  "weight": 16
+ },
+ "226": {
+  "pokemonName": "Mantine",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.11,
+  "weight": 220
+ },
+ "227": {
+  "pokemonName": "Skarmory",
+  "forms": {
+   "1295": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.7,
+  "weight": 50.5
+ },
+ "228": {
+  "pokemonName": "Houndour",
+  "forms": {
+   "229": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 10.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "229": {
+  "pokemonName": "Houndoom",
+  "forms": {
+   "232": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.4,
+  "weight": 35,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.9,
+    "weight": 49.5
+   }
+  }
+ },
+ "230": {
+  "pokemonName": "Kingdra",
+  "forms": {
+   "1298": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.8,
+  "weight": 152
+ },
+ "231": {
+  "pokemonName": "Phanpy",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.51,
+  "weight": 33.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "232": {
+  "pokemonName": "Donphan",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.09,
+  "weight": 120
+ },
+ "233": {
+  "pokemonName": "Porygon2",
+  "forms": {
+   "680": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 32.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "234": {
+  "pokemonName": "Stantler",
+  "forms": {
+   "941": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.4,
+  "weight": 71.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "235": {
+  "pokemonName": "Smeargle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.19,
+  "weight": 58
+ },
+ "236": {
+  "pokemonName": "Tyrogue",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.71,
+  "weight": 21,
+  "evolutions": [
+   {},
+   {},
+   {}
+  ]
+ },
+ "237": {
+  "pokemonName": "Hitmontop",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 48
+ },
+ "238": {
+  "pokemonName": "Smoochum",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.41,
+  "weight": 6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "239": {
+  "pokemonName": "Elekid",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 23.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "240": {
+  "pokemonName": "Magby",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.71,
+  "weight": 21.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "241": {
+  "pokemonName": "Miltank",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.19,
+  "weight": 75.5
+ },
+ "242": {
+  "pokemonName": "Blissey",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 46.8
+ },
+ "243": {
+  "pokemonName": "Raikou",
+  "forms": {
+   "1331": {
+    "formName": "Normal"
+   },
+   "2731": {
+    "formName": "S"
+   }
+  },
+  "height": 1.91,
+  "weight": 178
+ },
+ "244": {
+  "pokemonName": "Entei",
+  "forms": {
+   "1334": {
+    "formName": "Normal"
+   },
+   "2732": {
+    "formName": "S"
+   }
+  },
+  "height": 2.11,
+  "weight": 198
+ },
+ "245": {
+  "pokemonName": "Suicune",
+  "forms": {
+   "1337": {
+    "formName": "Normal"
+   },
+   "2733": {
+    "formName": "S"
+   }
+  },
+  "height": 2.01,
+  "weight": 187
+ },
+ "246": {
+  "pokemonName": "Larvitar",
+  "forms": {
+   "313": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 72,
+  "evolutions": [
+   {}
+  ]
+ },
+ "247": {
+  "pokemonName": "Pupitar",
+  "forms": {
+   "316": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.19,
+  "weight": 152,
+  "evolutions": [
+   {}
+  ]
+ },
+ "248": {
+  "pokemonName": "Tyranitar",
+  "forms": {
+   "319": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.01,
+  "weight": 202,
+  "tempEvolutions": {
+   "1": {
+    "height": 2.5,
+    "weight": 255
+   }
+  }
+ },
+ "249": {
+  "pokemonName": "Lugia",
+  "forms": {
+   "1340": {
+    "formName": "Normal"
+   },
+   "2729": {
+    "formName": "S"
+   }
+  },
+  "height": 5.21,
+  "weight": 216
+ },
+ "250": {
+  "pokemonName": "Ho Oh",
+  "forms": {
+   "1343": {
+    "formName": "Normal"
+   },
+   "2730": {
+    "formName": "S"
+   }
+  },
+  "height": 3.81,
+  "weight": 199
+ },
+ "251": {
+  "pokemonName": "Celebi",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 5
+ },
+ "252": {
+  "pokemonName": "Treecko",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.51,
+  "weight": 5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "253": {
+  "pokemonName": "Grovyle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.89,
+  "weight": 21.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "254": {
+  "pokemonName": "Sceptile",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 52.2,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.9,
+    "weight": 55.2
+   }
+  }
+ },
+ "255": {
+  "pokemonName": "Torchic",
+  "forms": {
+   "1358": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.41,
+  "weight": 2.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "256": {
+  "pokemonName": "Combusken",
+  "forms": {
+   "1361": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.89,
+  "weight": 19.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "257": {
+  "pokemonName": "Blaziken",
+  "forms": {
+   "1364": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.91,
+  "weight": 52,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.9
+   }
+  }
+ },
+ "258": {
+  "pokemonName": "Mudkip",
+  "forms": {
+   "205": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.41,
+  "weight": 7.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "259": {
+  "pokemonName": "Marshtomp",
+  "forms": {
+   "208": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.71,
+  "weight": 28,
+  "evolutions": [
+   {}
+  ]
+ },
+ "260": {
+  "pokemonName": "Swampert",
+  "forms": {
+   "211": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 81.9,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.9,
+    "weight": 102
+   }
+  }
+ },
+ "261": {
+  "pokemonName": "Poochyena",
+  "forms": {
+   "1367": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.51,
+  "weight": 13.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "262": {
+  "pokemonName": "Mightyena",
+  "forms": {
+   "1370": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.99,
+  "weight": 37
+ },
+ "263": {
+  "pokemonName": "Zigzagoon",
+  "forms": {
+   "945": {
+    "formName": "Normal"
+   },
+   "946": {
+    "formName": "Galarian"
+   }
+  },
+  "height": 0.4,
+  "weight": 17.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "264": {
+  "pokemonName": "Linoone",
+  "forms": {
+   "947": {
+    "formName": "Normal"
+   },
+   "948": {
+    "formName": "Galarian"
+   }
+  },
+  "height": 0.5,
+  "weight": 32.5
+ },
+ "265": {
+  "pokemonName": "Wurmple",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 3.6,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "266": {
+  "pokemonName": "Silcoon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 10,
+  "evolutions": [
+   {}
+  ]
+ },
+ "267": {
+  "pokemonName": "Beautifly",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.99,
+  "weight": 28.4
+ },
+ "268": {
+  "pokemonName": "Cascoon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.71,
+  "weight": 11.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "269": {
+  "pokemonName": "Dustox",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.19,
+  "weight": 31.6
+ },
+ "270": {
+  "pokemonName": "Lotad",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.51,
+  "weight": 2.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "271": {
+  "pokemonName": "Lombre",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.19,
+  "weight": 32.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "272": {
+  "pokemonName": "Ludicolo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 55
+ },
+ "273": {
+  "pokemonName": "Seedot",
+  "forms": {
+   "625": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.51,
+  "weight": 4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "274": {
+  "pokemonName": "Nuzleaf",
+  "forms": {
+   "628": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.99,
+  "weight": 28,
+  "evolutions": [
+   {}
+  ]
+ },
+ "275": {
+  "pokemonName": "Shiftry",
+  "forms": {
+   "631": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.3,
+  "weight": 59.6
+ },
+ "276": {
+  "pokemonName": "Taillow",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 2.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "277": {
+  "pokemonName": "Swellow",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.71,
+  "weight": 19.8
+ },
+ "278": {
+  "pokemonName": "Wingull",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 9.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "279": {
+  "pokemonName": "Pelipper",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.19,
+  "weight": 28
+ },
+ "280": {
+  "pokemonName": "Ralts",
+  "forms": {
+   "292": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.41,
+  "weight": 6.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "281": {
+  "pokemonName": "Kirlia",
+  "forms": {
+   "295": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.79,
+  "weight": 20.2,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "282": {
+  "pokemonName": "Gardevoir",
+  "forms": {
+   "298": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.6,
+  "weight": 48.4,
+  "tempEvolutions": {
+   "1": {}
+  }
+ },
+ "283": {
+  "pokemonName": "Surskit",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.51,
+  "weight": 1.7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "284": {
+  "pokemonName": "Masquerain",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.79,
+  "weight": 3.6
+ },
+ "285": {
+  "pokemonName": "Shroomish",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.41,
+  "weight": 4.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "286": {
+  "pokemonName": "Breloom",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.19,
+  "weight": 39.2
+ },
+ "287": {
+  "pokemonName": "Slakoth",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.79,
+  "weight": 24,
+  "evolutions": [
+   {}
+  ]
+ },
+ "288": {
+  "pokemonName": "Vigoroth",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 46.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "289": {
+  "pokemonName": "Slaking",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.01,
+  "weight": 130.5
+ },
+ "290": {
+  "pokemonName": "Nincada",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.51,
+  "weight": 5.5,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "291": {
+  "pokemonName": "Ninjask",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.79,
+  "weight": 12
+ },
+ "292": {
+  "pokemonName": "Shedinja",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.79,
+  "weight": 1.2
+ },
+ "293": {
+  "pokemonName": "Whismur",
+  "forms": {
+   "1442": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 16.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "294": {
+  "pokemonName": "Loudred",
+  "forms": {
+   "1445": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.99,
+  "weight": 40.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "295": {
+  "pokemonName": "Exploud",
+  "forms": {
+   "1448": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 84
+ },
+ "296": {
+  "pokemonName": "Makuhita",
+  "forms": {
+   "1451": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.99,
+  "weight": 86.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "297": {
+  "pokemonName": "Hariyama",
+  "forms": {
+   "1454": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.31,
+  "weight": 253.8
+ },
+ "298": {
+  "pokemonName": "Azurill",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "299": {
+  "pokemonName": "Nosepass",
+  "forms": {
+   "1460": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.99,
+  "weight": 97,
+  "evolutions": [
+   {}
+  ]
+ },
+ "300": {
+  "pokemonName": "Skitty",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 11,
+  "evolutions": [
+   {}
+  ]
+ },
+ "301": {
+  "pokemonName": "Delcatty",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.09,
+  "weight": 32.6
+ },
+ "302": {
+  "pokemonName": "Sableye",
+  "forms": {
+   "923": {
+    "formName": "Normal"
+   },
+   "2668": {
+    "formName": "Costume 2020"
+   }
+  },
+  "height": 0.51,
+  "weight": 11,
+  "tempEvolutions": {
+   "1": {
+    "height": 0.5,
+    "weight": 161
+   }
+  }
+ },
+ "303": {
+  "pokemonName": "Mawile",
+  "forms": {
+   "833": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 11.5,
+  "tempEvolutions": {
+   "1": {}
+  }
+ },
+ "304": {
+  "pokemonName": "Aron",
+  "forms": {
+   "1469": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.41,
+  "weight": 60,
+  "evolutions": [
+   {}
+  ]
+ },
+ "305": {
+  "pokemonName": "Lairon",
+  "forms": {
+   "1472": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.89,
+  "weight": 120,
+  "evolutions": [
+   {}
+  ]
+ },
+ "306": {
+  "pokemonName": "Aggron",
+  "forms": {
+   "1475": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.11,
+  "weight": 360,
+  "tempEvolutions": {
+   "1": {
+    "height": 2.2,
+    "weight": 395
+   }
+  }
+ },
+ "307": {
+  "pokemonName": "Meditite",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 11.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "308": {
+  "pokemonName": "Medicham",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 31.5,
+  "tempEvolutions": {
+   "1": {}
+  }
+ },
+ "309": {
+  "pokemonName": "Electrike",
+  "forms": {
+   "1484": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 15.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "310": {
+  "pokemonName": "Manectric",
+  "forms": {
+   "1487": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 40.2,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.8,
+    "weight": 44
+   }
+  }
+ },
+ "311": {
+  "pokemonName": "Plusle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.41,
+  "weight": 4.2
+ },
+ "312": {
+  "pokemonName": "Minun",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.41,
+  "weight": 4.2
+ },
+ "313": {
+  "pokemonName": "Volbeat",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.71,
+  "weight": 17.7
+ },
+ "314": {
+  "pokemonName": "Illumise",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 17.7
+ },
+ "315": {
+  "pokemonName": "Roselia",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "316": {
+  "pokemonName": "Gulpin",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.41,
+  "weight": 10.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "317": {
+  "pokemonName": "Swalot",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 80
+ },
+ "318": {
+  "pokemonName": "Carvanha",
+  "forms": {
+   "734": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.79,
+  "weight": 20.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "319": {
+  "pokemonName": "Sharpedo",
+  "forms": {
+   "737": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.8,
+  "weight": 88.8,
+  "tempEvolutions": {
+   "1": {}
+  }
+ },
+ "320": {
+  "pokemonName": "Wailmer",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.01,
+  "weight": 130,
+  "evolutions": [
+   {}
+  ]
+ },
+ "321": {
+  "pokemonName": "Wailord",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 14.5,
+  "weight": 398
+ },
+ "322": {
+  "pokemonName": "Numel",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.71,
+  "weight": 24,
+  "evolutions": [
+   {}
+  ]
+ },
+ "323": {
+  "pokemonName": "Camerupt",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.91,
+  "weight": 220,
+  "tempEvolutions": {
+   "1": {}
+  }
+ },
+ "324": {
+  "pokemonName": "Torkoal",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.51,
+  "weight": 80.4
+ },
+ "325": {
+  "pokemonName": "Spoink",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.71,
+  "weight": 30.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "326": {
+  "pokemonName": "Grumpig",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.89,
+  "weight": 71.5
+ },
+ "327": {
+  "pokemonName": "Spinda",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.09,
+  "weight": 5
+ },
+ "328": {
+  "pokemonName": "Trapinch",
+  "forms": {
+   "746": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.71,
+  "weight": 15,
+  "evolutions": [
+   {}
+  ]
+ },
+ "329": {
+  "pokemonName": "Vibrava",
+  "forms": {
+   "749": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.09,
+  "weight": 15.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "330": {
+  "pokemonName": "Flygon",
+  "forms": {
+   "752": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.01,
+  "weight": 82
+ },
+ "331": {
+  "pokemonName": "Cacnea",
+  "forms": {
+   "610": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.41,
+  "weight": 51.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "332": {
+  "pokemonName": "Cacturne",
+  "forms": {
+   "613": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.3,
+  "weight": 77.4
+ },
+ "333": {
+  "pokemonName": "Swablu",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.41,
+  "weight": 1.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "334": {
+  "pokemonName": "Altaria",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.09,
+  "weight": 20.6,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.5
+   }
+  }
+ },
+ "335": {
+  "pokemonName": "Zangoose",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 40.3
+ },
+ "336": {
+  "pokemonName": "Seviper",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.69,
+  "weight": 52.5
+ },
+ "337": {
+  "pokemonName": "Lunatone",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.99,
+  "weight": 168
+ },
+ "338": {
+  "pokemonName": "Solrock",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.19,
+  "weight": 154
+ },
+ "339": {
+  "pokemonName": "Barboach",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.41,
+  "weight": 1.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "340": {
+  "pokemonName": "Whiscash",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.89,
+  "weight": 23.6
+ },
+ "341": {
+  "pokemonName": "Corphish",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 11.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "342": {
+  "pokemonName": "Crawdaunt",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.09,
+  "weight": 32.8
+ },
+ "343": {
+  "pokemonName": "Baltoy",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.51,
+  "weight": 21.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "344": {
+  "pokemonName": "Claydol",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 108
+ },
+ "345": {
+  "pokemonName": "Lileep",
+  "forms": {
+   "1568": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.99,
+  "weight": 23.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "346": {
+  "pokemonName": "Cradily",
+  "forms": {
+   "1571": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 60.4
+ },
+ "347": {
+  "pokemonName": "Anorith",
+  "forms": {
+   "1574": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.71,
+  "weight": 12.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "348": {
+  "pokemonName": "Armaldo",
+  "forms": {
+   "1577": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 68.2
+ },
+ "349": {
+  "pokemonName": "Feebas",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 7.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "350": {
+  "pokemonName": "Milotic",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 6.2,
+  "weight": 162
+ },
+ "351": {
+  "pokemonName": "Castform",
+  "forms": {
+   "29": {
+    "formName": "Normal"
+   },
+   "30": {
+    "formName": "Sunny"
+   },
+   "31": {
+    "formName": "Rainy"
+   },
+   "32": {
+    "formName": "Snowy"
+   }
+  },
+  "height": 0.3,
+  "weight": 0.8
+ },
+ "352": {
+  "pokemonName": "Kecleon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.99,
+  "weight": 22
+ },
+ "353": {
+  "pokemonName": "Shuppet",
+  "forms": {
+   "908": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 2.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "354": {
+  "pokemonName": "Banette",
+  "forms": {
+   "911": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.09,
+  "weight": 12.5,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.2,
+    "weight": 13
+   }
+  }
+ },
+ "355": {
+  "pokemonName": "Duskull",
+  "forms": {
+   "914": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.79,
+  "weight": 15,
+  "evolutions": [
+   {}
+  ]
+ },
+ "356": {
+  "pokemonName": "Dusclops",
+  "forms": {
+   "917": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.6,
+  "weight": 30.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "357": {
+  "pokemonName": "Tropius",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.01,
+  "weight": 100
+ },
+ "358": {
+  "pokemonName": "Chimecho",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 1
+ },
+ "359": {
+  "pokemonName": "Absol",
+  "forms": {
+   "830": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.2,
+  "weight": 47,
+  "tempEvolutions": {
+   "1": {
+    "weight": 49
+   }
+  }
+ },
+ "360": {
+  "pokemonName": "Wynaut",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 14,
+  "evolutions": [
+   {}
+  ]
+ },
+ "361": {
+  "pokemonName": "Snorunt",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.71,
+  "weight": 16.8,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "362": {
+  "pokemonName": "Glalie",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 256.5,
+  "tempEvolutions": {
+   "1": {
+    "height": 2.1,
+    "weight": 350.2
+   }
+  }
+ },
+ "363": {
+  "pokemonName": "Spheal",
+  "forms": {
+   "1598": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.79,
+  "weight": 39.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "364": {
+  "pokemonName": "Sealeo",
+  "forms": {
+   "1601": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.09,
+  "weight": 87.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "365": {
+  "pokemonName": "Walrein",
+  "forms": {
+   "1604": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.4,
+  "weight": 150.6
+ },
+ "366": {
+  "pokemonName": "Clamperl",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.41,
+  "weight": 52.5,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "367": {
+  "pokemonName": "Huntail",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 27
+ },
+ "368": {
+  "pokemonName": "Gorebyss",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 22.6
+ },
+ "369": {
+  "pokemonName": "Relicanth",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.99,
+  "weight": 23.4
+ },
+ "370": {
+  "pokemonName": "Luvdisc",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.61,
+  "weight": 8.7
+ },
+ "371": {
+  "pokemonName": "Bagon",
+  "forms": {
+   "755": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 42.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "372": {
+  "pokemonName": "Shelgon",
+  "forms": {
+   "758": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.09,
+  "weight": 110.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "373": {
+  "pokemonName": "Salamence",
+  "forms": {
+   "761": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 102.6,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.8,
+    "weight": 112.6
+   }
+  }
+ },
+ "374": {
+  "pokemonName": "Beldum",
+  "forms": {
+   "764": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.61,
+  "weight": 95.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "375": {
+  "pokemonName": "Metang",
+  "forms": {
+   "767": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.19,
+  "weight": 202.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "376": {
+  "pokemonName": "Metagross",
+  "forms": {
+   "770": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.6,
+  "weight": 550,
+  "tempEvolutions": {
+   "1": {}
+  }
+ },
+ "377": {
+  "pokemonName": "Regirock",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 230
+ },
+ "378": {
+  "pokemonName": "Regice",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 175
+ },
+ "379": {
+  "pokemonName": "Registeel",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.91,
+  "weight": 205
+ },
+ "380": {
+  "pokemonName": "Latias",
+  "forms": {
+   "1631": {
+    "formName": "Normal"
+   },
+   "2821": {
+    "formName": "S"
+   }
+  },
+  "height": 1.4,
+  "weight": 40,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.8,
+    "weight": 52
+   }
+  }
+ },
+ "381": {
+  "pokemonName": "Latios",
+  "forms": {
+   "1634": {
+    "formName": "Normal"
+   },
+   "2822": {
+    "formName": "S"
+   }
+  },
+  "height": 2.01,
+  "weight": 60,
+  "tempEvolutions": {
+   "1": {
+    "height": 2.3,
+    "weight": 70
+   }
+  }
+ },
+ "382": {
+  "pokemonName": "Kyogre",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 4.5,
+  "weight": 352,
+  "tempEvolutions": {
+   "4": {
+    "height": 9.8,
+    "weight": 430
+   }
+  }
+ },
+ "383": {
+  "pokemonName": "Groudon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3.51,
+  "weight": 950,
+  "tempEvolutions": {
+   "4": {
+    "height": 5,
+    "weight": 999.7
+   }
+  }
+ },
+ "384": {
+  "pokemonName": "Rayquaza",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 7.01,
+  "weight": 206.5,
+  "tempEvolutions": {
+   "1": {
+    "height": 10.8,
+    "weight": 392
+   }
+  }
+ },
+ "385": {
+  "pokemonName": "Jirachi",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1.1
+ },
+ "386": {
+  "pokemonName": "Deoxys",
+  "forms": {
+   "33": {
+    "formName": "Normal"
+   },
+   "34": {
+    "formName": "Attack"
+   },
+   "35": {
+    "formName": "Defense"
+   },
+   "36": {
+    "formName": "Speed"
+   }
+  },
+  "height": 1.7,
+  "weight": 60.8
+ },
+ "387": {
+  "pokemonName": "Turtwig",
+  "forms": {
+   "688": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.4,
+  "weight": 10.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "388": {
+  "pokemonName": "Grotle",
+  "forms": {
+   "691": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.1,
+  "weight": 97,
+  "evolutions": [
+   {}
+  ]
+ },
+ "389": {
+  "pokemonName": "Torterra",
+  "forms": {
+   "694": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.2,
+  "weight": 310
+ },
+ "390": {
+  "pokemonName": "Chimchar",
+  "forms": {
+   "818": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.5,
+  "weight": 6.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "391": {
+  "pokemonName": "Monferno",
+  "forms": {
+   "821": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.9,
+  "weight": 22,
+  "evolutions": [
+   {}
+  ]
+ },
+ "392": {
+  "pokemonName": "Infernape",
+  "forms": {
+   "824": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.2,
+  "weight": 55
+ },
+ "393": {
+  "pokemonName": "Piplup",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 5.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "394": {
+  "pokemonName": "Prinplup",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 23,
+  "evolutions": [
+   {}
+  ]
+ },
+ "395": {
+  "pokemonName": "Empoleon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 84.5
+ },
+ "396": {
+  "pokemonName": "Starly",
+  "forms": {
+   "1658": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.3,
+  "weight": 2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "397": {
+  "pokemonName": "Staravia",
+  "forms": {
+   "1661": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.6,
+  "weight": 15.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "398": {
+  "pokemonName": "Staraptor",
+  "forms": {
+   "1664": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.2,
+  "weight": 24.9
+ },
+ "399": {
+  "pokemonName": "Bidoof",
+  "forms": {
+   "1667": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.5,
+  "weight": 20,
+  "evolutions": [
+   {}
+  ]
+ },
+ "400": {
+  "pokemonName": "Bibarel",
+  "forms": {
+   "1670": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 31.5
+ },
+ "401": {
+  "pokemonName": "Kricketot",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 2.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "402": {
+  "pokemonName": "Kricketune",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 25.5
+ },
+ "403": {
+  "pokemonName": "Shinx",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 9.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "404": {
+  "pokemonName": "Luxio",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 30.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "405": {
+  "pokemonName": "Luxray",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 42
+ },
+ "406": {
+  "pokemonName": "Budew",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 1.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "407": {
+  "pokemonName": "Roserade",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 14.5
+ },
+ "408": {
+  "pokemonName": "Cranidos",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 31.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "409": {
+  "pokemonName": "Rampardos",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 102.5
+ },
+ "410": {
+  "pokemonName": "Shieldon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 57,
+  "evolutions": [
+   {}
+  ]
+ },
+ "411": {
+  "pokemonName": "Bastiodon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 149.5
+ },
+ "412": {
+  "pokemonName": "Burmy",
+  "forms": {
+   "118": {
+    "formName": "Plant"
+   },
+   "119": {
+    "formName": "Sandy"
+   },
+   "120": {
+    "formName": "Trash"
+   }
+  },
+  "height": 0.2,
+  "weight": 3.4,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "413": {
+  "pokemonName": "Wormadam",
+  "forms": {
+   "87": {
+    "formName": "Plant"
+   },
+   "88": {
+    "formName": "Sandy"
+   },
+   "89": {
+    "formName": "Trash"
+   }
+  },
+  "height": 0.5,
+  "weight": 6.5
+ },
+ "414": {
+  "pokemonName": "Mothim",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 23.3
+ },
+ "415": {
+  "pokemonName": "Combee",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 5.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "416": {
+  "pokemonName": "Vespiquen",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 38.5
+ },
+ "417": {
+  "pokemonName": "Pachirisu",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 3.9
+ },
+ "418": {
+  "pokemonName": "Buizel",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 29.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "419": {
+  "pokemonName": "Floatzel",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 33.5
+ },
+ "420": {
+  "pokemonName": "Cherubi",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 3.3,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "421": {
+  "pokemonName": "Cherrim",
+  "forms": {
+   "94": {
+    "formName": "Overcast"
+   },
+   "95": {
+    "formName": "Sunny"
+   }
+  },
+  "height": 0.5,
+  "weight": 9.3
+ },
+ "422": {
+  "pokemonName": "Shellos",
+  "forms": {
+   "96": {
+    "formName": "West Sea"
+   },
+   "97": {
+    "formName": "East Sea"
+   }
+  },
+  "height": 0.3,
+  "weight": 6.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "423": {
+  "pokemonName": "Gastrodon",
+  "forms": {
+   "98": {
+    "formName": "West Sea"
+   },
+   "99": {
+    "formName": "East Sea"
+   }
+  },
+  "height": 0.9,
+  "weight": 29.9
+ },
+ "424": {
+  "pokemonName": "Ambipom",
+  "forms": {
+   "1742": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.2,
+  "weight": 20.3
+ },
+ "425": {
+  "pokemonName": "Drifloon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 1.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "426": {
+  "pokemonName": "Drifblim",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 15
+ },
+ "427": {
+  "pokemonName": "Buneary",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 5.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "428": {
+  "pokemonName": "Lopunny",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 33.3,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.3,
+    "weight": 28.3
+   }
+  }
+ },
+ "429": {
+  "pokemonName": "Mismagius",
+  "forms": {
+   "722": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.9,
+  "weight": 4.4
+ },
+ "430": {
+  "pokemonName": "Honchkrow",
+  "forms": {
+   "858": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.9,
+  "weight": 27.3
+ },
+ "431": {
+  "pokemonName": "Glameow",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 3.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "432": {
+  "pokemonName": "Purugly",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 43.8
+ },
+ "433": {
+  "pokemonName": "Chingling",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 0.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "434": {
+  "pokemonName": "Stunky",
+  "forms": {
+   "791": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.4,
+  "weight": 19.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "435": {
+  "pokemonName": "Skuntank",
+  "forms": {
+   "794": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 38
+ },
+ "436": {
+  "pokemonName": "Bronzor",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 60.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "437": {
+  "pokemonName": "Bronzong",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 187
+ },
+ "438": {
+  "pokemonName": "Bonsly",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 15,
+  "evolutions": [
+   {}
+  ]
+ },
+ "439": {
+  "pokemonName": "Mime Jr",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 13,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "440": {
+  "pokemonName": "Happiny",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 24.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "441": {
+  "pokemonName": "Chatot",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 1.9
+ },
+ "442": {
+  "pokemonName": "Spiritomb",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 108
+ },
+ "443": {
+  "pokemonName": "Gible",
+  "forms": {
+   "861": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.7,
+  "weight": 20.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "444": {
+  "pokemonName": "Gabite",
+  "forms": {
+   "864": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.4,
+  "weight": 56,
+  "evolutions": [
+   {}
+  ]
+ },
+ "445": {
+  "pokemonName": "Garchomp",
+  "forms": {
+   "867": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.9,
+  "weight": 95,
+  "tempEvolutions": {
+   "1": {}
+  }
+ },
+ "446": {
+  "pokemonName": "Munchlax",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 105,
+  "evolutions": [
+   {}
+  ]
+ },
+ "447": {
+  "pokemonName": "Riolu",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 20.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "448": {
+  "pokemonName": "Lucario",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 54,
+  "tempEvolutions": {
+   "1": {}
+  }
+ },
+ "449": {
+  "pokemonName": "Hippopotas",
+  "forms": {
+   "888": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.8,
+  "weight": 49.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "450": {
+  "pokemonName": "Hippowdon",
+  "forms": {
+   "891": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2,
+  "weight": 300
+ },
+ "451": {
+  "pokemonName": "Skorupi",
+  "forms": {
+   "1796": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.8,
+  "weight": 12,
+  "evolutions": [
+   {}
+  ]
+ },
+ "452": {
+  "pokemonName": "Drapion",
+  "forms": {
+   "1799": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.3,
+  "weight": 61.5
+ },
+ "453": {
+  "pokemonName": "Croagunk",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 23,
+  "evolutions": [
+   {}
+  ]
+ },
+ "454": {
+  "pokemonName": "Toxicroak",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 44.4
+ },
+ "455": {
+  "pokemonName": "Carnivine",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 27
+ },
+ "456": {
+  "pokemonName": "Finneon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "457": {
+  "pokemonName": "Lumineon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 24
+ },
+ "458": {
+  "pokemonName": "Mantyke",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 65,
+  "evolutions": [
+   {}
+  ]
+ },
+ "459": {
+  "pokemonName": "Snover",
+  "forms": {
+   "932": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 50.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "460": {
+  "pokemonName": "Abomasnow",
+  "forms": {
+   "935": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.2,
+  "weight": 135.5,
+  "tempEvolutions": {
+   "1": {
+    "height": 2.7,
+    "weight": 185
+   }
+  }
+ },
+ "461": {
+  "pokemonName": "Weavile",
+  "forms": {
+   "800": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.1,
+  "weight": 34
+ },
+ "462": {
+  "pokemonName": "Magnezone",
+  "forms": {
+   "661": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.2,
+  "weight": 180
+ },
+ "463": {
+  "pokemonName": "Lickilicky",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 140
+ },
+ "464": {
+  "pokemonName": "Rhyperior",
+  "forms": {
+   "852": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.4,
+  "weight": 282.8
+ },
+ "465": {
+  "pokemonName": "Tangrowth",
+  "forms": {
+   "1823": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2,
+  "weight": 128.6
+ },
+ "466": {
+  "pokemonName": "Electivire",
+  "forms": {
+   "643": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.8,
+  "weight": 138.6
+ },
+ "467": {
+  "pokemonName": "Magmortar",
+  "forms": {
+   "637": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.6,
+  "weight": 68
+ },
+ "468": {
+  "pokemonName": "Togekiss",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 38
+ },
+ "469": {
+  "pokemonName": "Yanmega",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.9,
+  "weight": 51.5
+ },
+ "470": {
+  "pokemonName": "Leafeon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 25.5
+ },
+ "471": {
+  "pokemonName": "Glaceon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 25.9
+ },
+ "472": {
+  "pokemonName": "Gliscor",
+  "forms": {
+   "806": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2,
+  "weight": 42.5
+ },
+ "473": {
+  "pokemonName": "Mamoswine",
+  "forms": {
+   "1838": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.5,
+  "weight": 291
+ },
+ "474": {
+  "pokemonName": "Porygon Z",
+  "forms": {
+   "683": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.9,
+  "weight": 34
+ },
+ "475": {
+  "pokemonName": "Gallade",
+  "forms": {
+   "301": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.6,
+  "weight": 52,
+  "tempEvolutions": {
+   "1": {}
+  }
+ },
+ "476": {
+  "pokemonName": "Probopass",
+  "forms": {
+   "1841": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.4,
+  "weight": 340
+ },
+ "477": {
+  "pokemonName": "Dusknoir",
+  "forms": {
+   "920": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2.2,
+  "weight": 106.6
+ },
+ "478": {
+  "pokemonName": "Froslass",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 26.6
+ },
+ "479": {
+  "pokemonName": "Rotom",
+  "forms": {
+   "81": {
+    "formName": "Normal"
+   },
+   "82": {
+    "formName": "Frost"
+   },
+   "83": {
+    "formName": "Fan"
+   },
+   "84": {
+    "formName": "Mow"
+   },
+   "85": {
+    "formName": "Wash"
+   },
+   "86": {
+    "formName": "Heat"
+   }
+  },
+  "height": 0.3,
+  "weight": 0.3
+ },
+ "480": {
+  "pokemonName": "Uxie",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 0.3
+ },
+ "481": {
+  "pokemonName": "Mesprit",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 0.3
+ },
+ "482": {
+  "pokemonName": "Azelf",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 0.3
+ },
+ "483": {
+  "pokemonName": "Dialga",
+  "forms": {
+   "1856": {
+    "formName": "Normal"
+   },
+   "2829": {
+    "formName": "Origin",
+    "height": 7,
+    "weight": 850
+   }
+  },
+  "height": 5.4,
+  "weight": 683
+ },
+ "484": {
+  "pokemonName": "Palkia",
+  "forms": {
+   "1859": {
+    "formName": "Normal"
+   },
+   "2830": {
+    "formName": "Origin",
+    "height": 6.3,
+    "weight": 660
+   }
+  },
+  "height": 4.2,
+  "weight": 336
+ },
+ "485": {
+  "pokemonName": "Heatran",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 430
+ },
+ "486": {
+  "pokemonName": "Regigigas",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3.7,
+  "weight": 420
+ },
+ "487": {
+  "pokemonName": "Giratina",
+  "forms": {
+   "90": {
+    "formName": "Altered"
+   },
+   "91": {
+    "formName": "Origin",
+    "height": 6.9,
+    "weight": 650
+   }
+  },
+  "height": 4.5,
+  "weight": 750
+ },
+ "488": {
+  "pokemonName": "Cresselia",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 85.6
+ },
+ "489": {
+  "pokemonName": "Phione",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 3.1
+ },
+ "490": {
+  "pokemonName": "Manaphy",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1.4
+ },
+ "491": {
+  "pokemonName": "Darkrai",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 50.5
+ },
+ "492": {
+  "pokemonName": "Shaymin",
+  "forms": {
+   "92": {
+    "formName": "Sky",
+    "height": 0.4,
+    "weight": 5.2
+   },
+   "93": {
+    "formName": "Land"
+   }
+  },
+  "height": 0.2,
+  "weight": 2.1
+ },
+ "493": {
+  "pokemonName": "Arceus",
+  "forms": {
+   "100": {
+    "formName": "Normal"
+   },
+   "101": {
+    "formName": "Fighting"
+   },
+   "102": {
+    "formName": "Flying"
+   },
+   "103": {
+    "formName": "Poison"
+   },
+   "104": {
+    "formName": "Ground"
+   },
+   "105": {
+    "formName": "Rock"
+   },
+   "106": {
+    "formName": "Bug"
+   },
+   "107": {
+    "formName": "Ghost"
+   },
+   "108": {
+    "formName": "Steel"
+   },
+   "109": {
+    "formName": "Fire"
+   },
+   "110": {
+    "formName": "Water"
+   },
+   "111": {
+    "formName": "Grass"
+   },
+   "112": {
+    "formName": "Electric"
+   },
+   "113": {
+    "formName": "Psychic"
+   },
+   "114": {
+    "formName": "Ice"
+   },
+   "115": {
+    "formName": "Dragon"
+   },
+   "116": {
+    "formName": "Dark"
+   },
+   "117": {
+    "formName": "Fairy"
+   }
+  },
+  "height": 3.2,
+  "weight": 320
+ },
+ "494": {
+  "pokemonName": "Victini",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 4
+ },
+ "495": {
+  "pokemonName": "Snivy",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 8.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "496": {
+  "pokemonName": "Servine",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 16,
+  "evolutions": [
+   {}
+  ]
+ },
+ "497": {
+  "pokemonName": "Serperior",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3.3,
+  "weight": 63
+ },
+ "498": {
+  "pokemonName": "Tepig",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 9.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "499": {
+  "pokemonName": "Pignite",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 55.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "500": {
+  "pokemonName": "Emboar",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 150
+ },
+ "501": {
+  "pokemonName": "Oshawott",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 5.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "502": {
+  "pokemonName": "Dewott",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 24.5,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "503": {
+  "pokemonName": "Samurott",
+  "forms": {
+   "1913": {
+    "formName": "Normal"
+   },
+   "2787": {
+    "formName": "Hisuian",
+    "height": 1.5,
+    "weight": 58.2
+   }
+  },
+  "height": 1.5,
+  "weight": 94.6
+ },
+ "504": {
+  "pokemonName": "Patrat",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 11.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "505": {
+  "pokemonName": "Watchog",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 27
+ },
+ "506": {
+  "pokemonName": "Lillipup",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 4.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "507": {
+  "pokemonName": "Herdier",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 14.7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "508": {
+  "pokemonName": "Stoutland",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 61
+ },
+ "509": {
+  "pokemonName": "Purrloin",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 10.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "510": {
+  "pokemonName": "Liepard",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 37.5
+ },
+ "511": {
+  "pokemonName": "Pansage",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 10.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "512": {
+  "pokemonName": "Simisage",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 30.5
+ },
+ "513": {
+  "pokemonName": "Pansear",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 11,
+  "evolutions": [
+   {}
+  ]
+ },
+ "514": {
+  "pokemonName": "Simisear",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 28
+ },
+ "515": {
+  "pokemonName": "Panpour",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 13.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "516": {
+  "pokemonName": "Simipour",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 29
+ },
+ "517": {
+  "pokemonName": "Munna",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 23.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "518": {
+  "pokemonName": "Musharna",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 60.5
+ },
+ "519": {
+  "pokemonName": "Pidove",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 2.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "520": {
+  "pokemonName": "Tranquill",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 15,
+  "evolutions": [
+   {}
+  ]
+ },
+ "521": {
+  "pokemonName": "Unfezant",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 29
+ },
+ "522": {
+  "pokemonName": "Blitzle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 29.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "523": {
+  "pokemonName": "Zebstrika",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 79.5
+ },
+ "524": {
+  "pokemonName": "Roggenrola",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 18,
+  "evolutions": [
+   {}
+  ]
+ },
+ "525": {
+  "pokemonName": "Boldore",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 102,
+  "evolutions": [
+   {}
+  ]
+ },
+ "526": {
+  "pokemonName": "Gigalith",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 260
+ },
+ "527": {
+  "pokemonName": "Woobat",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 2.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "528": {
+  "pokemonName": "Swoobat",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 10.5
+ },
+ "529": {
+  "pokemonName": "Drilbur",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 8.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "530": {
+  "pokemonName": "Excadrill",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 40.4
+ },
+ "531": {
+  "pokemonName": "Audino",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 31,
+  "tempEvolutions": {
+   "1": {}
+  }
+ },
+ "532": {
+  "pokemonName": "Timburr",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 12.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "533": {
+  "pokemonName": "Gurdurr",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 40,
+  "evolutions": [
+   {}
+  ]
+ },
+ "534": {
+  "pokemonName": "Conkeldurr",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 87
+ },
+ "535": {
+  "pokemonName": "Tympole",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 4.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "536": {
+  "pokemonName": "Palpitoad",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 17,
+  "evolutions": [
+   {}
+  ]
+ },
+ "537": {
+  "pokemonName": "Seismitoad",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 62
+ },
+ "538": {
+  "pokemonName": "Throh",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 55.5
+ },
+ "539": {
+  "pokemonName": "Sawk",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 51
+ },
+ "540": {
+  "pokemonName": "Sewaddle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 2.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "541": {
+  "pokemonName": "Swadloon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 7.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "542": {
+  "pokemonName": "Leavanny",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 20.5
+ },
+ "543": {
+  "pokemonName": "Venipede",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 5.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "544": {
+  "pokemonName": "Whirlipede",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 58.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "545": {
+  "pokemonName": "Scolipede",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.5,
+  "weight": 200.5
+ },
+ "546": {
+  "pokemonName": "Cottonee",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 0.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "547": {
+  "pokemonName": "Whimsicott",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 6.6
+ },
+ "548": {
+  "pokemonName": "Petilil",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 6.6,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "549": {
+  "pokemonName": "Lilligant",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 16.3
+ },
+ "550": {
+  "pokemonName": "Basculin",
+  "forms": {
+   "136": {
+    "formName": "Red Striped"
+   },
+   "137": {
+    "formName": "Blue Striped"
+   },
+   "2804": {
+    "formName": "White Striped"
+   }
+  },
+  "height": 1,
+  "weight": 18,
+  "evolutions": [
+   {}
+  ]
+ },
+ "551": {
+  "pokemonName": "Sandile",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 15.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "552": {
+  "pokemonName": "Krokorok",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 33.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "553": {
+  "pokemonName": "Krookodile",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 96.3
+ },
+ "554": {
+  "pokemonName": "Darumaka",
+  "forms": {
+   "2063": {
+    "formName": "Normal"
+   },
+   "2341": {
+    "formName": "Galarian",
+    "height": 0.7,
+    "weight": 40
+   }
+  },
+  "height": 0.6,
+  "weight": 37.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "555": {
+  "pokemonName": "Darmanitan",
+  "forms": {
+   "138": {
+    "formName": "Standard"
+   },
+   "139": {
+    "formName": "Zen"
+   },
+   "2342": {
+    "formName": "Galarian Standard",
+    "height": 1.7,
+    "weight": 120
+   },
+   "2343": {
+    "formName": "Galarian Zen",
+    "height": 1.7,
+    "weight": 120
+   }
+  },
+  "height": 1.3,
+  "weight": 92.9
+ },
+ "556": {
+  "pokemonName": "Maractus",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 28
+ },
+ "557": {
+  "pokemonName": "Dwebble",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 14.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "558": {
+  "pokemonName": "Crustle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 200
+ },
+ "559": {
+  "pokemonName": "Scraggy",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 11.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "560": {
+  "pokemonName": "Scrafty",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 30
+ },
+ "561": {
+  "pokemonName": "Sigilyph",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 14
+ },
+ "562": {
+  "pokemonName": "Yamask",
+  "forms": {
+   "2084": {
+    "formName": "Normal"
+   },
+   "2344": {
+    "formName": "Galarian"
+   }
+  },
+  "height": 0.5,
+  "weight": 1.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "563": {
+  "pokemonName": "Cofagrigus",
+  "forms": {
+   "2087": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.7,
+  "weight": 76.5
+ },
+ "564": {
+  "pokemonName": "Tirtouga",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 16.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "565": {
+  "pokemonName": "Carracosta",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 81
+ },
+ "566": {
+  "pokemonName": "Archen",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 9.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "567": {
+  "pokemonName": "Archeops",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 32
+ },
+ "568": {
+  "pokemonName": "Trubbish",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 31,
+  "evolutions": [
+   {}
+  ]
+ },
+ "569": {
+  "pokemonName": "Garbodor",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.9,
+  "weight": 107.3,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "570": {
+  "pokemonName": "Zorua",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 12.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "571": {
+  "pokemonName": "Zoroark",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 81.1
+ },
+ "572": {
+  "pokemonName": "Minccino",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 5.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "573": {
+  "pokemonName": "Cinccino",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 7.5
+ },
+ "574": {
+  "pokemonName": "Gothita",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 5.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "575": {
+  "pokemonName": "Gothorita",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 18,
+  "evolutions": [
+   {}
+  ]
+ },
+ "576": {
+  "pokemonName": "Gothitelle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 44
+ },
+ "577": {
+  "pokemonName": "Solosis",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "578": {
+  "pokemonName": "Duosion",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "579": {
+  "pokemonName": "Reuniclus",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 20.1
+ },
+ "580": {
+  "pokemonName": "Ducklett",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 5.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "581": {
+  "pokemonName": "Swanna",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 24.2
+ },
+ "582": {
+  "pokemonName": "Vanillite",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 5.7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "583": {
+  "pokemonName": "Vanillish",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 41,
+  "evolutions": [
+   {}
+  ]
+ },
+ "584": {
+  "pokemonName": "Vanilluxe",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 57.5
+ },
+ "585": {
+  "pokemonName": "Deerling",
+  "forms": {
+   "585": {
+    "formName": "Spring"
+   },
+   "586": {
+    "formName": "Summer"
+   },
+   "587": {
+    "formName": "Autumn"
+   },
+   "588": {
+    "formName": "Winter"
+   }
+  },
+  "height": 0.6,
+  "weight": 19.5
+ },
+ "586": {
+  "pokemonName": "Sawsbuck",
+  "forms": {
+   "589": {
+    "formName": "Spring"
+   },
+   "590": {
+    "formName": "Summer"
+   },
+   "591": {
+    "formName": "Autumn"
+   },
+   "592": {
+    "formName": "Winter"
+   }
+  },
+  "height": 1.9,
+  "weight": 92.5
+ },
+ "587": {
+  "pokemonName": "Emolga",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 5
+ },
+ "588": {
+  "pokemonName": "Karrablast",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 5.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "589": {
+  "pokemonName": "Escavalier",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 33
+ },
+ "590": {
+  "pokemonName": "Foongus",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "591": {
+  "pokemonName": "Amoonguss",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 10.5
+ },
+ "592": {
+  "pokemonName": "Frillish",
+  "forms": {
+   "2168": {
+    "formName": "Normal"
+   },
+   "2330": {
+    "formName": "Female"
+   }
+  },
+  "height": 1.2,
+  "weight": 33,
+  "evolutions": [
+   {}
+  ]
+ },
+ "593": {
+  "pokemonName": "Jellicent",
+  "forms": {
+   "2171": {
+    "formName": "Normal"
+   },
+   "2331": {
+    "formName": "Female"
+   }
+  },
+  "height": 2.2,
+  "weight": 135
+ },
+ "594": {
+  "pokemonName": "Alomomola",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 31.6
+ },
+ "595": {
+  "pokemonName": "Joltik",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.1,
+  "weight": 0.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "596": {
+  "pokemonName": "Galvantula",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 14.3
+ },
+ "597": {
+  "pokemonName": "Ferroseed",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 18.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "598": {
+  "pokemonName": "Ferrothorn",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 110
+ },
+ "599": {
+  "pokemonName": "Klink",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 21,
+  "evolutions": [
+   {}
+  ]
+ },
+ "600": {
+  "pokemonName": "Klang",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 51,
+  "evolutions": [
+   {}
+  ]
+ },
+ "601": {
+  "pokemonName": "Klinklang",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 81
+ },
+ "602": {
+  "pokemonName": "Tynamo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 0.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "603": {
+  "pokemonName": "Eelektrik",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 22,
+  "evolutions": [
+   {}
+  ]
+ },
+ "604": {
+  "pokemonName": "Eelektross",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.1,
+  "weight": 80.5
+ },
+ "605": {
+  "pokemonName": "Elgyem",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "606": {
+  "pokemonName": "Beheeyem",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 34.5
+ },
+ "607": {
+  "pokemonName": "Litwick",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 3.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "608": {
+  "pokemonName": "Lampent",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 13,
+  "evolutions": [
+   {}
+  ]
+ },
+ "609": {
+  "pokemonName": "Chandelure",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 34.3
+ },
+ "610": {
+  "pokemonName": "Axew",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 18,
+  "evolutions": [
+   {}
+  ]
+ },
+ "611": {
+  "pokemonName": "Fraxure",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 36,
+  "evolutions": [
+   {}
+  ]
+ },
+ "612": {
+  "pokemonName": "Haxorus",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 105.5
+ },
+ "613": {
+  "pokemonName": "Cubchoo",
+  "forms": {
+   "2231": {
+    "formName": "Normal"
+   },
+   "2672": {
+    "formName": "Winter 2020"
+   }
+  },
+  "height": 0.5,
+  "weight": 8.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "614": {
+  "pokemonName": "Beartic",
+  "forms": {
+   "2234": {
+    "formName": "Normal"
+   },
+   "2820": {
+    "formName": "Winter 2020"
+   }
+  },
+  "height": 2.6,
+  "weight": 260
+ },
+ "615": {
+  "pokemonName": "Cryogonal",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 148
+ },
+ "616": {
+  "pokemonName": "Shelmet",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 7.7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "617": {
+  "pokemonName": "Accelgor",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 25.3
+ },
+ "618": {
+  "pokemonName": "Stunfisk",
+  "forms": {
+   "2246": {
+    "formName": "Normal"
+   },
+   "2345": {
+    "formName": "Galarian",
+    "height": 0.7,
+    "weight": 20.5
+   }
+  },
+  "height": 0.7,
+  "weight": 11
+ },
+ "619": {
+  "pokemonName": "Mienfoo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 20,
+  "evolutions": [
+   {}
+  ]
+ },
+ "620": {
+  "pokemonName": "Mienshao",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 35.5
+ },
+ "621": {
+  "pokemonName": "Druddigon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 139
+ },
+ "622": {
+  "pokemonName": "Golett",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 92,
+  "evolutions": [
+   {}
+  ]
+ },
+ "623": {
+  "pokemonName": "Golurk",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.8,
+  "weight": 330
+ },
+ "624": {
+  "pokemonName": "Pawniard",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 10.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "625": {
+  "pokemonName": "Bisharp",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 70,
+  "evolutions": [
+   {}
+  ]
+ },
+ "626": {
+  "pokemonName": "Bouffalant",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 94.6
+ },
+ "627": {
+  "pokemonName": "Rufflet",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 10.5,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "628": {
+  "pokemonName": "Braviary",
+  "forms": {
+   "2276": {
+    "formName": "Normal"
+   },
+   "2798": {
+    "formName": "Hisuian",
+    "height": 1.7,
+    "weight": 43.4
+   }
+  },
+  "height": 1.5,
+  "weight": 41
+ },
+ "629": {
+  "pokemonName": "Vullaby",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "630": {
+  "pokemonName": "Mandibuzz",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 39.5
+ },
+ "631": {
+  "pokemonName": "Heatmor",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 58
+ },
+ "632": {
+  "pokemonName": "Durant",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 33
+ },
+ "633": {
+  "pokemonName": "Deino",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 17.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "634": {
+  "pokemonName": "Zweilous",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 50,
+  "evolutions": [
+   {}
+  ]
+ },
+ "635": {
+  "pokemonName": "Hydreigon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 160
+ },
+ "636": {
+  "pokemonName": "Larvesta",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 28.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "637": {
+  "pokemonName": "Volcarona",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 46
+ },
+ "638": {
+  "pokemonName": "Cobalion",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.1,
+  "weight": 250
+ },
+ "639": {
+  "pokemonName": "Terrakion",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.9,
+  "weight": 260
+ },
+ "640": {
+  "pokemonName": "Virizion",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2,
+  "weight": 200
+ },
+ "641": {
+  "pokemonName": "Tornadus",
+  "forms": {
+   "140": {
+    "formName": "Incarnate"
+   },
+   "141": {
+    "formName": "Therian",
+    "height": 1.4,
+    "weight": 63
+   }
+  },
+  "height": 1.5,
+  "weight": 63
+ },
+ "642": {
+  "pokemonName": "Thundurus",
+  "forms": {
+   "142": {
+    "formName": "Incarnate"
+   },
+   "143": {
+    "formName": "Therian",
+    "height": 3,
+    "weight": 61
+   }
+  },
+  "height": 1.5,
+  "weight": 61
+ },
+ "643": {
+  "pokemonName": "Reshiram",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3.2,
+  "weight": 330
+ },
+ "644": {
+  "pokemonName": "Zekrom",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.9,
+  "weight": 345
+ },
+ "645": {
+  "pokemonName": "Landorus",
+  "forms": {
+   "144": {
+    "formName": "Incarnate"
+   },
+   "145": {
+    "formName": "Therian",
+    "height": 1.3,
+    "weight": 68
+   }
+  },
+  "height": 1.5,
+  "weight": 68
+ },
+ "646": {
+  "pokemonName": "Kyurem",
+  "forms": {
+   "146": {
+    "formName": "Normal"
+   },
+   "147": {
+    "formName": "Black"
+   },
+   "148": {
+    "formName": "White"
+   }
+  },
+  "height": 3,
+  "weight": 325
+ },
+ "647": {
+  "pokemonName": "Keldeo",
+  "forms": {
+   "149": {
+    "formName": "Ordinary"
+   },
+   "150": {
+    "formName": "Resolute"
+   }
+  },
+  "height": 1.4,
+  "weight": 48.5
+ },
+ "648": {
+  "pokemonName": "Meloetta",
+  "forms": {
+   "151": {
+    "formName": "Aria"
+   },
+   "152": {
+    "formName": "Pirouette"
+   }
+  },
+  "height": 0.6,
+  "weight": 6.5
+ },
+ "649": {
+  "pokemonName": "Genesect",
+  "forms": {
+   "593": {
+    "formName": "Normal"
+   },
+   "594": {
+    "formName": "Shock"
+   },
+   "595": {
+    "formName": "Burn"
+   },
+   "596": {
+    "formName": "Chill"
+   },
+   "597": {
+    "formName": "Douse"
+   }
+  },
+  "height": 1.5,
+  "weight": 82.5
+ },
+ "650": {
+  "pokemonName": "Chespin",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "651": {
+  "pokemonName": "Quilladin",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 29,
+  "evolutions": [
+   {}
+  ]
+ },
+ "652": {
+  "pokemonName": "Chesnaught",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 90
+ },
+ "653": {
+  "pokemonName": "Fennekin",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 9.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "654": {
+  "pokemonName": "Braixen",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 14.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "655": {
+  "pokemonName": "Delphox",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 39
+ },
+ "656": {
+  "pokemonName": "Froakie",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "657": {
+  "pokemonName": "Frogadier",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 10.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "658": {
+  "pokemonName": "Greninja",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 40
+ },
+ "659": {
+  "pokemonName": "Bunnelby",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "660": {
+  "pokemonName": "Diggersby",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 42.4
+ },
+ "661": {
+  "pokemonName": "Fletchling",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1.7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "662": {
+  "pokemonName": "Fletchinder",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 16,
+  "evolutions": [
+   {}
+  ]
+ },
+ "663": {
+  "pokemonName": "Talonflame",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 24.5
+ },
+ "664": {
+  "pokemonName": "Scatterbug",
+  "forms": {
+   "2745": {
+    "formName": "Archipelago"
+   },
+   "2746": {
+    "formName": "Continental"
+   },
+   "2747": {
+    "formName": "Elegant"
+   },
+   "2748": {
+    "formName": "Fancy"
+   },
+   "2749": {
+    "formName": "Garden"
+   },
+   "2750": {
+    "formName": "High Plains"
+   },
+   "2751": {
+    "formName": "Icy Snow"
+   },
+   "2752": {
+    "formName": "Jungle"
+   },
+   "2753": {
+    "formName": "Marine"
+   },
+   "2754": {
+    "formName": "Meadow"
+   },
+   "2755": {
+    "formName": "Modern"
+   },
+   "2756": {
+    "formName": "Monsoon"
+   },
+   "2757": {
+    "formName": "Ocean"
+   },
+   "2758": {
+    "formName": "Pokeball"
+   },
+   "2759": {
+    "formName": "Polar"
+   },
+   "2760": {
+    "formName": "River"
+   },
+   "2761": {
+    "formName": "Sandstorm"
+   },
+   "2762": {
+    "formName": "Savanna"
+   },
+   "2763": {
+    "formName": "Sun"
+   },
+   "2764": {
+    "formName": "Tundra"
+   }
+  },
+  "height": 0.3,
+  "weight": 2.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "665": {
+  "pokemonName": "Spewpa",
+  "forms": {
+   "2765": {
+    "formName": "Archipelago"
+   },
+   "2766": {
+    "formName": "Continental"
+   },
+   "2767": {
+    "formName": "Elegant"
+   },
+   "2768": {
+    "formName": "Fancy"
+   },
+   "2769": {
+    "formName": "Garden"
+   },
+   "2770": {
+    "formName": "High Plains"
+   },
+   "2771": {
+    "formName": "Icy Snow"
+   },
+   "2772": {
+    "formName": "Jungle"
+   },
+   "2773": {
+    "formName": "Marine"
+   },
+   "2774": {
+    "formName": "Meadow"
+   },
+   "2775": {
+    "formName": "Modern"
+   },
+   "2776": {
+    "formName": "Monsoon"
+   },
+   "2777": {
+    "formName": "Ocean"
+   },
+   "2778": {
+    "formName": "Pokeball"
+   },
+   "2779": {
+    "formName": "Polar"
+   },
+   "2780": {
+    "formName": "River"
+   },
+   "2781": {
+    "formName": "Sandstorm"
+   },
+   "2782": {
+    "formName": "Savanna"
+   },
+   "2783": {
+    "formName": "Sun"
+   },
+   "2784": {
+    "formName": "Tundra"
+   }
+  },
+  "height": 0.3,
+  "weight": 8.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "666": {
+  "pokemonName": "Vivillon",
+  "forms": {
+   "2594": {
+    "formName": "Archipelago"
+   },
+   "2595": {
+    "formName": "Continental"
+   },
+   "2596": {
+    "formName": "Elegant"
+   },
+   "2597": {
+    "formName": "Fancy"
+   },
+   "2598": {
+    "formName": "Garden"
+   },
+   "2599": {
+    "formName": "High Plains"
+   },
+   "2600": {
+    "formName": "Icy Snow"
+   },
+   "2601": {
+    "formName": "Jungle"
+   },
+   "2602": {
+    "formName": "Marine"
+   },
+   "2603": {
+    "formName": "Meadow"
+   },
+   "2604": {
+    "formName": "Modern"
+   },
+   "2605": {
+    "formName": "Monsoon"
+   },
+   "2606": {
+    "formName": "Ocean"
+   },
+   "2607": {
+    "formName": "Pokeball"
+   },
+   "2608": {
+    "formName": "Polar"
+   },
+   "2609": {
+    "formName": "River"
+   },
+   "2610": {
+    "formName": "Sandstorm"
+   },
+   "2611": {
+    "formName": "Savanna"
+   },
+   "2612": {
+    "formName": "Sun"
+   },
+   "2613": {
+    "formName": "Tundra"
+   }
+  },
+  "height": 1.2,
+  "weight": 17
+ },
+ "667": {
+  "pokemonName": "Litleo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 13.5,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "668": {
+  "pokemonName": "Pyroar",
+  "forms": {
+   "2587": {
+    "formName": "Normal"
+   },
+   "2588": {
+    "formName": "Female"
+   }
+  },
+  "height": 1.5,
+  "weight": 81.5
+ },
+ "669": {
+  "pokemonName": "Flabebe",
+  "forms": {
+   "2614": {
+    "formName": "Red"
+   },
+   "2615": {
+    "formName": "Yellow"
+   },
+   "2616": {
+    "formName": "Orange"
+   },
+   "2617": {
+    "formName": "Blue"
+   },
+   "2618": {
+    "formName": "White"
+   }
+  },
+  "height": 0.1,
+  "weight": 0.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "670": {
+  "pokemonName": "Floette",
+  "forms": {
+   "2619": {
+    "formName": "Red"
+   },
+   "2620": {
+    "formName": "Yellow"
+   },
+   "2621": {
+    "formName": "Orange"
+   },
+   "2622": {
+    "formName": "Blue"
+   },
+   "2623": {
+    "formName": "White"
+   }
+  },
+  "height": 0.2,
+  "weight": 0.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "671": {
+  "pokemonName": "Florges",
+  "forms": {
+   "2624": {
+    "formName": "Red"
+   },
+   "2625": {
+    "formName": "Yellow"
+   },
+   "2626": {
+    "formName": "Orange"
+   },
+   "2627": {
+    "formName": "Blue"
+   },
+   "2628": {
+    "formName": "White"
+   }
+  },
+  "height": 1.1,
+  "weight": 10
+ },
+ "672": {
+  "pokemonName": "Skiddo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 31,
+  "evolutions": [
+   {}
+  ]
+ },
+ "673": {
+  "pokemonName": "Gogoat",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 91
+ },
+ "674": {
+  "pokemonName": "Pancham",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "675": {
+  "pokemonName": "Pangoro",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.1,
+  "weight": 136
+ },
+ "676": {
+  "pokemonName": "Furfrou",
+  "forms": {
+   "2629": {
+    "formName": "Natural"
+   },
+   "2630": {
+    "formName": "Heart"
+   },
+   "2631": {
+    "formName": "Star"
+   },
+   "2632": {
+    "formName": "Diamond"
+   },
+   "2633": {
+    "formName": "Debutante"
+   },
+   "2634": {
+    "formName": "Matron"
+   },
+   "2635": {
+    "formName": "Dandy"
+   },
+   "2636": {
+    "formName": "La Reine"
+   },
+   "2637": {
+    "formName": "Kabuki"
+   },
+   "2638": {
+    "formName": "Pharaoh"
+   }
+  },
+  "height": 1.2,
+  "weight": 28
+ },
+ "677": {
+  "pokemonName": "Espurr",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 3.5,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "678": {
+  "pokemonName": "Meowstic",
+  "forms": {
+   "2589": {
+    "formName": "Normal"
+   },
+   "2590": {
+    "formName": "Female"
+   }
+  },
+  "height": 0.6,
+  "weight": 8.5
+ },
+ "679": {
+  "pokemonName": "Honedge",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "680": {
+  "pokemonName": "Doublade",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 4.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "681": {
+  "pokemonName": "Aegislash",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 53
+ },
+ "682": {
+  "pokemonName": "Spritzee",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 0.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "683": {
+  "pokemonName": "Aromatisse",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 15.5
+ },
+ "684": {
+  "pokemonName": "Swirlix",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 3.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "685": {
+  "pokemonName": "Slurpuff",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 5
+ },
+ "686": {
+  "pokemonName": "Inkay",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 3.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "687": {
+  "pokemonName": "Malamar",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 47
+ },
+ "688": {
+  "pokemonName": "Binacle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 31,
+  "evolutions": [
+   {}
+  ]
+ },
+ "689": {
+  "pokemonName": "Barbaracle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 96
+ },
+ "690": {
+  "pokemonName": "Skrelp",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 7.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "691": {
+  "pokemonName": "Dragalge",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 81.5
+ },
+ "692": {
+  "pokemonName": "Clauncher",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 8.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "693": {
+  "pokemonName": "Clawitzer",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 35.3
+ },
+ "694": {
+  "pokemonName": "Helioptile",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "695": {
+  "pokemonName": "Heliolisk",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 21
+ },
+ "696": {
+  "pokemonName": "Tyrunt",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 26,
+  "evolutions": [
+   {}
+  ]
+ },
+ "697": {
+  "pokemonName": "Tyrantrum",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.5,
+  "weight": 270
+ },
+ "698": {
+  "pokemonName": "Amaura",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 25.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "699": {
+  "pokemonName": "Aurorus",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.7,
+  "weight": 225
+ },
+ "700": {
+  "pokemonName": "Sylveon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 23.5
+ },
+ "701": {
+  "pokemonName": "Hawlucha",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 21.5
+ },
+ "702": {
+  "pokemonName": "Dedenne",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 2.2
+ },
+ "703": {
+  "pokemonName": "Carbink",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 5.7
+ },
+ "704": {
+  "pokemonName": "Goomy",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 2.8,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "705": {
+  "pokemonName": "Sliggoo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 17.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "706": {
+  "pokemonName": "Goodra",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2,
+  "weight": 150.5
+ },
+ "707": {
+  "pokemonName": "Klefki",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 3
+ },
+ "708": {
+  "pokemonName": "Phantump",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "709": {
+  "pokemonName": "Trevenant",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 71
+ },
+ "710": {
+  "pokemonName": "Pumpkaboo",
+  "forms": {
+   "2641": {
+    "formName": "Small"
+   },
+   "2642": {
+    "formName": "Average",
+    "height": 0.4,
+    "weight": 5
+   },
+   "2643": {
+    "formName": "Large",
+    "height": 0.5,
+    "weight": 7.5
+   },
+   "2644": {
+    "formName": "Super",
+    "height": 0.8,
+    "weight": 15
+   }
+  },
+  "height": 0.3,
+  "weight": 3.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "711": {
+  "pokemonName": "Gourgeist",
+  "forms": {
+   "2645": {
+    "formName": "Small"
+   },
+   "2646": {
+    "formName": "Average",
+    "height": 0.9,
+    "weight": 12.5
+   },
+   "2647": {
+    "formName": "Large",
+    "height": 1.1,
+    "weight": 14
+   },
+   "2648": {
+    "formName": "Super",
+    "height": 1.7,
+    "weight": 39
+   }
+  },
+  "height": 0.7,
+  "weight": 9.5
+ },
+ "712": {
+  "pokemonName": "Bergmite",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 99.5,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "713": {
+  "pokemonName": "Avalugg",
+  "forms": {
+   "2795": {
+    "formName": "Hisuian",
+    "height": 1.4,
+    "weight": 262.4
+   },
+   "2812": {
+    "formName": "Normal"
+   }
+  },
+  "height": 2,
+  "weight": 505
+ },
+ "714": {
+  "pokemonName": "Noibat",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "715": {
+  "pokemonName": "Noivern",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 85
+ },
+ "716": {
+  "pokemonName": "Xerneas",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3,
+  "weight": 215
+ },
+ "717": {
+  "pokemonName": "Yveltal",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 5.8,
+  "weight": 203
+ },
+ "718": {
+  "pokemonName": "Zygarde",
+  "forms": {
+   "2591": {
+    "formName": "Ten Percent",
+    "height": 1.2,
+    "weight": 33.5
+   },
+   "2592": {
+    "formName": "Fifty Percent"
+   },
+   "2593": {
+    "formName": "Complete",
+    "height": 4.5,
+    "weight": 610
+   },
+   "2823": {
+    "formName": "Complete Ten Percent",
+    "height": 1.2,
+    "weight": 33.5
+   },
+   "2824": {
+    "formName": "Complete Fifty Percent"
+   }
+  },
+  "height": 5,
+  "weight": 305,
+  "evolutions": [
+   {}
+  ]
+ },
+ "719": {
+  "pokemonName": "Diancie",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 8.8,
+  "tempEvolutions": {
+   "1": {
+    "height": 1.1,
+    "weight": 27.8
+   }
+  }
+ },
+ "720": {
+  "pokemonName": "Hoopa",
+  "forms": {
+   "2651": {
+    "formName": "Confined"
+   },
+   "2652": {
+    "formName": "Unbound",
+    "height": 6.5,
+    "weight": 490
+   }
+  },
+  "height": 0.5,
+  "weight": 9
+ },
+ "721": {
+  "pokemonName": "Volcanion",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 195
+ },
+ "722": {
+  "pokemonName": "Rowlet",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "723": {
+  "pokemonName": "Dartrix",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 16,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "724": {
+  "pokemonName": "Decidueye",
+  "forms": {
+   "2785": {
+    "formName": "Hisuian",
+    "height": 1.6,
+    "weight": 37
+   },
+   "2809": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.6,
+  "weight": 36.6
+ },
+ "725": {
+  "pokemonName": "Litten",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 4.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "726": {
+  "pokemonName": "Torracat",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 25,
+  "evolutions": [
+   {}
+  ]
+ },
+ "727": {
+  "pokemonName": "Incineroar",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 83
+ },
+ "728": {
+  "pokemonName": "Popplio",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 7.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "729": {
+  "pokemonName": "Brionne",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 17.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "730": {
+  "pokemonName": "Primarina",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 44
+ },
+ "731": {
+  "pokemonName": "Pikipek",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "732": {
+  "pokemonName": "Trumbeak",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 14.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "733": {
+  "pokemonName": "Toucannon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 26
+ },
+ "734": {
+  "pokemonName": "Yungoos",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "735": {
+  "pokemonName": "Gumshoos",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 14.2
+ },
+ "736": {
+  "pokemonName": "Grubbin",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 4.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "737": {
+  "pokemonName": "Charjabug",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 10.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "738": {
+  "pokemonName": "Vikavolt",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 45
+ },
+ "739": {
+  "pokemonName": "Crabrawler",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "740": {
+  "pokemonName": "Crabominable",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.7,
+  "weight": 180
+ },
+ "741": {
+  "pokemonName": "Oricorio",
+  "forms": {
+   "2679": {
+    "formName": "Baile"
+   },
+   "2680": {
+    "formName": "Pompom"
+   },
+   "2681": {
+    "formName": "Pau"
+   },
+   "2683": {
+    "formName": "Sensu"
+   }
+  },
+  "height": 0.6,
+  "weight": 3.4
+ },
+ "742": {
+  "pokemonName": "Cutiefly",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.1,
+  "weight": 0.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "743": {
+  "pokemonName": "Ribombee",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 0.5
+ },
+ "744": {
+  "pokemonName": "Rockruff",
+  "forms": {
+   "2737": {
+    "formName": "Dusk"
+   },
+   "2831": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.5,
+  "weight": 9.2,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "745": {
+  "pokemonName": "Lycanroc",
+  "forms": {
+   "2684": {
+    "formName": "Midday"
+   },
+   "2685": {
+    "formName": "Midnight",
+    "height": 1.1,
+    "weight": 25
+   },
+   "2686": {
+    "formName": "Dusk"
+   }
+  },
+  "height": 0.8,
+  "weight": 25
+ },
+ "746": {
+  "pokemonName": "Wishiwashi",
+  "forms": {
+   "2687": {
+    "formName": "Solo"
+   },
+   "2688": {
+    "formName": "School",
+    "height": 8.2,
+    "weight": 78.6
+   }
+  },
+  "height": 0.2,
+  "weight": 0.3
+ },
+ "747": {
+  "pokemonName": "Mareanie",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "748": {
+  "pokemonName": "Toxapex",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 14.5
+ },
+ "749": {
+  "pokemonName": "Mudbray",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 110,
+  "evolutions": [
+   {}
+  ]
+ },
+ "750": {
+  "pokemonName": "Mudsdale",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.5,
+  "weight": 920
+ },
+ "751": {
+  "pokemonName": "Dewpider",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "752": {
+  "pokemonName": "Araquanid",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 82
+ },
+ "753": {
+  "pokemonName": "Fomantis",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "754": {
+  "pokemonName": "Lurantis",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 18.5
+ },
+ "755": {
+  "pokemonName": "Morelull",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 1.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "756": {
+  "pokemonName": "Shiinotic",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 11.5
+ },
+ "757": {
+  "pokemonName": "Salandit",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 4.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "758": {
+  "pokemonName": "Salazzle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 22.2
+ },
+ "759": {
+  "pokemonName": "Stufful",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 6.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "760": {
+  "pokemonName": "Bewear",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.1,
+  "weight": 135
+ },
+ "761": {
+  "pokemonName": "Bounsweet",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 3.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "762": {
+  "pokemonName": "Steenee",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 8.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "763": {
+  "pokemonName": "Tsareena",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 21.4
+ },
+ "764": {
+  "pokemonName": "Comfey",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.1,
+  "weight": 0.3
+ },
+ "765": {
+  "pokemonName": "Oranguru",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 76
+ },
+ "766": {
+  "pokemonName": "Passimian",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2,
+  "weight": 82.8
+ },
+ "767": {
+  "pokemonName": "Wimpod",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 12,
+  "evolutions": [
+   {}
+  ]
+ },
+ "768": {
+  "pokemonName": "Golisopod",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2,
+  "weight": 108
+ },
+ "769": {
+  "pokemonName": "Sandygast",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 70,
+  "evolutions": [
+   {}
+  ]
+ },
+ "770": {
+  "pokemonName": "Palossand",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 250
+ },
+ "771": {
+  "pokemonName": "Pyukumuku",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1.2
+ },
+ "772": {
+  "pokemonName": "Type Null",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.9,
+  "weight": 120.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "773": {
+  "pokemonName": "Silvally",
+  "forms": {
+   "2689": {
+    "formName": "Normal"
+   },
+   "2690": {
+    "formName": "Bug"
+   },
+   "2691": {
+    "formName": "Dark"
+   },
+   "2692": {
+    "formName": "Dragon"
+   },
+   "2693": {
+    "formName": "Electric"
+   },
+   "2694": {
+    "formName": "Fairy"
+   },
+   "2695": {
+    "formName": "Fighting"
+   },
+   "2696": {
+    "formName": "Fire"
+   },
+   "2697": {
+    "formName": "Flying"
+   },
+   "2698": {
+    "formName": "Ghost"
+   },
+   "2699": {
+    "formName": "Grass"
+   },
+   "2700": {
+    "formName": "Ground"
+   },
+   "2701": {
+    "formName": "Ice"
+   },
+   "2702": {
+    "formName": "Poison"
+   },
+   "2703": {
+    "formName": "Psychic"
+   },
+   "2704": {
+    "formName": "Rock"
+   },
+   "2705": {
+    "formName": "Steel"
+   },
+   "2706": {
+    "formName": "Water"
+   }
+  },
+  "height": 2.3,
+  "weight": 100.5
+ },
+ "774": {
+  "pokemonName": "Minior",
+  "forms": {
+   "2708": {
+    "formName": "Blue",
+    "height": 0.3,
+    "weight": 0.3
+   },
+   "2709": {
+    "formName": "Green",
+    "height": 0.3,
+    "weight": 0.3
+   },
+   "2710": {
+    "formName": "Indigo",
+    "height": 0.3,
+    "weight": 0.3
+   },
+   "2711": {
+    "formName": "Orange",
+    "height": 0.3,
+    "weight": 0.3
+   },
+   "2712": {
+    "formName": "Red",
+    "height": 0.3,
+    "weight": 0.3
+   },
+   "2713": {
+    "formName": "Violet",
+    "height": 0.3,
+    "weight": 0.3
+   },
+   "2714": {
+    "formName": "Yellow",
+    "height": 0.3,
+    "weight": 0.3
+   }
+  },
+  "height": 0.3,
+  "weight": 40
+ },
+ "775": {
+  "pokemonName": "Komala",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 19.9
+ },
+ "776": {
+  "pokemonName": "Turtonator",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2,
+  "weight": 212
+ },
+ "777": {
+  "pokemonName": "Togedemaru",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 3.3
+ },
+ "778": {
+  "pokemonName": "Mimikyu",
+  "forms": {
+   "2715": {
+    "formName": "Busted"
+   },
+   "2716": {
+    "formName": "Disguised"
+   }
+  },
+  "height": 0.2,
+  "weight": 0.7
+ },
+ "779": {
+  "pokemonName": "Bruxish",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 19
+ },
+ "780": {
+  "pokemonName": "Drampa",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3,
+  "weight": 185
+ },
+ "781": {
+  "pokemonName": "Dhelmise",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3.9,
+  "weight": 210
+ },
+ "782": {
+  "pokemonName": "Jangmo O",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 29.7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "783": {
+  "pokemonName": "Hakamo O",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 47,
+  "evolutions": [
+   {}
+  ]
+ },
+ "784": {
+  "pokemonName": "Kommo O",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 78.2
+ },
+ "785": {
+  "pokemonName": "Tapu Koko",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 20.5
+ },
+ "786": {
+  "pokemonName": "Tapu Lele",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 18.6
+ },
+ "787": {
+  "pokemonName": "Tapu Bulu",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.9,
+  "weight": 45.5
+ },
+ "788": {
+  "pokemonName": "Tapu Fini",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 21.2
+ },
+ "789": {
+  "pokemonName": "Cosmog",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 0.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "790": {
+  "pokemonName": "Cosmoem",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.1,
+  "weight": 999.9,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "791": {
+  "pokemonName": "Solgaleo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3.4,
+  "weight": 230
+ },
+ "792": {
+  "pokemonName": "Lunala",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 4,
+  "weight": 120
+ },
+ "793": {
+  "pokemonName": "Nihilego",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 55.5
+ },
+ "794": {
+  "pokemonName": "Buzzwole",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.4,
+  "weight": 333.6
+ },
+ "795": {
+  "pokemonName": "Pheromosa",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 25
+ },
+ "796": {
+  "pokemonName": "Xurkitree",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3.8,
+  "weight": 100
+ },
+ "797": {
+  "pokemonName": "Celesteela",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 9.2,
+  "weight": 999.9
+ },
+ "798": {
+  "pokemonName": "Kartana",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 0.1
+ },
+ "799": {
+  "pokemonName": "Guzzlord",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 5.5,
+  "weight": 888
+ },
+ "800": {
+  "pokemonName": "Necrozma",
+  "forms": {
+   "2717": {
+    "formName": "Normal"
+   },
+   "2718": {
+    "formName": "Dusk Mane",
+    "height": 3.8,
+    "weight": 460
+   },
+   "2719": {
+    "formName": "Dawn Wings",
+    "height": 4.2,
+    "weight": 350
+   },
+   "2720": {
+    "formName": "Ultra",
+    "height": 7.5,
+    "weight": 230
+   }
+  },
+  "height": 2.4,
+  "weight": 230
+ },
+ "801": {
+  "pokemonName": "Magearna",
+  "forms": {
+   "2721": {
+    "formName": "Normal"
+   },
+   "2722": {
+    "formName": "Original Color"
+   }
+  },
+  "height": 1,
+  "weight": 80.5
+ },
+ "802": {
+  "pokemonName": "Marshadow",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 22.2
+ },
+ "803": {
+  "pokemonName": "Poipole",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 1.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "804": {
+  "pokemonName": "Naganadel",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3.6,
+  "weight": 150
+ },
+ "805": {
+  "pokemonName": "Stakataka",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 5.5,
+  "weight": 820
+ },
+ "806": {
+  "pokemonName": "Blacephalon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 13
+ },
+ "807": {
+  "pokemonName": "Zeraora",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 44.5
+ },
+ "808": {
+  "pokemonName": "Meltan",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "809": {
+  "pokemonName": "Melmetal",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.5,
+  "weight": 800,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "810": {
+  "pokemonName": "Grookey",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "811": {
+  "pokemonName": "Thwackey",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 14,
+  "evolutions": [
+   {}
+  ]
+ },
+ "812": {
+  "pokemonName": "Rillaboom",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.1,
+  "weight": 90,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "813": {
+  "pokemonName": "Scorbunny",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 4.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "814": {
+  "pokemonName": "Raboot",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "815": {
+  "pokemonName": "Cinderace",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 33,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "816": {
+  "pokemonName": "Sobble",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "817": {
+  "pokemonName": "Drizzile",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 11.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "818": {
+  "pokemonName": "Inteleon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.9,
+  "weight": 45.2,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "819": {
+  "pokemonName": "Skwovet",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 2.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "820": {
+  "pokemonName": "Greedent",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 6
+ },
+ "821": {
+  "pokemonName": "Rookidee",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 1.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "822": {
+  "pokemonName": "Corvisquire",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 16,
+  "evolutions": [
+   {}
+  ]
+ },
+ "823": {
+  "pokemonName": "Corviknight",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.2,
+  "weight": 75,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "824": {
+  "pokemonName": "Blipbug",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "825": {
+  "pokemonName": "Dottler",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 19.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "826": {
+  "pokemonName": "Orbeetle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 40.8,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "827": {
+  "pokemonName": "Nickit",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 8.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "828": {
+  "pokemonName": "Thievul",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 19.9
+ },
+ "829": {
+  "pokemonName": "Gossifleur",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 2.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "830": {
+  "pokemonName": "Eldegoss",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 2.5
+ },
+ "831": {
+  "pokemonName": "Wooloo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "832": {
+  "pokemonName": "Dubwool",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 43
+ },
+ "833": {
+  "pokemonName": "Chewtle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 8.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "834": {
+  "pokemonName": "Drednaw",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 115.5,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "835": {
+  "pokemonName": "Yamper",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 13.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "836": {
+  "pokemonName": "Boltund",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 34
+ },
+ "837": {
+  "pokemonName": "Rolycoly",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 12,
+  "evolutions": [
+   {}
+  ]
+ },
+ "838": {
+  "pokemonName": "Carkol",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 78,
+  "evolutions": [
+   {}
+  ]
+ },
+ "839": {
+  "pokemonName": "Coalossal",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.8,
+  "weight": 310.5,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "840": {
+  "pokemonName": "Applin",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 0.5,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "841": {
+  "pokemonName": "Flapple",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "842": {
+  "pokemonName": "Appletun",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 13,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "843": {
+  "pokemonName": "Silicobra",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.2,
+  "weight": 7.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "844": {
+  "pokemonName": "Sandaconda",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3.8,
+  "weight": 65.5,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "845": {
+  "pokemonName": "Cramorant",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 18
+ },
+ "846": {
+  "pokemonName": "Arrokuda",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "847": {
+  "pokemonName": "Barraskewda",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 30
+ },
+ "848": {
+  "pokemonName": "Toxel",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 11,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "849": {
+  "pokemonName": "Toxtricity",
+  "forms": {
+   "2463": {
+    "formName": "Low Key"
+   },
+   "2464": {
+    "formName": "Amped"
+   }
+  },
+  "height": 1.6,
+  "weight": 40,
+  "tempEvolutions": {
+   "Amped Gmax": {},
+   "Low Key Gmax": {}
+  }
+ },
+ "850": {
+  "pokemonName": "Sizzlipede",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "851": {
+  "pokemonName": "Centiskorch",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3,
+  "weight": 120,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "852": {
+  "pokemonName": "Clobbopus",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "853": {
+  "pokemonName": "Grapploct",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 39
+ },
+ "854": {
+  "pokemonName": "Sinistea",
+  "forms": {
+   "2477": {
+    "formName": "Phony"
+   },
+   "2478": {
+    "formName": "Antique"
+   }
+  },
+  "height": 0.1,
+  "weight": 0.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "855": {
+  "pokemonName": "Polteageist",
+  "forms": {
+   "2480": {
+    "formName": "Phony"
+   },
+   "2481": {
+    "formName": "Antique"
+   }
+  },
+  "height": 0.2,
+  "weight": 0.4
+ },
+ "856": {
+  "pokemonName": "Hatenna",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 3.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "857": {
+  "pokemonName": "Hattrem",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 4.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "858": {
+  "pokemonName": "Hatterene",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.1,
+  "weight": 5.1,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "859": {
+  "pokemonName": "Impidimp",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 5.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "860": {
+  "pokemonName": "Morgrem",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 12.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "861": {
+  "pokemonName": "Grimmsnarl",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 61,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "862": {
+  "pokemonName": "Obstagoon",
+  "forms": {
+   "2501": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.6,
+  "weight": 46
+ },
+ "863": {
+  "pokemonName": "Perrserker",
+  "forms": {
+   "2504": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.8,
+  "weight": 28
+ },
+ "864": {
+  "pokemonName": "Cursola",
+  "forms": {
+   "2507": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1,
+  "weight": 0.4
+ },
+ "865": {
+  "pokemonName": "Sirfetchd",
+  "forms": {
+   "2510": {
+    "formName": "Normal"
+   }
+  },
+  "height": 0.8,
+  "weight": 117
+ },
+ "866": {
+  "pokemonName": "Mr Rime",
+  "forms": {
+   "2513": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.5,
+  "weight": 58.2
+ },
+ "867": {
+  "pokemonName": "Runerigus",
+  "forms": {
+   "2516": {
+    "formName": "Normal"
+   }
+  },
+  "height": 1.6,
+  "weight": 66.6
+ },
+ "868": {
+  "pokemonName": "Milcery",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 0.3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "869": {
+  "pokemonName": "Alcremie",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 0.5,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "870": {
+  "pokemonName": "Falinks",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3,
+  "weight": 62
+ },
+ "871": {
+  "pokemonName": "Pincurchin",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1
+ },
+ "872": {
+  "pokemonName": "Snom",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 3.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "873": {
+  "pokemonName": "Frosmoth",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 42
+ },
+ "874": {
+  "pokemonName": "Stonjourner",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.5,
+  "weight": 520
+ },
+ "875": {
+  "pokemonName": "Eiscue",
+  "forms": {
+   "2540": {
+    "formName": "Ice"
+   },
+   "2541": {
+    "formName": "Noice"
+   }
+  },
+  "height": 1.4,
+  "weight": 89
+ },
+ "876": {
+  "pokemonName": "Indeedee",
+  "forms": {
+   "2542": {
+    "formName": "Male"
+   },
+   "2543": {
+    "formName": "Female"
+   }
+  },
+  "height": 0.9,
+  "weight": 28
+ },
+ "877": {
+  "pokemonName": "Morpeko",
+  "forms": {
+   "2544": {
+    "formName": "Full Belly"
+   },
+   "2545": {
+    "formName": "Hangry"
+   }
+  },
+  "height": 0.3,
+  "weight": 3
+ },
+ "878": {
+  "pokemonName": "Cufant",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 100,
+  "evolutions": [
+   {}
+  ]
+ },
+ "879": {
+  "pokemonName": "Copperajah",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 100,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "880": {
+  "pokemonName": "Dracozolt",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 190
+ },
+ "881": {
+  "pokemonName": "Arctozolt",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.3,
+  "weight": 150
+ },
+ "882": {
+  "pokemonName": "Dracovish",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.3,
+  "weight": 215
+ },
+ "883": {
+  "pokemonName": "Arctovish",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2,
+  "weight": 175
+ },
+ "884": {
+  "pokemonName": "Duraludon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 40,
+  "tempEvolutions": {
+   "Gmax": {}
+  }
+ },
+ "885": {
+  "pokemonName": "Dreepy",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "886": {
+  "pokemonName": "Drakloak",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 11,
+  "evolutions": [
+   {}
+  ]
+ },
+ "887": {
+  "pokemonName": "Dragapult",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3,
+  "weight": 50
+ },
+ "888": {
+  "pokemonName": "Zacian",
+  "forms": {
+   "2576": {
+    "formName": "Crowned Sword"
+   },
+   "2577": {
+    "formName": "Hero"
+   }
+  },
+  "height": 2.8,
+  "weight": 110
+ },
+ "889": {
+  "pokemonName": "Zamazenta",
+  "forms": {
+   "2578": {
+    "formName": "Crowned Shield"
+   },
+   "2579": {
+    "formName": "Hero"
+   }
+  },
+  "height": 2.9,
+  "weight": 210
+ },
+ "890": {
+  "pokemonName": "Eternatus",
+  "forms": {
+   "2580": {
+    "formName": "Eternamax"
+   },
+   "2581": {
+    "formName": "Normal"
+   }
+  },
+  "height": 20,
+  "weight": 950
+ },
+ "891": {
+  "pokemonName": "Kubfu",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 12,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "892": {
+  "pokemonName": "Urshifu",
+  "forms": {
+   "2723": {
+    "formName": "Single Strike"
+   },
+   "2724": {
+    "formName": "Rapid Strike"
+   }
+  },
+  "height": 1.9,
+  "weight": 105,
+  "tempEvolutions": {
+   "Rapid Strike Gmax": {},
+   "Single Strike Gmax": {}
+  }
+ },
+ "893": {
+  "pokemonName": "Zarude",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 70
+ },
+ "894": {
+  "pokemonName": "Regieleki",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 145
+ },
+ "895": {
+  "pokemonName": "Regidrago",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.1,
+  "weight": 200
+ },
+ "896": {
+  "pokemonName": "Glastrier",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.2,
+  "weight": 800
+ },
+ "897": {
+  "pokemonName": "Spectrier",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2,
+  "weight": 44.5
+ },
+ "898": {
+  "pokemonName": "Calyrex",
+  "forms": {
+   "2725": {
+    "formName": "Normal"
+   },
+   "2726": {
+    "formName": "Ice Rider",
+    "height": 2.4,
+    "weight": 809.1
+   },
+   "2727": {
+    "formName": "Shadow Rider",
+    "height": 2.4,
+    "weight": 53.6
+   }
+  },
+  "height": 1.1,
+  "weight": 7.7
+ },
+ "899": {
+  "pokemonName": "Wyrdeer",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 95.1
+ },
+ "900": {
+  "pokemonName": "Kleavor",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 89
+ },
+ "901": {
+  "pokemonName": "Ursaluna",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.4,
+  "weight": 290
+ },
+ "902": {
+  "pokemonName": "Basculegion",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  }
+ },
+ "903": {
+  "pokemonName": "Sneasler",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 43
+ },
+ "904": {
+  "pokemonName": "Overqwil",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.5,
+  "weight": 60.5
+ },
+ "905": {
+  "pokemonName": "Enamorus",
+  "forms": {
+   "2802": {
+    "formName": "Incarnate"
+   },
+   "2803": {
+    "formName": "Therian"
+   }
+  },
+  "height": 1.6,
+  "weight": 48
+ },
+ "906": {
+  "pokemonName": "Sprigatito",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 4.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "907": {
+  "pokemonName": "Floragato",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 12.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "908": {
+  "pokemonName": "Meowscarada",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 31.2
+ },
+ "909": {
+  "pokemonName": "Fuecoco",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 9.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "910": {
+  "pokemonName": "Crocalor",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 30.7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "911": {
+  "pokemonName": "Skeledirge",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 326.5
+ },
+ "912": {
+  "pokemonName": "Quaxly",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 6.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "913": {
+  "pokemonName": "Quaxwell",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 21.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "914": {
+  "pokemonName": "Quaquaval",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 61.9
+ },
+ "915": {
+  "pokemonName": "Lechonk",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 10.2,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "916": {
+  "pokemonName": "Oinkologne",
+  "forms": {
+   "2981": {
+    "formName": "Normal"
+   },
+   "2982": {
+    "formName": "Female"
+   }
+  },
+  "height": 1,
+  "weight": 120
+ },
+ "917": {
+  "pokemonName": "Tarountula",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "918": {
+  "pokemonName": "Spidops",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 16.5
+ },
+ "919": {
+  "pokemonName": "Nymble",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "920": {
+  "pokemonName": "Lokix",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 17.5
+ },
+ "921": {
+  "pokemonName": "Pawmi",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 2.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "922": {
+  "pokemonName": "Pawmo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 6.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "923": {
+  "pokemonName": "Pawmot",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 41
+ },
+ "924": {
+  "pokemonName": "Tandemaus",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 1.8,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "925": {
+  "pokemonName": "Maushold",
+  "forms": {
+   "2983": {
+    "formName": "Family Of Three"
+   },
+   "2984": {
+    "formName": "Family Of Four",
+    "height": 0.3,
+    "weight": 2.8
+   }
+  },
+  "height": 0.3,
+  "weight": 2.3
+ },
+ "926": {
+  "pokemonName": "Fidough",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 10.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "927": {
+  "pokemonName": "Dachsbun",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 14.9
+ },
+ "928": {
+  "pokemonName": "Smoliv",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 6.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "929": {
+  "pokemonName": "Dolliv",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 11.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "930": {
+  "pokemonName": "Arboliva",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 48.2
+ },
+ "931": {
+  "pokemonName": "Squawkabilly",
+  "forms": {
+   "2985": {
+    "formName": "Green"
+   },
+   "2986": {
+    "formName": "Blue"
+   },
+   "2987": {
+    "formName": "Yellow"
+   },
+   "2988": {
+    "formName": "White"
+   }
+  },
+  "height": 0.6,
+  "weight": 2.4
+ },
+ "932": {
+  "pokemonName": "Nacli",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 16,
+  "evolutions": [
+   {}
+  ]
+ },
+ "933": {
+  "pokemonName": "Naclstack",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 105,
+  "evolutions": [
+   {}
+  ]
+ },
+ "934": {
+  "pokemonName": "Garganacl",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.3,
+  "weight": 240
+ },
+ "935": {
+  "pokemonName": "Charcadet",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 10.5,
+  "evolutions": [
+   {},
+   {}
+  ]
+ },
+ "936": {
+  "pokemonName": "Armarouge",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 85
+ },
+ "937": {
+  "pokemonName": "Ceruledge",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 62
+ },
+ "938": {
+  "pokemonName": "Tadbulb",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 0.4,
+  "evolutions": [
+   {}
+  ]
+ },
+ "939": {
+  "pokemonName": "Bellibolt",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 113
+ },
+ "940": {
+  "pokemonName": "Wattrel",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 3.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "941": {
+  "pokemonName": "Kilowattrel",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 38.6
+ },
+ "942": {
+  "pokemonName": "Maschiff",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 16,
+  "evolutions": [
+   {}
+  ]
+ },
+ "943": {
+  "pokemonName": "Mabosstiff",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.1,
+  "weight": 61
+ },
+ "944": {
+  "pokemonName": "Shroodle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 0.7,
+  "evolutions": [
+   {}
+  ]
+ },
+ "945": {
+  "pokemonName": "Grafaiai",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 27.2
+ },
+ "946": {
+  "pokemonName": "Bramblin",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 0.6,
+  "evolutions": [
+   {}
+  ]
+ },
+ "947": {
+  "pokemonName": "Brambleghast",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 6
+ },
+ "948": {
+  "pokemonName": "Toedscool",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 33,
+  "evolutions": [
+   {}
+  ]
+ },
+ "949": {
+  "pokemonName": "Toedscruel",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.9,
+  "weight": 58
+ },
+ "950": {
+  "pokemonName": "Klawf",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 79
+ },
+ "951": {
+  "pokemonName": "Capsakid",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 3,
+  "evolutions": [
+   {}
+  ]
+ },
+ "952": {
+  "pokemonName": "Scovillain",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 15
+ },
+ "953": {
+  "pokemonName": "Rellor",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "954": {
+  "pokemonName": "Rabsca",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.3,
+  "weight": 3.5
+ },
+ "955": {
+  "pokemonName": "Flittle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.2,
+  "weight": 1.5,
+  "evolutions": [
+   {}
+  ]
+ },
+ "956": {
+  "pokemonName": "Espathra",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.9,
+  "weight": 90
+ },
+ "957": {
+  "pokemonName": "Tinkatink",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 8.9,
+  "evolutions": [
+   {}
+  ]
+ },
+ "958": {
+  "pokemonName": "Tinkatuff",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 59.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "959": {
+  "pokemonName": "Tinkaton",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 112.8
+ },
+ "960": {
+  "pokemonName": "Wiglett",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 1.8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "961": {
+  "pokemonName": "Wugtrio",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 5.4
+ },
+ "962": {
+  "pokemonName": "Bombirdier",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 42.9
+ },
+ "963": {
+  "pokemonName": "Finizen",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 60.2,
+  "evolutions": [
+   {}
+  ]
+ },
+ "964": {
+  "pokemonName": "Palafin",
+  "forms": {
+   "2989": {
+    "formName": "Zero"
+   },
+   "2990": {
+    "formName": "Hero",
+    "height": 1.8,
+    "weight": 97.4
+   }
+  },
+  "height": 1.3,
+  "weight": 60.2
+ },
+ "965": {
+  "pokemonName": "Varoom",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1,
+  "weight": 35,
+  "evolutions": [
+   {}
+  ]
+ },
+ "966": {
+  "pokemonName": "Revavroom",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 120
+ },
+ "967": {
+  "pokemonName": "Cyclizar",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 63
+ },
+ "968": {
+  "pokemonName": "Orthworm",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.5,
+  "weight": 310
+ },
+ "969": {
+  "pokemonName": "Glimmet",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.7,
+  "weight": 8,
+  "evolutions": [
+   {}
+  ]
+ },
+ "970": {
+  "pokemonName": "Glimmora",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 45
+ },
+ "971": {
+  "pokemonName": "Greavard",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 35,
+  "evolutions": [
+   {}
+  ]
+ },
+ "972": {
+  "pokemonName": "Houndstone",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2,
+  "weight": 15
+ },
+ "973": {
+  "pokemonName": "Flamigo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 37
+ },
+ "974": {
+  "pokemonName": "Cetoddle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 45,
+  "evolutions": [
+   {}
+  ]
+ },
+ "975": {
+  "pokemonName": "Cetitan",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 4.5,
+  "weight": 700
+ },
+ "976": {
+  "pokemonName": "Veluza",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.5,
+  "weight": 90
+ },
+ "977": {
+  "pokemonName": "Dondozo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 12,
+  "weight": 220
+ },
+ "978": {
+  "pokemonName": "Tatsugiri",
+  "forms": {
+   "2991": {
+    "formName": "Curly"
+   },
+   "2992": {
+    "formName": "Droopy"
+   },
+   "2993": {
+    "formName": "Stretchy"
+   }
+  },
+  "height": 0.3,
+  "weight": 8
+ },
+ "979": {
+  "pokemonName": "Annihilape",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 56
+ },
+ "980": {
+  "pokemonName": "Clodsire",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 223
+ },
+ "981": {
+  "pokemonName": "Farigiraf",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3.2,
+  "weight": 160
+ },
+ "982": {
+  "pokemonName": "Dudunsparce",
+  "forms": {
+   "2994": {
+    "formName": "Two"
+   },
+   "2995": {
+    "formName": "Three",
+    "height": 4.5,
+    "weight": 47.4
+   }
+  },
+  "height": 3.6,
+  "weight": 39.2
+ },
+ "983": {
+  "pokemonName": "Kingambit",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2,
+  "weight": 120
+ },
+ "984": {
+  "pokemonName": "Greattusk",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.2,
+  "weight": 320
+ },
+ "985": {
+  "pokemonName": "Screamtail",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 8
+ },
+ "986": {
+  "pokemonName": "Brutebonnet",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 21
+ },
+ "987": {
+  "pokemonName": "Fluttermane",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 4
+ },
+ "988": {
+  "pokemonName": "Slitherwing",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 3.2,
+  "weight": 92
+ },
+ "989": {
+  "pokemonName": "Sandyshocks",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.3,
+  "weight": 60
+ },
+ "990": {
+  "pokemonName": "Irontreads",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.9,
+  "weight": 240
+ },
+ "991": {
+  "pokemonName": "Ironbundle",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.6,
+  "weight": 11
+ },
+ "992": {
+  "pokemonName": "Ironhands",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.8,
+  "weight": 380.7
+ },
+ "993": {
+  "pokemonName": "Ironjugulis",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.3,
+  "weight": 111
+ },
+ "994": {
+  "pokemonName": "Ironmoth",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 36
+ },
+ "995": {
+  "pokemonName": "Ironthorns",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.6,
+  "weight": 303
+ },
+ "996": {
+  "pokemonName": "Frigibax",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.5,
+  "weight": 17,
+  "evolutions": [
+   {}
+  ]
+ },
+ "997": {
+  "pokemonName": "Arctibax",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.8,
+  "weight": 30,
+  "evolutions": [
+   {}
+  ]
+ },
+ "998": {
+  "pokemonName": "Baxcalibur",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.1,
+  "weight": 210
+ },
+ "999": {
+  "pokemonName": "Gimmighoul",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.1,
+  "weight": 0.1,
+  "evolutions": [
+   {}
+  ]
+ },
+ "1000": {
+  "pokemonName": "Gholdengo",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.2,
+  "weight": 30
+ },
+ "1001": {
+  "pokemonName": "Wochien",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.5,
+  "weight": 74.2
+ },
+ "1002": {
+  "pokemonName": "Chienpao",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.9,
+  "weight": 152.2
+ },
+ "1003": {
+  "pokemonName": "Tinglu",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2.7,
+  "weight": 669.7
+ },
+ "1004": {
+  "pokemonName": "Chiyu",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 0.4,
+  "weight": 4.9
+ },
+ "1005": {
+  "pokemonName": "Roaringmoon",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 2,
+  "weight": 380
+ },
+ "1006": {
+  "pokemonName": "Ironvaliant",
+  "forms": {
+   "0": {
+    "formName": "Unset"
+   }
+  },
+  "height": 1.4,
+  "weight": 35
+ },
+ "1007": {
+  "pokemonName": "Koraidon",
+  "forms": {
+   "2996": {
+    "formName": "Apex"
+   }
+  },
+  "height": 2.5,
+  "weight": 303
+ },
+ "1008": {
+  "pokemonName": "Miraidon",
+  "forms": {
+   "2997": {
+    "formName": "Ultimate"
+   }
+  },
+  "height": 3.5,
+  "weight": 240
+ },
+ "1009": {
+  "pokemonName": "Walking-wake",
+  "forms": {}
+ },
+ "1010": {
+  "pokemonName": "Iron-leaves",
+  "forms": {}
+ },
+ "1011": {
+  "pokemonName": "Dipplin",
+  "forms": {}
+ },
+ "1012": {
+  "pokemonName": "Poltchageist",
+  "forms": {}
+ },
+ "1013": {
+  "pokemonName": "Sinistcha",
+  "forms": {}
+ },
+ "1014": {
+  "pokemonName": "Okidogi",
+  "forms": {}
+ },
+ "1015": {
+  "pokemonName": "Munkidori",
+  "forms": {}
+ },
+ "1016": {
+  "pokemonName": "Fezandipiti",
+  "forms": {}
+ },
+ "1017": {
+  "pokemonName": "Ogerpon",
+  "forms": {}
+ },
+ "1018": {
+  "pokemonName": "Archaludon",
+  "forms": {}
+ },
+ "1019": {
+  "pokemonName": "Hydrapple",
+  "forms": {}
+ },
+ "1020": {
+  "pokemonName": "Gouging-fire",
+  "forms": {}
+ },
+ "1021": {
+  "pokemonName": "Raging-bolt",
+  "forms": {}
+ },
+ "1022": {
+  "pokemonName": "Iron-boulder",
+  "forms": {}
+ },
+ "1023": {
+  "pokemonName": "Iron-crown",
+  "forms": {}
+ },
+ "1024": {
+  "pokemonName": "Terapagos",
+  "forms": {}
+ },
+ "1025": {
+  "pokemonName": "Pecharunt",
+  "forms": {}
+ }
+}

@@ -168,6 +168,7 @@ module.exports = {
     calculateHp,
     calculateCp,
     calculatePvPStat,
+    calculatePvPStatFormChange,
     calculateRanks,
     calculateRanksFormChange,
     calculateRanksCompact,

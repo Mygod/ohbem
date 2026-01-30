@@ -5,8 +5,11 @@ const {
     calculateHp,
     calculateCp,
     calculatePvPStat,
+    calculatePvPStatFormChange,
     calculateRanks,
+    calculateRanksFormChange,
     calculateRanksCompact,
+    calculateRanksFormChangeCompact,
 } = require('./pvp-core.js');
 const addPokemonDataHelpers = require('./pokemon-data.js');
 
@@ -186,6 +189,34 @@ class Ohbem {
         }
         return combinationIndex;
     }
+    calculateAllRanksFormChange(defaultStats, alternateStats, cpCap) {
+        const key = `${defaultStats.attack},${defaultStats.defense},${defaultStats.stamina},${alternateStats.attack},${alternateStats.defense},${alternateStats.stamina},${cpCap}`;
+        let combinationIndex = this._rankCache ? this._rankCache.get(key) : undefined;
+        if (combinationIndex === undefined) {
+            combinationIndex = null;
+            let maxed = false;
+            const calculator = this._compactCache ? (lvCap) => {
+                const { combinations, sortedRanks } = calculateRanksFormChangeCompact(
+                    defaultStats, alternateStats, cpCap, lvCap, this._rankingComparator);
+                const result = combinations;
+                result.push(sortedRanks[0].value);
+                return result;
+            } : (lvCap) => calculateRanksFormChange(defaultStats, alternateStats, cpCap, lvCap, this._rankingComparator).combinations;
+            for (const lvCap of this._levelCaps) {
+                if (this._removeUnviablePokemon && calculateCp(defaultStats, 15, 15, 15, lvCap) <= cpCap) continue;   // not viable
+                if (combinationIndex === null) combinationIndex = { [lvCap]: calculator(lvCap) };
+                else combinationIndex[lvCap] = calculator(lvCap);
+                // check if no more power up is possible: further increasing the cap will not be relevant
+                if (calculateCp(defaultStats, 0, 0, 0, lvCap + .5) > cpCap) {
+                    maxed = true;
+                    break;
+                }
+            }
+            if (combinationIndex !== null && !maxed) combinationIndex[maxLevel] = calculator(maxLevel);
+            if (this._rankCache) this._rankCache.set(key, combinationIndex);
+        }
+        return combinationIndex;
+    }
 
     calculateTopRanks(maxRank, pokemonId, form = 0, evolution = 0, ivFloor = 0) {
         const masterPokemon = this._pokemonData.pokemon[pokemonId];
@@ -323,6 +354,48 @@ class Ohbem {
                     if (entries.length === 0) continue;
                 } else continue;
                 result[leagueName] = result[leagueName] ? result[leagueName].concat(entries) : entries;
+
+                // if (pokemonId !== 681) continue; // Aegislash
+                // if (leagueOptions !== null) {
+                //     const combinationIndex = this.calculateAllRanksFormChange(stats, { attack: 272, defense: 97, stamina: 155 }, leagueOptions.cap);
+                //     if (combinationIndex === null) continue;
+                //     for (const [lvCap, combinations] of Object.entries(combinationIndex)) {
+                //         let entry;
+                //         if (this._compactCache) {
+                //             const cap = parseFloat(lvCap);
+                //             const stat = calculatePvPStatFormChange(stats, attack, defense, stamina,
+                //                 leagueOptions.cap, cap, level);
+                //             if (stat === null) continue;
+                //             entry = {
+                //                 ...baseEntry,
+                //                 cap,
+                //                 ...stat,
+                //                 percentage: Number((stat.value / combinations[4096]).toFixed(5)),
+                //                 rank: combinations[(attack * 16 + defense) * 16 + stamina],
+                //             };
+                //             delete entry.attack;
+                //         } else {
+                //             const ivEntry = combinations[attack][defense][stamina];
+                //             if (level > ivEntry.level) continue;
+                //             entry = { ...baseEntry, cap: parseFloat(lvCap), ...ivEntry };
+                //         }
+                //         if (evolution) entry.evolution = evolution;
+                //         entry.value = Math.floor(entry.value);
+                //         entries.push(entry);
+                //     }
+                //     if (entries.length === 0) continue;
+                //     let last = entries[entries.length - 1];
+                //     while (entries.length >= 2) {   // remove duplicate ranks at highest caps
+                //         const secondLast = entries[entries.length - 2];
+                //         if (secondLast.level !== last.level || secondLast.rank !== last.rank) break;
+                //         entries.pop();
+                //         last = secondLast;
+                //     }
+                //     if (last.cap < maxLevel) last.capped = true; else {
+                //         if (entries.length === 1) continue;
+                //         entries.pop();
+                //     }
+                // }
             }
         };
         pushAllEntries(masterForm.attack ? masterForm : masterPokemon);
