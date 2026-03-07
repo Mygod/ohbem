@@ -30,10 +30,21 @@ function durationMultiplier(move) {
     const multiplier = move.durationMs / durationMs(move);
     return multiplier > .8 && multiplier < 1.2 ? 1 : 2 - multiplier;
 }
+function shouldSkipChargedMove(chargedMoveId, candidateChargedMoveIds) {
+    const chargedMove = moves[chargedMoveId];
+    if (partyCount || chargedMove.energyDelta >= -50) return false;
+    const hasSameTypeTwoBar = candidateChargedMoveIds.some((candidateMoveId) => {
+        if (candidateMoveId === chargedMoveId) return false;
+        const candidateMove = moves[candidateMoveId];
+        return candidateMove.energyDelta >= -50 && candidateMove.type.typeId === chargedMove.type.typeId;
+    });
+    return !hasSameTypeTwoBar;
+}
 
 function checkStats(pokemon, form, formData, pokemonData, specialMove = 323) {  // RETURN
     if (!formData.attack && !formData.quickMoves && !formData.chargedMoves && !formData.eliteQuickMoves && !formData.eliteChargedMoves && !formData.types) return;
     const stabTypes = new Set((formData.types || pokemonData.types).map((type) => type.typeId));
+    const chargedMoveIds = (formData.chargedMoves || pokemonData.chargedMoves).concat(formData.eliteChargedMoves || pokemonData && pokemonData.eliteChargedMoves || []);
     let bestMoves = [];
     const addMoveset = (moveset) => {
         if (bestMoves.length > 0) {
@@ -70,7 +81,7 @@ function checkStats(pokemon, form, formData, pokemonData, specialMove = 323) {  
                     console.warn(`WEE WOO ${chargedMoveId} learned by ${pokemon} ${form}`);
                     return;
                 }
-                if (!partyCount && chargedMove.energyDelta < -50) return;   // one-bar charged no gud
+                if (shouldSkipChargedMove(chargedMoveId, chargedMoveIds)) return;
                 let chargedDamage = 500 * (chargedMove.power ?? 0) * (resistances1[chargedMove.type.typeId] ?? 1) * (resistances2[chargedMove.type.typeId] ?? 1);
                 if (stabTypes.has(chargedMove.type.typeId)) chargedDamage *= 1.2;
                 if (partyCount) chargedDamage *= durationMultiplier(chargedMove);
@@ -78,7 +89,7 @@ function checkStats(pokemon, form, formData, pokemonData, specialMove = 323) {  
                 const quickMs = chargedMove.energyDelta / quickEpms;
                 addMoveset({...moveset, charged: chargedMoveId, dps: (chargedDamage - quickMs * quickDps) / (durationMs(chargedMove) - quickMs)});
             };
-            for (const moveId of (formData.chargedMoves || pokemonData.chargedMoves).concat(formData.eliteChargedMoves || pokemonData && pokemonData.eliteChargedMoves || [])) testChargedMove(moveId);
+            for (const moveId of chargedMoveIds) testChargedMove(moveId);
             if (canShadow) testChargedMove(specialMove);    // RETURN
         };
         if (quickMoveId === 281) for (let quickType = 2; quickType < 18; ++quickType) {
@@ -114,8 +125,9 @@ function checkStats(pokemon, form, formData, pokemonData, specialMove = 323) {  
 }
 
 function checkSpecial(pokemon, shadow, formData, chargedMoveId) {
+    const chargedMoveIds = formData.chargedMoves.concat(formData.eliteChargedMoves || []);
+    if (shouldSkipChargedMove(chargedMoveId, chargedMoveIds)) return;
     const chargedMove = moves[chargedMoveId];
-    if (!partyCount && chargedMove.energyDelta < -50) return;   // one-bar charged no gud
     const stabTypes = new Set(formData.types.map((type) => type.typeId));
     let bestMoves = [];
     const addMoveset = (moveset) => {
